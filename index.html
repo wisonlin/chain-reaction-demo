@@ -22,7 +22,7 @@
 <body>
   <main class="game-app">
     <header class="app-header">
-      <div class="brand"><span class="brand-mark">↗</span><div>反击弹幕<small>CHAIN REACTION / MOBILE 0.2</small></div></div>
+      <div class="brand"><span class="brand-mark">↗</span><div>反击弹幕<small>V0.3 / 挑战版</small></div></div>
       <div class="header-actions"><button id="sound-button" class="icon-button" aria-label="关闭音效" aria-pressed="true">♪</button><button id="pause-button" class="icon-button" aria-label="暂停游戏" disabled>Ⅱ</button></div>
     </header>
     <section class="hud" aria-label="游戏状态">
@@ -38,15 +38,15 @@
         <div class="arena-heading"><span id="arena-label">反击准备就绪</span><span>MOBILE / 01</span></div>
         <div class="overlay" id="overlay">
           <div class="overlay-card">
-            <span class="overlay-kicker" id="overlay-kicker">把危险，变成你的武器</span>
+            <span class="overlay-kicker" id="overlay-kicker">挑战版 · 突破包围</span>
             <h1 id="overlay-title">连锁<span class="title-second">反应.</span></h1>
             <p id="overlay-description">射爆粉色敌弹<br>引发一整片绿色连锁爆炸</p>
             <div class="how-to" id="how-to"><span>◎<small>拖动移动</small></span><span>⌖<small>自动射击</small></span><span>↗<small>点击冲刺</small></span></div>
             <div class="result-stats" id="result-stats" hidden></div>
             <button class="primary-button" id="start-button"><span>开始反击</span><span>↗</span></button>
             <button class="secondary-button" id="retry-button" hidden>重新开始</button>
-            <p class="overlay-hint" id="overlay-hint">60 秒一局 · 竖屏就能玩</p>
-            <div class="personal-best">个人最高 <strong id="personal-best">000000</strong></div>
+            <p class="overlay-hint" id="overlay-hint">60 秒一局 · 小心侧翼突袭</p>
+            <div class="personal-best">挑战版最高 <strong id="personal-best">000000</strong></div>
           </div>
         </div>
         <div class="toast" id="toast" aria-live="polite"></div>
@@ -60,12 +60,18 @@
       <div class="auto-status"><span class="auto-dot"></span>自动射击<small>优先引爆敌弹</small><div class="dash-meter"><i id="dash-fill"></i></div><span id="dash-label">冲刺已就绪</span></div>
       <div class="dash-control"><button id="touch-dash" aria-label="冲刺，短暂无敌" disabled><span class="dash-arrow">↗</span><span id="dash-button-label">冲刺</span></button><span class="control-label">短暂无敌</span></div>
     </section>
-    <footer id="field-note">绿色爆炸不会伤到你 · 试着靠近密集弹幕</footer>
+    <footer id="field-note">橙色追击者会包围你 · 用冲刺拉开距离</footer>
   </main>
   <script type="module">const WORLD = { width: 1100, height: 700, duration: 60 };
 const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
 const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
 const TAU = Math.PI * 2;
+const PRESSURE = [
+  { spawn: 1.15, chase: 124, bullet: 115, volley: 1.65, flank: 2 },
+  { spawn: 1, chase: 138, bullet: 130, volley: 1.45, flank: 2 },
+  { spawn: .8, chase: 152, bullet: 146, volley: 1.25, flank: 3 },
+  { spawn: .62, chase: 166, bullet: 164, volley: 1.08, flank: 3 }
+];
 
 class Game {
   constructor(random = Math.random, world = WORLD) {
@@ -95,7 +101,8 @@ class Game {
     this.detonations = 0;
     this.dashes = 0;
     this.wave = 1;
-    this.spawnTimer = 1.8;
+    this.spawnTimer = this.mobile ? 1.15 : 1.8;
+    this.flankTimer = 6;
     this.shootTimer = 0;
     this.hitstop = 0;
     this.shake = 0;
@@ -110,9 +117,16 @@ class Game {
   }
   get multiplier() { return Math.min(8, 1 + Math.floor(this.combo / 5)); }
   get remaining() { return Math.max(0, this.world.duration - this.elapsed); }
+  get pressure() { return PRESSURE[Math.min(3, this.wave - 1)]; }
   getAutoTarget() {
     const candidates = this.bullets.filter(b => !b.dead && !b.prime && distance(b, this.player) < 420)
       .sort((a, b) => distance(a, this.player) - distance(b, this.player)).slice(0, 32);
+    // Help against imminent contact, but simultaneous threats still need player movement.
+    if (this.mobile && !candidates.some(b => distance(b, this.player) < 65)) {
+      const pursuer = this.enemies.filter(e => !e.dead && e.warmup <= 0 && e.type === 'chaser' && distance(e, this.player) < 125)
+        .sort((a, b) => distance(a, this.player) - distance(b, this.player))[0];
+      if (pursuer) return pursuer;
+    }
     let target = null, best = -Infinity;
     for (const b of candidates) {
       const d = distance(b, this.player);
@@ -144,7 +158,22 @@ class Game {
         y = this.player.y < height / 2 ? height - 70 : 70;
       }
     }
-    this.enemies.push({ type, x, y, r: type === 'spinner' ? 22 : type === 'shooter' ? 18 : 14, hp: type === 'spinner' ? 5 : type === 'shooter' ? 3 : 2, timer: .8 + this.random() * .5, angle: this.random() * TAU, warmup: delay, flash: 0, dead: false });
+    // Explicit flank positions have the same spawn safety as random edge positions.
+    if (this.mobile && delay > 0 && Math.hypot(x - this.player.x, y - this.player.y) < 180) {
+      y = this.player.y < height / 2 ? height - 45 : 45;
+    }
+    const hp = this.mobile ? { spinner: 7, shooter: 4, chaser: 5 }[type] : type === 'spinner' ? 5 : type === 'shooter' ? 3 : 2;
+    this.enemies.push({ type, x, y, r: type === 'spinner' ? 22 : type === 'shooter' ? 18 : 14, hp, timer: (this.mobile ? .6 : .8) + this.random() * .5, angle: this.random() * TAU, warmup: delay, flash: 0, dead: false });
+  }
+  spawnFlank() {
+    const count = Math.min(this.pressure.flank, 24 - this.enemies.length);
+    if (count <= 0) return;
+    const offset = Math.floor(this.random() * 4) * Math.PI / 2;
+    for (let i = 0; i < count; i++) {
+      const a = offset + i * TAU / count;
+      this.spawnEnemy('chaser', this.world.width / 2 + Math.cos(a) * (this.world.width / 2 - 38), this.world.height / 2 + Math.sin(a) * (this.world.height / 2 - 38), 1.1);
+    }
+    this.event('flank', { count });
   }
   emitBullet(x, y, angle, speed = 105) {
     this.bullets.push({ x, y, vx: Math.cos(angle) * speed, vy: Math.sin(angle) * speed, r: 6, life: 10, dead: false, prime: 0 });
@@ -174,7 +203,7 @@ class Game {
     this.combo++;
     this.comboTimer = 2.4;
     this.addScore(35);
-    this.blasts.push({ x: bullet.x, y: bullet.y, age: 0, duration: .38, radius: this.mobile ? 85 : 100, id, hit: new Set() });
+    this.blasts.push({ x: bullet.x, y: bullet.y, age: 0, duration: .38, radius: this.mobile ? 72 : 100, id, hit: new Set() });
     this.particle(bullet.x, bullet.y, '#d0fa72', 12, 210);
     this.shake = Math.max(this.shake, Math.min(7, 2 + size * .25));
     this.event('chain', { size, x: bullet.x, y: bullet.y });
@@ -204,7 +233,7 @@ class Game {
     const p = this.player;
     if (p.invincible > 0 || this.state !== 'playing') return;
     p.hp--;
-    p.invincible = 1.7;
+    p.invincible = this.mobile ? 1.4 : 1.7;
     this.combo = 0;
     this.comboTimer = 0;
     this.shake = 12;
@@ -253,7 +282,7 @@ class Game {
     if (input.shoot && this.shootTimer <= 0) {
       const a = p.angle;
       this.shots.push({ x: p.x + Math.cos(a) * 20, y: p.y + Math.sin(a) * 20, vx: Math.cos(a) * 920, vy: Math.sin(a) * 920, life: 1.3, r: 4, dead: false });
-      this.shootTimer = .105;
+      this.shootTimer = this.mobile ? .145 : .105;
       this.event('shoot');
     }
     if (this.comboTimer > 0) { this.comboTimer -= dt; if (this.comboTimer <= 0) this.combo = 0; }
@@ -261,12 +290,16 @@ class Game {
     if (wave !== this.wave) { this.wave = wave; this.event('wave', { wave }); }
     this.spawnTimer -= dt;
     if (this.spawnTimer <= 0) {
-      if (this.enemies.length < 22) {
+      if (this.enemies.length < (this.mobile ? 24 : 22)) {
         const roll = this.random();
-        const type = this.elapsed > 13 && roll < .25 ? 'spinner' : roll < .6 ? 'shooter' : 'chaser';
+        const type = this.elapsed > (this.mobile ? 8 : 13) && roll < .25 ? 'spinner' : roll < .55 ? 'shooter' : 'chaser';
         this.spawnEnemy(type);
       }
-      this.spawnTimer = Math.max(.48, 1.8 - this.elapsed * .023);
+      this.spawnTimer = this.mobile ? this.pressure.spawn : Math.max(.48, 1.8 - this.elapsed * .023);
+    }
+    if (this.mobile) {
+      this.flankTimer -= dt;
+      if (this.flankTimer <= 0) { this.spawnFlank(); this.flankTimer = 8; }
     }
     for (const e of this.enemies) {
       if (e.dead) continue;
@@ -276,7 +309,7 @@ class Game {
       const d = distance(e, p);
       e.angle += dt * (e.type === 'spinner' ? 1.4 : .5);
       if (e.type === 'chaser') {
-        const speed = (this.mobile ? 70 : 95) + this.wave * 9;
+        const speed = this.mobile ? this.pressure.chase : 95 + this.wave * 9;
         e.x += Math.cos(a) * speed * dt;
         e.y += Math.sin(a) * speed * dt;
       } else {
@@ -285,9 +318,13 @@ class Game {
         e.y = clamp(e.y + Math.sin(a) * speed * dt, 28, this.world.height - 28);
         e.timer -= dt;
         if (e.timer <= 0) {
-          if (e.type === 'shooter') for (let i = -2; i <= 2; i++) this.emitBullet(e.x, e.y, a + i * .16, (this.mobile ? 72 : 92) + this.wave * 9);
-          else for (let i = 0; i < 12; i++) this.emitBullet(e.x, e.y, e.angle + i * TAU / 12, 80 + this.wave * 7);
-          e.timer = e.type === 'shooter' ? 2.2 - this.wave * .13 : 2.8;
+          const spread = this.mobile && this.wave >= 3 ? 3 : 2;
+          if (e.type === 'shooter') for (let i = -spread; i <= spread; i++) this.emitBullet(e.x, e.y, a + i * .19, this.mobile ? this.pressure.bullet : 92 + this.wave * 9);
+          else {
+            const count = this.mobile ? 14 : 12;
+            for (let i = 0; i < count; i++) this.emitBullet(e.x, e.y, e.angle + i * TAU / count, this.mobile ? this.pressure.bullet * .9 : 80 + this.wave * 7);
+          }
+          e.timer = this.mobile ? this.pressure.volley * (e.type === 'spinner' ? 1.25 : 1) : e.type === 'shooter' ? 2.2 - this.wave * .13 : 2.8;
         }
       }
       if (d < e.r + p.r) this.hurtPlayer();
@@ -355,8 +392,8 @@ const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 let dashRequested = false, best = 0, muted = false, storageAvailable = true;
 let lastFrame = 0, accumulator = 0, visualTime = 0, toastTimer = 0, view = { width: 1100, height: 700, scale: 1, x: 0, y: 0 };
 let soundContext, masterGain, lastSound = 0;
-const waveNames = ['初次接触', '交叉火力', '危险密度', '最后反击'];
-try { best = Math.max(0, Number(localStorage.getItem('chain-reaction-mobile-best-v2')) || 0); muted = localStorage.getItem('chain-reaction-muted') === '1'; } catch { storageAvailable = false; }
+const waveNames = ['迎击', '两面夹击', '高压弹幕', '极限反击'];
+try { best = Math.max(0, Number(localStorage.getItem('chain-reaction-mobile-best-v3')) || 0); muted = localStorage.getItem('chain-reaction-muted') === '1'; } catch { storageAvailable = false; }
 $('personal-best').textContent = formatScore(best);
 
 function formatScore(value) { return String(Math.floor(value)).padStart(6, '0'); }
@@ -423,7 +460,7 @@ function start() {
   pointer.x = game.player.x; pointer.y = 180;
   canvas.focus({ preventScroll: true });
   $('how-to').hidden = true;
-  toast('拖动移动 · 自动瞄准敌弹 · 点击冲刺');
+  toast('挑战版 · 保持移动，留意橙色追击者');
   tone(330, .15, 'sine', .35, 660);
   updateHUD();
 }
@@ -469,14 +506,14 @@ function showResult(won) {
   const newBest = game.score > best;
   if (newBest) {
     best = game.score;
-    try { localStorage.setItem('chain-reaction-mobile-best-v2', String(best)); } catch { storageAvailable = false; }
+    try { localStorage.setItem('chain-reaction-mobile-best-v3', String(best)); } catch { storageAvailable = false; }
     $('personal-best').textContent = formatScore(best);
   }
   document.body.classList.remove('playing');
   $('overlay').hidden = false;
   $('overlay-kicker').textContent = newBest ? 'NEW PERSONAL BEST / 新纪录' : won ? 'CHALLENGE COMPLETE / 挑战完成' : 'ONE MORE TRY / 再来一次';
   $('overlay-title').innerHTML = won ? '漂亮的反击<span>。</span>' : '还差一点<span>。</span>';
-  $('overlay-description').textContent = won ? `存活 60 秒，获得 ${game.player.hp * 500} 分护盾奖励。` : `坚持了 ${game.elapsed.toFixed(1)} 秒。下次，试着引爆更密的弹幕。`;
+  $('overlay-description').textContent = won ? `撑过高压 60 秒，获得 ${game.player.hp * 500} 分护盾奖励。` : `坚持了 ${game.elapsed.toFixed(1)} 秒。试着用冲刺穿出包围。`;
   $('result-stats').innerHTML = `<div><strong>${formatScore(game.score)}</strong>本局得分</div><div><strong>${game.bestChain}</strong>最大连锁</div><div><strong>${game.kills}</strong>击败敌人</div>`;
   $('result-stats').hidden = false;
   $('start-button').firstElementChild.textContent = '再来一局';
@@ -577,7 +614,8 @@ function handleEvents() {
     if (e.type === 'chain' && visualTime - lastSound > .035) { tone(220 + Math.min(e.size, 20) * 35, .15, 'sine', .42, 110 + Math.min(e.size, 20) * 30); lastSound = visualTime; }
     if (e.type === 'kill') tone(110, .1, 'triangle', .22, 40);
     if (e.type === 'hurt') { tone(95, .25, 'sawtooth', .5, 30); toast(`护盾受损 · 剩余 ${game.player.hp} 格`); }
-    if (e.type === 'wave') { toast(['', '初次接触', '交叉火力 · 环形炮台加入战场', '危险密度 · 更多弹幕，更多机会', '最后 15 秒 · 把它们全部引爆'][e.wave]); tone(440, .2, 'sine', .2, 550); }
+    if (e.type === 'wave') { toast(['', '迎击', '两面夹击 · 敌人加速', '高压弹幕 · 保持移动', '最后 15 秒 · 极限反击'][e.wave]); tone(440, .2, 'sine', .2, 550); }
+    if (e.type === 'flank') { toast(`侧翼突袭 · ${e.count} 个追击者即将入场`); tone(280, .16, 'triangle', .24, 420); }
     if (e.type === 'chainNotice') { $('field-note').textContent = `${e.size} 发敌弹，连成了一次反击。继续寻找密集弹幕，把倍率推到 ×8。`; }
     if (e.type === 'over') showResult(e.won);
   }
@@ -639,7 +677,8 @@ function drawBackground(time) {
 function drawEnemy(e, time) {
   if (e.warmup > 0) {
     const alpha = .3 + Math.sin(time * 12) * .15;
-    ctx.globalAlpha = alpha; circle(e.x, e.y, 30, '#b99cff', false, 1.5); line(e.x-9,e.y,e.x+9,e.y,'#b99cff'); line(e.x,e.y-9,e.x,e.y+9,'#b99cff'); ctx.globalAlpha = 1; return;
+    const color = e.type === 'chaser' ? '#ffb86c' : '#b99cff';
+    ctx.globalAlpha = alpha; circle(e.x, e.y, 30, color, false, 1.5); line(e.x-9,e.y,e.x+9,e.y,color); line(e.x,e.y-9,e.x,e.y+9,color); ctx.globalAlpha = 1; return;
   }
   const color = e.flash > 0 ? '#ffffff' : e.type === 'chaser' ? '#ffb86c' : '#b99cff';
   ctx.shadowColor = color; ctx.shadowBlur = 13;
