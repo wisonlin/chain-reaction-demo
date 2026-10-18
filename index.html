@@ -8,71 +8,34 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="description" content="反击弹幕：零号航程。四区闯关、三类武器、局内改装与核心 Boss。移动、聚弹、反击，重新点亮航道。">
   <title>反击弹幕 · 零号航程</title>
-  <style>:root{color-scheme:dark;--bg:#10160e;--green:#d0fa72;--line:#334329;--pink:#ff6c9b;--muted:#90a07e;--mono:ui-monospace,SFMono-Regular,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overscroll-behavior:none;background:var(--bg);color:#f0f5e8;font-family:var(--sans);-webkit-font-smoothing:antialiased}body{overflow:hidden}button{-webkit-tap-highlight-color:transparent;touch-action:manipulation;font:inherit;cursor:pointer}button:focus-visible{outline:2px solid var(--green);outline-offset:3px}button:disabled{cursor:default}[hidden]{display:none!important}
-.game-app{height:100vh;height:100dvh;max-width:520px;margin:0 auto;padding:env(safe-area-inset-top) 12px env(safe-area-inset-bottom);display:grid;grid-template-rows:58px 67px minmax(0,1fr) 152px 27px;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}.app-header{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:9px;font-size:17px;font-weight:750;letter-spacing:.5px}.brand-mark{width:32px;height:32px;display:grid;place-items:center;border:1px solid #a8c575;color:var(--green);font-size:28px;font-weight:400;line-height:1}.brand small{display:block;font:7px var(--mono);color:#839474;letter-spacing:1px;margin-top:4px}.header-actions{display:flex;gap:4px}.icon-button{height:44px;width:44px;color:#c8d9b5;border:0;background:none;font:23px var(--mono)}.icon-button:disabled{opacity:.25}.icon-button[aria-pressed=false]{color:#647358;text-decoration:line-through}.hud{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 6px}.hud>div>span{display:block;font-size:9px;color:var(--muted);margin-bottom:5px}.hud strong{font:25px var(--mono);letter-spacing:-1px;line-height:1}.hud-score{flex:1}.hud-chain strong{font-size:22px;color:var(--green)}.hud-chain strong span{display:none}.hud-time strong{color:var(--green)}.hud-time strong span{font-size:11px;margin-left:2px;color:var(--muted)}.hud-life>div{display:flex;align-items:center;gap:4px;height:25px}.hud-life i{width:7px;height:17px;background:var(--green);transform:skewX(-13deg);display:block}.hud-life i.empty{background:#394a2c}.game-frame{min-height:0;display:flex;flex-direction:column;border:1px solid #425333;background:#0e170e;overflow:hidden;position:relative}.stage{position:relative;flex:1;min-height:0;overflow:hidden;isolation:isolate}canvas{display:block;width:100%;height:100%;outline:none;touch-action:none;cursor:crosshair}.stage-vignette{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 55px #080f0866}.arena-heading{position:absolute;top:10px;left:11px;right:11px;display:flex;justify-content:space-between;align-items:center;font:8px var(--mono);color:#7b9266;pointer-events:none;letter-spacing:.4px}.arena-heading>span:first-child:before{content:"";display:inline-block;width:4px;height:4px;background:var(--green);border-radius:50%;margin-right:6px}.overlay{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;text-align:center;background:#0d170c55;backdrop-filter:blur(1px);padding:25px 12px 12px}.overlay-card{width:100%;max-width:340px;padding:20px 13px;background:radial-gradient(ellipse,#101c10ee 35%,#101c10cc 60%,transparent 73%)}.overlay-kicker{font-size:10px;letter-spacing:3px;color:#c1dc98}.overlay h1{font-size:52px;letter-spacing:-2px;line-height:1.13;margin:18px 0 15px;font-weight:850}.overlay h1>span{color:var(--green)}.overlay h1>.title-second{display:block}.overlay-card>p:not(.overlay-hint){font-size:12px;line-height:1.8;color:#a7b89a;margin:0 0 20px}.how-to{display:flex;justify-content:center;gap:32px;margin-bottom:23px}.how-to>span{color:var(--green);font-size:23px;line-height:1.2}.how-to small{display:block;font-size:10px;font-weight:400;color:#c0cead;margin-top:7px;white-space:nowrap}.primary-button{height:52px;width:100%;max-width:258px;background:var(--green);color:#1a290f;display:flex;align-items:center;justify-content:space-between;margin:0 auto;padding:0 22px;border:1px solid var(--green);font-size:15px;font-weight:750}.primary-button>span:last-child{font-size:27px;font-weight:400}.primary-button:active{background:#e5ffae;transform:scale(.98)}.overlay-hint{font-size:10px;color:#91a57e;margin:13px 0 0;line-height:1.6}.personal-best{margin-top:19px;font-size:9px;color:#7d916b;letter-spacing:1px}.personal-best strong{font:12px var(--mono);color:#b4cc97;margin-left:8px}.secondary-button{display:block;margin:9px auto 0;min-height:44px;border:0;background:transparent;color:#c2d0b3;font-size:13px;text-decoration:underline;text-underline-offset:4px}.result-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:0 0 22px}.result-stats div{font-size:10px;color:#9cad8c}.result-stats strong{display:block;font:24px var(--mono);color:var(--green);margin-bottom:7px}.toast{position:absolute;z-index:2;top:34px;left:50%;transform:translateX(-50%);background:#1d3116ee;border:1px solid #6c8a4d88;max-width:92%;width:max-content;padding:10px 14px;font-size:11px;line-height:1.5;color:var(--green);pointer-events:none;opacity:0;text-align:center}.toast.visible{opacity:1}.arena-bottom{height:27px;flex-shrink:0;display:flex;align-items:center;justify-content:space-between;padding:0 11px;background:#192214;border-top:1px solid #2e3c26;color:#92a57e;font-size:9px}.arena-bottom>span:first-child{display:flex;align-items:center;gap:7px}.arena-bottom b{font:9px var(--mono);color:var(--green)}.time-track{height:2px;flex-shrink:0;background:#2b3b21}.time-track i{display:block;width:100%;height:100%;background:var(--green)}.touch-panel{display:flex;justify-content:space-between;align-items:center;padding:10px 8px 0;gap:12px;touch-action:none}.move-control,.counter-control{display:flex;flex-direction:column;align-items:center;gap:8px;flex-shrink:0}.touch-pad{width:106px;height:106px;border-radius:50%;border:1px solid #718f4b66;background:radial-gradient(circle,#d0fa7209 0 38%,transparent 39% 61%,#d0fa7206 62%);position:relative;display:grid;place-items:center;touch-action:none}.touch-pad:before,.touch-pad:after{content:"";position:absolute;width:8px;height:1px;background:#a4c47655;top:50%;left:8px}.touch-pad:after{left:auto;right:8px}.pad-cross:before,.pad-cross:after{content:"";position:absolute;height:8px;width:1px;background:#a4c47655;top:8px;left:50%}.pad-cross:after{top:auto;bottom:8px}.touch-pad>i{width:44px;height:44px;display:block;border:1px solid #a5ca7466;border-radius:50%;background:#26391b;box-shadow:0 0 24px #d0fa720c;pointer-events:none}.control-label{font-size:10px;color:#9bab8a;letter-spacing:1px}.auto-status{font-size:10px;color:#c4d3b3;text-align:center;white-space:nowrap}.auto-dot{display:inline-block;height:4px;width:4px;border-radius:50%;background:var(--green);margin-right:5px}.auto-status small{display:block;font-size:8px;color:#7e926b;margin-top:6px}.counter-meter{height:3px;background:#304321;margin:16px auto 6px;width:61px}.counter-meter>i{height:100%;width:100%;display:block;background:var(--green)}#counter-label{font:8px var(--mono);color:#81976f}#touch-counter{width:88px;height:88px;display:flex;align-items:center;justify-content:center;flex-direction:column;border:1px solid #c4ee7188;border-radius:50%;background:#253a17;color:var(--green);touch-action:none;box-shadow:inset 0 0 25px #d0fa720b;position:relative}#touch-counter .counter-arrow{font-size:37px;line-height:1.1}#counter-button-label{font-size:12px;margin-top:2px}#touch-counter:disabled{border-color:#536e3b;color:#82996d;background:#1a2813}#touch-counter:active:not(:disabled){background:var(--green);color:#243417;transform:scale(.96)}.drag-indicator{position:absolute;width:80px;height:80px;border:1px solid #d0fa7277;background:#d0fa7208;border-radius:50%;transform:translate(-50%,-50%);pointer-events:none;z-index:2}.drag-indicator>i{position:absolute;left:25px;top:25px;width:30px;height:30px;border-radius:50%;background:#d0fa7233;border:1px solid #d0fa72aa}footer{text-align:center;font-size:9px;line-height:1.6;color:#7e916d;padding-top:3px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.low-time{color:var(--pink)!important}body.playing .touch-pad{border-color:#a7cb7577}body:not(.playing) .touch-panel{opacity:.55}
-@media(min-width:600px) and (min-height:700px){body{background:radial-gradient(ellipse at 50% 50%,#1c2917,#0a1009 75%)}.game-app{border-left:1px solid #273621;border-right:1px solid #273621;padding-left:17px;padding-right:17px}}
-@media(max-height:740px) and (orientation:portrait){.game-app{grid-template-rows:50px 58px minmax(0,1fr) 132px 22px}.touch-pad{width:92px;height:92px}#touch-counter{height:78px;width:78px}.overlay-card{padding:8px}.overlay h1{font-size:43px;margin:12px 0 9px}.overlay-card>p:not(.overlay-hint){font-size:11px;margin-bottom:12px}.how-to{gap:28px;margin-bottom:15px}.how-to>span{font-size:19px}.primary-button{height:47px}.personal-best{margin-top:10px}.overlay-hint{margin-top:9px}.overlay{padding-top:27px}}
-@media(max-height:620px) and (orientation:portrait){.game-app{grid-template-rows:45px 52px minmax(0,1fr) 112px 20px;padding-left:8px;padding-right:8px}.touch-pad{width:76px;height:76px}.touch-pad>i{width:34px;height:34px}#touch-counter{width:70px;height:70px}.overlay h1{font-size:33px;margin:9px 0}.overlay-kicker{font-size:8px}.how-to{display:none}.personal-best{display:none}.overlay-card>p:not(.overlay-hint){margin-bottom:10px;font-size:10px}.primary-button{height:44px}.result-stats{margin-bottom:12px}.overlay-card{padding:4px}.secondary-button{min-height:36px}.hud strong{font-size:22px}}
-@media(orientation:landscape) and (max-height:600px){.game-app{max-width:none;grid-template-columns:126px minmax(0,1fr) 126px;grid-template-rows:48px minmax(0,1fr) 22px;gap:0 10px;padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right))}.app-header{grid-column:1/-1;grid-row:1}.brand{font-size:14px}.brand small{font-size:6px}.hud{grid-column:1;grid-row:2;align-content:start;display:grid;grid-template-columns:1fr 1fr;padding-top:15px;gap:10px}.game-frame{grid-column:2;grid-row:2}.touch-panel{display:contents}.move-control{position:absolute;left:max(16px,env(safe-area-inset-left));bottom:35px}.counter-control{position:absolute;right:max(22px,env(safe-area-inset-right));bottom:48px}.auto-status{position:absolute;right:30px;top:73px}.touch-pad{height:95px;width:95px}#touch-counter{height:84px;width:84px}footer{grid-column:1/-1;grid-row:3}.overlay-card{padding:3px}.overlay h1{font-size:31px;line-height:1;margin:10px 0}.overlay h1>.title-second{display:inline}.overlay-card>p:not(.overlay-hint){margin-bottom:10px;font-size:10px}.overlay-kicker{font-size:8px}.how-to{display:none}.personal-best{display:none}.primary-button{height:44px;max-width:230px}.overlay-hint{font-size:8px;margin-top:9px}.overlay{padding:24px 8px 4px}.result-stats{margin:10px 0}.result-stats strong{font-size:20px}.secondary-button{min-height:30px;margin-top:4px}.arena-heading{font-size:6px}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
-.pad-cross{position:absolute;inset:0;pointer-events:none}
-
-#touch-counter.charging{border-color:#91ebff;background:#16373b;color:#b9f4ff;box-shadow:0 0 24px #91ebff33}#touch-counter.charging .counter-arrow{transform:scale(1.15)}#counter-label{font-size:9px;white-space:normal;display:block;max-width:118px;min-height:24px;line-height:1.4}.auto-status{min-width:0}#counter-hint{white-space:normal;line-height:1.5;max-width:110px}#counter-button-label{font-size:11px}
-
-:root{--sector-accent:#d0fa72}
-.game-app{grid-template-rows:50px 82px minmax(0,1fr) 140px 22px}
-.brand{font-size:15px}.brand small{font-size:6px;letter-spacing:.8px}.brand-mark{border-color:#a0c2ad;background:linear-gradient(135deg,#d0fa721a,transparent)}
-.hud{position:relative;padding-bottom:20px}.hud>div>span{font-size:8px}.hud strong{font-size:24px}.hud-life>div{gap:3px}.hud-life i{width:5px;height:16px}
-.mission-row{position:absolute;bottom:6px;left:5px;right:5px;display:flex;align-items:center;gap:8px;height:13px;font-size:8px;color:#9aaea4}.mission-row #mission-name{white-space:nowrap;max-width:50%;overflow:hidden;text-overflow:ellipsis}.mission-row #level-label{color:#91ebff;font:8px var(--mono)}.xp-track{flex:1;height:3px;background:#263a36}.xp-track i{display:block;background:#91ebff;height:100%;width:0%;box-shadow:0 0 7px #91ebff66}#xp-label{font:7px var(--mono);color:#698f91;min-width:32px;text-align:right}
-.game-frame{border-color:#355044;box-shadow:0 0 35px #91ebff05}.arena-bottom{background:#10201b;border-color:#244039}.time-track i{background:var(--sector-accent)}
-.overlay{overflow-y:auto;align-items:center;background:linear-gradient(180deg,#071015bb,#091612dd);backdrop-filter:blur(5px);padding:30px 12px 15px;scrollbar-width:thin;scrollbar-color:#527b62 transparent}.overlay-card{margin:auto;width:100%;max-width:355px;padding:6px 4px;background:transparent}.overlay-kicker{font:7px var(--mono);color:#8cb8ad;letter-spacing:2px}.overlay h1{font-size:43px;line-height:1.05;margin:12px 0 12px;letter-spacing:-2px}.overlay h1>.title-second{display:inline;margin-left:8px}.overlay-card>p:not(.overlay-hint){font-size:11px;line-height:1.7;margin-bottom:16px;color:#adc3b7}.overlay-hint{font-size:8px;line-height:1.6;margin:9px 0 0;color:#78968a}.personal-best{font-size:8px;margin-top:10px;letter-spacing:1px}.personal-best strong{font-size:10px}.primary-button{height:47px;max-width:none;border-radius:3px;font-size:14px;box-shadow:0 0 28px #d0fa7210}.secondary-button{min-height:35px;margin-top:4px;font-size:11px}.result-stats{margin:17px 0}.result-stats strong{font-size:23px}.result-stats div{font-size:9px}
-.home-options{margin:0 0 13px}.loadout-heading{display:flex;justify-content:space-between;font-size:9px;color:#a9c3b6;margin-bottom:8px}.loadout-heading>span:last-child{font-size:8px;color:#91ebff99}.weapon-list{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.weapon-option{border:1px solid #345047;border-radius:4px;background:#11231e88;display:flex;align-items:center;flex-direction:column;gap:5px;padding:10px 2px;color:#c1d3ca;min-height:78px}.weapon-option>b{font:25px var(--mono);color:#b4cbbb}.weapon-option strong{font-size:10px;font-weight:600}.weapon-option small{font-size:7px;color:#6e9388}.weapon-option.selected{border-color:#c1ec7b;background:linear-gradient(135deg,#d0fa7219,#91ebff08);box-shadow:inset 0 0 18px #d0fa7205}.weapon-option.selected>b{color:#d0fa72}.weapon-option:disabled{opacity:.4}.home-meta{display:flex;justify-content:space-between;margin-top:10px;font-size:8px;color:#7ba294}.home-meta b{color:#b0e7dc;font:11px var(--mono)}.resume-button{width:100%;min-height:35px;background:#91ebff10;border:1px solid #91ebff44;color:#b9e7ee;border-radius:3px;margin-top:7px;font-size:11px}.home-links{display:flex;justify-content:space-between;gap:8px;margin-top:6px}.home-links button{background:none;border:0;color:#8faea2;min-height:33px;font-size:9px;padding:0 5px}.home-links button:hover{color:#d0fa72}
-.choice-panel{display:flex;flex-direction:column;gap:8px;margin:12px 0}.upgrade-card{display:flex;align-items:center;gap:12px;width:100%;padding:12px 11px;text-align:left;background:linear-gradient(110deg,#17312aee,#0e201ce6);color:#d2e9dd;border:1px solid #426553;border-radius:4px;min-height:86px;animation:card-arrive .35s ease both}.upgrade-card:nth-child(2){animation-delay:.06s}.upgrade-card:nth-child(3){animation-delay:.12s}.upgrade-card .upgrade-icon{font:29px var(--mono);color:#d0fa72;width:34px;flex-shrink:0;text-align:center}.upgrade-card>span:nth-child(2){flex:1}.upgrade-card small{display:block;font-size:7px;color:#82b5a1;margin-bottom:4px;letter-spacing:1px}.upgrade-card strong{font-size:13px}.upgrade-card p{font-size:9px;line-height:1.6;margin:5px 0 0;color:#99b6a8}.upgrade-card>b{font:12px var(--mono);color:#c3e994;white-space:nowrap}.upgrade-card:active{background:#264a38;border-color:#d0fa72}.upgrade-card:disabled{opacity:.5}.manual{text-align:left;border-top:1px solid #284538;padding-top:5px}.manual p{font-size:10px;line-height:1.8;color:#9ebdaf;margin:10px 0}.manual b{display:block;color:#d0fa72;font-size:11px;margin-bottom:2px}
-.boss-status{position:absolute;top:30px;left:30px;right:30px;pointer-events:none}.boss-status>div{display:flex;justify-content:space-between;font-size:8px;color:#ffb7ce;margin-bottom:6px;letter-spacing:1px}.boss-status>i{height:4px;background:#4d2133;display:block}.boss-status b{display:block;width:100%;height:100%;background:#ff799f;box-shadow:0 0 10px #ff799f55}.toast{font-size:10px;max-width:93%;padding:8px 12px;top:34px;border-color:#76988166;background:#11291dee}.boss-status:not([hidden])~.toast{top:63px}
-.touch-panel{padding:7px 6px 0;gap:10px}.touch-pad{width:100px;height:100px}.touch-pad>i{background:radial-gradient(circle at 40% 35%,#354a29,#1a2d23);border-color:#81ad8088;box-shadow:0 0 18px #91ebff09}#touch-counter{width:86px;height:86px;background:radial-gradient(circle at 40% 30%,#345022,#172d20);border-color:#a0c578;box-shadow:0 0 25px #d0fa720c,inset 0 0 25px #d0fa7208}.auto-status{font-size:9px}.auto-status small{font-size:7px;margin-top:4px}.counter-meter{margin-top:9px;margin-bottom:4px;width:62px}#counter-label{font-size:8px;min-height:21px;max-width:110px}.dash-secondary{display:block;min-height:34px;width:72px;background:#112923;border:1px solid #4c7b68;color:#a5d5c5;margin:5px auto 0;border-radius:3px;font-size:10px;touch-action:none}.dash-secondary:disabled{opacity:.38}.dash-secondary:active:not(:disabled){background:#91ebff33;border-color:#91ebff}.control-label{font-size:9px;letter-spacing:.5px}footer{font-size:8px;color:#6b9180}.arena-heading{font-size:7px}
-@keyframes card-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-@media(min-width:600px) and (min-height:700px){body{background:radial-gradient(ellipse at 50% 45%,#112b25,#050e0d 75%)}.game-app{max-width:540px;border-color:#20382f}.overlay h1{font-size:50px}}
-@media(max-height:740px) and (orientation:portrait){.game-app{grid-template-rows:45px 74px minmax(0,1fr) 126px 20px}.touch-pad{width:87px;height:87px}#touch-counter{width:77px;height:77px}.overlay h1{font-size:35px;margin:9px 0}.overlay-card>p:not(.overlay-hint){font-size:10px;margin-bottom:10px}.weapon-option{min-height:65px;padding:7px 1px;gap:4px}.weapon-option>b{font-size:21px}.weapon-option strong{font-size:9px}.weapon-option small{font-size:6px}.home-options{margin-bottom:10px}.primary-button{height:42px}.home-meta{margin-top:7px}.personal-best{margin-top:7px}.upgrade-card{padding:9px;min-height:76px}.upgrade-card p{font-size:8px}.overlay{padding:27px 10px 10px}.home-links button{min-height:27px;font-size:8px}.overlay-hint{font-size:7px}.overlay-kicker{font-size:6px}}
-@media(max-height:620px) and (orientation:portrait){.game-app{grid-template-rows:42px 67px minmax(0,1fr) 112px 18px}.overlay{align-items:flex-start;padding:27px 10px 10px}.overlay h1{font-size:28px;margin:8px 0}.overlay-card>p:not(.overlay-hint){font-size:9px;line-height:1.5;margin-bottom:8px}.personal-best{display:none}.weapon-option{min-height:57px;padding:5px 1px}.weapon-option>b{font-size:18px}.home-meta{margin-top:6px}.home-options{margin-bottom:7px}.loadout-heading{margin-bottom:5px}.primary-button{height:38px}.home-links{margin-top:3px}.overlay-hint{margin-top:5px}.hud strong{font-size:22px}.touch-pad{width:75px;height:75px}#touch-counter{width:69px;height:69px}.dash-secondary{min-height:29px;font-size:9px}.counter-meter{margin-top:5px}.upgrade-card{min-height:70px;padding:8px;gap:8px}.upgrade-card .upgrade-icon{font-size:23px;width:27px}.upgrade-card strong{font-size:11px}.choice-panel{gap:6px;margin-top:8px}.home-links button{min-height:25px}.resume-button{min-height:30px;font-size:10px}.mission-row{font-size:7px;gap:5px}.brand small{font-size:5px}}
-@media(orientation:landscape) and (max-height:600px){.game-app{grid-template-rows:44px minmax(0,1fr) 19px}.hud{padding-bottom:30px}.mission-row{left:0;right:0;bottom:5px;display:flex;flex-wrap:wrap;height:24px;font-size:7px}.mission-row #mission-name{max-width:100%;width:100%}.auto-status{right:24px;top:56px}.dash-secondary{margin-top:4px}.overlay{padding:22px 16px 10px}.overlay h1{font-size:29px}.overlay-card{max-width:360px}.overlay-card>p:not(.overlay-hint){font-size:9px}.home-options{margin-bottom:9px}.weapon-option{min-height:58px;padding:5px}.weapon-option>b{font-size:18px}.home-meta{font-size:7px;margin-top:6px}.home-links button{font-size:8px}.primary-button{max-width:none;height:39px}.choice-panel{gap:5px}.upgrade-card{min-height:66px;padding:8px}.upgrade-card p{font-size:8px}.upgrade-card strong{font-size:11px}.boss-status{left:20px;right:20px}.personal-best{display:none}.mission-row #xp-label{display:none}}
-@media(prefers-reduced-motion:reduce){.upgrade-card{animation:none}*{transition:none!important}}
-.dash-secondary{min-height:42px}.weapon-option small{font-size:8px}.home-links button{font-size:10px}.overlay-hint{font-size:9px}.mission-row{font-size:9px}#xp-label{font-size:8px}.upgrade-card p{font-size:10px}.upgrade-card small{font-size:8px}.manual p{font-size:11px}.home-meta{font-size:9px}
-@media(max-height:620px) and (orientation:portrait){.dash-secondary{min-height:36px}.overlay-hint{font-size:8px}.home-links button{font-size:9px}.weapon-option small{font-size:7px}.upgrade-card p{font-size:9px}.manual p{font-size:10px}.mission-row{font-size:8px}}
-
-/* 1.1 combat feedback: the field stays clear while controls carry the energy cue. */
-#effects-button{font-size:22px;color:#a3d9e2}#effects-button[aria-pressed=false]{color:#718b87;text-decoration:none}
-#touch-counter{--charge-progress:360deg;isolation:isolate;transition:background .16s,border-color .16s,box-shadow .16s}
-#touch-counter::before{content:"";position:absolute;inset:-5px;border-radius:50%;background:conic-gradient(from -90deg,#94dc91 var(--charge-progress),#33513d22 0);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1px));mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1px));pointer-events:none;opacity:.65}
-#touch-counter.charging::before{background:conic-gradient(from -90deg,#b8f5ff var(--charge-progress),#335b6622 0);opacity:1}
-#touch-counter.charging{box-shadow:0 0 22px #91ebff25,inset 0 0 20px #91ebff18}
-#touch-counter.fully-charged{border-color:#d0fa72;color:#efffe5;background:#31512a;box-shadow:0 0 30px #d0fa7244,inset 0 0 18px #c5ffff22}
-#touch-counter.fully-charged .counter-arrow{animation:charged-breathe .9s ease-in-out infinite alternate}
-#score{display:block;transform-origin:left center;transition:color .15s,text-shadow .15s,transform .15s}#score.value-gain{color:#e5ffb3;text-shadow:0 0 15px #d0fa7255;transform:scale(1.035)}
-#health.shield-hit{animation:shield-break .4s ease-out}#health.shield-hit i:not(.empty){background:#ff96bb;box-shadow:0 0 9px #ff799f77}
-.xp-track i{transition:width .22s ease-out,box-shadow .2s}.xp-track i.energy-gain{box-shadow:0 0 12px #91ebffcc;background:#d3faff}
-.overlay.result-reveal .overlay-card{animation:result-arrive .55s cubic-bezier(.2,.7,.2,1) both}
-.upgrade-card{transition:border-color .15s,background .15s,box-shadow .15s}.upgrade-card:hover,.upgrade-card:focus-visible{border-color:#b9dc95;box-shadow:0 0 22px #91ebff0b}
-@keyframes charged-breathe{from{transform:scale(1.05);filter:drop-shadow(0 0 3px #91ebff55)}to{transform:scale(1.16);filter:drop-shadow(0 0 8px #d0fa7288)}}
-@keyframes shield-break{0%{transform:translateX(0)}20%{transform:translateX(-2px)}45%{transform:translateX(2px)}70%{transform:translateX(-1px)}100%{transform:translateX(0)}}
-@keyframes result-arrive{0%{opacity:0;transform:translateY(12px) scale(.98)}35%{opacity:.15}100%{opacity:1;transform:translateY(0) scale(1)}}
-@media(max-width:350px){.brand{font-size:13px;gap:6px}.brand small{font-size:5px;letter-spacing:.2px}.brand-mark{width:27px;height:27px;font-size:24px}.header-actions{gap:0}.header-actions .icon-button{width:40px}}
-@media(prefers-reduced-motion:reduce){#touch-counter.fully-charged .counter-arrow,#health.shield-hit,.overlay.result-reveal .overlay-card{animation:none}#score.value-gain{transform:none}.xp-track i,#score,#touch-counter{transition:none}}
-@media(max-height:620px) and (orientation:portrait){
-  .overlay:has(#home-options:not([hidden])){padding:10px 12px}
-  .overlay:has(#home-options:not([hidden])) .overlay-kicker,.overlay:has(#home-options:not([hidden])) #overlay-description,.overlay:has(#home-options:not([hidden])) #overlay-hint{display:none}
-  .overlay:has(#home-options:not([hidden])) h1{font-size:25px;margin:5px 0 10px}
-  .overlay:has(#home-options:not([hidden])) .weapon-option{min-height:48px;gap:3px;padding:4px 1px}
-  .overlay:has(#home-options:not([hidden])) .weapon-option>b{font-size:16px}
-  .overlay:has(#home-options:not([hidden])) .home-links button{min-height:26px}
-}
+  <style>:root{color-scheme:dark;--bg:#0b1715;--green:#d0fa72;--pink:#ff6c9b;--muted:#90a99c;--sector-accent:#d0fa72;--mono:ui-monospace,SFMono-Regular,Consolas,monospace;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;--safe-left:max(16px,env(safe-area-inset-left));--safe-right:max(16px,env(safe-area-inset-right));--safe-top:max(8px,env(safe-area-inset-top));--safe-bottom:max(10px,env(safe-area-inset-bottom))}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overscroll-behavior:none;background:var(--bg);color:#f0f5e8;font-family:var(--sans);-webkit-font-smoothing:antialiased}body{overflow:hidden}button{font:inherit;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}button:focus-visible{outline:2px solid var(--green);outline-offset:3px}button:disabled{cursor:default}[hidden]{display:none!important}
+.game-app{position:fixed;inset:0;width:100%;height:100%;height:100dvh;overflow:hidden;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.game-frame,.stage{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}.stage{isolation:isolate}.game-frame{background:#0b1715}canvas{display:block;width:100%;height:100%;outline:none;touch-action:none;cursor:crosshair}.stage-vignette{position:absolute;inset:0;pointer-events:none;box-shadow:inset 0 0 80px #020b0844}
+.app-header{position:absolute;z-index:10;top:var(--safe-top);left:var(--safe-left);right:var(--safe-right);height:44px;display:flex;align-items:center;justify-content:space-between;pointer-events:none}.brand{display:flex;align-items:center;gap:9px;font-size:15px;font-weight:750;letter-spacing:.5px}.brand-mark{width:32px;height:32px;display:grid;place-items:center;border:1px solid #a0c2ad;background:linear-gradient(135deg,#d0fa721a,transparent);color:var(--green);font:28px var(--mono)}.brand small{display:block;font:7px var(--mono);color:#839f92;letter-spacing:.8px;margin-top:4px}.header-actions{display:flex;gap:3px;margin-left:auto;pointer-events:auto}.icon-button{height:40px;width:40px;color:#c8d9cd;border:1px solid #91b69e25;border-radius:7px;background:#0b201baa;font:23px var(--mono)}.icon-button:disabled{opacity:.25}.icon-button[aria-pressed=false]{color:#647e72;text-decoration:line-through}#effects-button{color:#a3d9e2}#effects-button[aria-pressed=false]{color:#718b87;text-decoration:none}body.playing .brand{visibility:hidden}body.playing .hud:before{content:"";position:fixed;z-index:-1;left:0;right:0;top:0;height:90px;background:linear-gradient(#06110de6,#06110d70 65%,transparent);pointer-events:none}
+.hud{position:absolute;z-index:9;top:var(--safe-top);left:var(--safe-left);height:57px;width:min(530px,calc(100% - var(--safe-left) - var(--safe-right) - 186px));display:flex;align-items:flex-start;gap:24px;padding-top:3px;pointer-events:none;opacity:0;transition:opacity .2s}body.playing .hud{opacity:1}.hud>div>span{display:block;font-size:8px;color:var(--muted);margin-bottom:4px}.hud strong{font:23px var(--mono);letter-spacing:-1px;line-height:1}.hud-score{flex:1}.hud-chain strong,.hud-time strong{color:var(--green)}.hud-chain strong span{display:none}.hud-time strong span{font-size:10px;margin-left:2px;color:var(--muted)}.hud-life>div{display:flex;gap:4px;align-items:center;height:23px}.hud-life i{width:6px;height:16px;display:block;background:var(--green);transform:skewX(-13deg)}.hud-life i.empty{background:#394f3c}.mission-row{position:absolute;bottom:0;left:0;right:0;display:flex;align-items:center;gap:8px;height:12px;font-size:8px;color:#9aaea4}.mission-row #mission-name{white-space:nowrap;max-width:54%;overflow:hidden;text-overflow:ellipsis}.mission-row #level-label{color:#91ebff;font:8px var(--mono)}.xp-track{flex:1;height:2px;background:#263a36}.xp-track i{display:block;background:#91ebff;height:100%;width:0;box-shadow:0 0 7px #91ebff66;transition:width .22s,box-shadow .2s}#xp-label{font:8px var(--mono);color:#8db6af;min-width:32px;text-align:right}.low-time{color:var(--pink)!important}
+.arena-heading{position:absolute;z-index:2;left:var(--safe-left);right:var(--safe-right);top:calc(var(--safe-top) + 64px);display:flex;justify-content:space-between;font:8px var(--mono);color:#95b8a480;pointer-events:none}.arena-heading>span:first-child{visibility:hidden}.arena-bottom{position:absolute;z-index:2;left:var(--safe-left);right:var(--safe-right);bottom:var(--safe-bottom);display:flex;align-items:center;justify-content:space-between;color:#9fc0aa88;font-size:9px;pointer-events:none}.arena-bottom>span:first-child{display:flex;align-items:center;gap:7px}.arena-bottom b{font:10px var(--mono);color:var(--sector-accent)}.time-track{position:absolute;z-index:2;bottom:0;left:0;right:0;height:2px;background:#254136;pointer-events:none}.time-track i{display:block;width:100%;height:100%;background:var(--sector-accent)}body:not(.playing) .arena-heading,body:not(.playing) .arena-bottom{opacity:0}
+.boss-status{position:absolute;z-index:2;top:calc(var(--safe-top) + 74px);left:32%;right:32%;pointer-events:none}.boss-status>div{display:flex;justify-content:space-between;font-size:8px;color:#ffb7ce;margin-bottom:5px;letter-spacing:1px}.boss-status>i{height:4px;background:#4d213388;display:block}.boss-status b{display:block;width:100%;height:100%;background:#ff799f;box-shadow:0 0 10px #ff799f55}.toast{position:absolute;z-index:12;top:calc(var(--safe-top) + 78px);left:50%;transform:translateX(-50%);background:#0d241de8;border:1px solid #76988155;border-radius:4px;max-width:65%;width:max-content;padding:7px 12px;font-size:10px;line-height:1.5;color:#d1f6cb;pointer-events:none;opacity:0;text-align:center}.toast.visible{opacity:1}.boss-status:not([hidden])~.toast{top:calc(var(--safe-top) + 104px)}
+/* The canvas receives both thumbs. These widgets only draw at their origins. */
+.touch-controls{position:absolute;inset:0;z-index:4;pointer-events:none;touch-action:none}.zone-hint{position:absolute;bottom:calc(var(--safe-bottom) + 26px);width:220px;text-align:center;color:#badbc173;font-size:10px;letter-spacing:1px;pointer-events:none}.zone-left{left:25%;transform:translateX(-50%)}.zone-right{left:75%;transform:translateX(-50%)}.zone-hint b{font-weight:500;display:block}.zone-hint span{display:block;font-size:8px;letter-spacing:.3px;margin-top:5px;color:#9fbdab55}body:not(.playing) .touch-controls{display:none}.drag-indicator,.counter-indicator{position:absolute;transform:translate(-50%,-50%);pointer-events:none}.drag-indicator{width:120px;height:120px;border:1px solid #c5ef9777;border-radius:50%;background:radial-gradient(circle,#0c201a99 35%,#81b48015 36%,#d0fa7206 67%);box-shadow:0 0 28px #91ebff0a,inset 0 0 24px #c5ef9709}.drag-indicator:before,.drag-indicator:after{content:"";position:absolute;left:50%;top:14px;bottom:14px;width:1px;background:#b7e3ac1f}.drag-indicator:after{transform:rotate(90deg)}.drag-indicator>i{position:absolute;left:41px;top:41px;width:36px;height:36px;border:1px solid #c7f6b8bb;border-radius:50%;background:#7db48555;box-shadow:0 0 18px #c7f6b822;will-change:transform}.drag-indicator>span{position:absolute;top:-23px;left:0;right:0;text-align:center;font-size:10px;color:#d4ecd4aa}.counter-indicator{width:108px;height:108px}#touch-counter{--charge-progress:360deg;isolation:isolate;width:108px;height:108px;display:flex;align-items:center;justify-content:center;flex-direction:column;border:1px solid #b9e88d99;border-radius:50%;background:radial-gradient(circle,#1c412999,#0b211a77);color:#d0fa72;box-shadow:0 0 24px #d0fa7210,inset 0 0 24px #d0fa7210;position:relative}.counter-arrow{font-size:34px;line-height:1.1}#counter-button-label{font-size:10px;margin-top:5px}#touch-counter:before{content:"";position:absolute;inset:-6px;border-radius:50%;background:conic-gradient(from -90deg,#94dc91 var(--charge-progress),#33513d22 0);-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));mask:radial-gradient(farthest-side,transparent calc(100% - 3px),#000 calc(100% - 2px));pointer-events:none;opacity:.8}#touch-counter.charging{border-color:#b8f5ff;background:#16373b88;color:#b9f4ff;box-shadow:0 0 22px #91ebff25,inset 0 0 20px #91ebff18}#touch-counter.charging:before{background:conic-gradient(from -90deg,#b8f5ff var(--charge-progress),#335b6622 0);opacity:1}#touch-counter.fully-charged{border-color:#d0fa72;color:#efffe5;background:#31512a99;box-shadow:0 0 30px #d0fa7244,inset 0 0 18px #c5ffff22}#touch-counter.fully-charged .counter-arrow{animation:charged-breathe .9s ease-in-out infinite alternate}#touch-counter.cooling,.counter-indicator.unavailable #touch-counter{color:#9caaa5;border-color:#71887b77;background:#10201c99}
+.battle-status{position:absolute;z-index:6;left:50%;bottom:calc(var(--safe-bottom) + 4px);transform:translateX(-50%);width:150px;text-align:center;font-size:8px;pointer-events:none;color:#a3c4b1}.auto-status{display:none}.counter-meter{height:2px;background:#304b3d;margin:0 auto 5px;width:78px}.counter-meter>i{height:100%;width:100%;display:block;background:var(--green)}#counter-label{display:block;min-height:11px;font:8px var(--mono);color:#92b6a3}.dash-secondary{display:block;position:absolute;left:50%;bottom:36px;transform:translateX(-50%);min-height:40px;width:78px;background:#112923bb;border:1px solid #6eaa8c77;color:#b3e2cd;border-radius:6px;font-size:10px;touch-action:none;pointer-events:auto}.dash-secondary:disabled{opacity:.3}.dash-secondary:active:not(:disabled){background:#91ebff44;border-color:#91ebff}body:not(.playing) .battle-status{display:none}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.sr-only:focus-visible{clip:auto;width:100px;height:40px;bottom:82px;left:25px;background:#142e22;color:var(--green)}
+/* Landscape menus use the width instead of shrinking the battlefield. */
+.overlay{position:absolute;inset:0;z-index:8;display:flex;align-items:center;justify-content:center;text-align:left;background:radial-gradient(ellipse at 30% 50%,#102d28d9,#061411ee 80%);backdrop-filter:blur(6px);padding:calc(var(--safe-top) + 52px) max(26px,env(safe-area-inset-right)) max(24px,env(safe-area-inset-bottom)) max(26px,env(safe-area-inset-left));overflow-y:auto;touch-action:pan-y;scrollbar-width:thin;scrollbar-color:#527b62 transparent}.overlay-card{width:100%;max-width:850px;display:grid;grid-template-columns:minmax(180px,.9fr) minmax(270px,1.1fr);column-gap:52px;row-gap:0;align-items:center;margin:auto}.overlay-kicker{grid-column:1;grid-row:1;font:8px var(--mono);color:#83b9a5;letter-spacing:1.5px;align-self:end}.overlay h1{grid-column:1;grid-row:2;font-size:clamp(40px,6.5vw,68px);letter-spacing:-3px;line-height:1.05;margin:15px 0 18px;font-weight:850}.overlay h1>span{color:var(--green)}.overlay h1>.title-second{display:block}.overlay-card>p:not(.overlay-hint){grid-column:1;grid-row:3;font-size:12px;line-height:1.9;color:#a7c5b6;margin:0 0 16px}.overlay-hint{grid-column:1;grid-row:4;font-size:10px;line-height:1.9;color:#92b4a1;margin:5px 0 0;max-width:290px}.personal-best{grid-column:1;grid-row:5;font-size:9px;color:#6d9a82;letter-spacing:1px;margin-top:20px}.personal-best strong{font:12px var(--mono);color:#bbdfb7;margin-left:8px}.home-options{grid-column:2;grid-row:1/4;margin:0 0 12px}.loadout-heading{display:flex;justify-content:space-between;font-size:10px;color:#a9c3b6;margin-bottom:8px}.loadout-heading>span:last-child{font-size:9px;color:#91ebff99}.weapon-list{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.weapon-option{border:1px solid #345047;border-radius:5px;background:#11231e88;display:flex;align-items:center;flex-direction:column;gap:6px;padding:11px 3px;color:#c1d3ca;min-height:86px}.weapon-option>b{font:28px var(--mono);color:#b4cbbb}.weapon-option strong{font-size:11px;font-weight:600}.weapon-option small{font-size:8px;color:#82a99a}.weapon-option.selected{border-color:#c1ec7b;background:linear-gradient(135deg,#d0fa7219,#91ebff08);box-shadow:inset 0 0 18px #d0fa7205}.weapon-option.selected>b{color:#d0fa72}.weapon-option:disabled{opacity:.4}.home-meta{display:flex;justify-content:space-between;margin-top:10px;font-size:9px;color:#7ba294}.home-meta b{color:#b0e7dc;font:11px var(--mono)}.primary-button{grid-column:2;grid-row:4;height:46px;width:100%;background:var(--green);color:#192a15;display:flex;align-items:center;justify-content:space-between;margin:0;padding:0 20px;border:1px solid var(--green);border-radius:4px;font-size:14px;font-weight:750;box-shadow:0 0 28px #d0fa7210}.primary-button>span:last-child{font-size:26px;font-weight:400}.primary-button:active{background:#e5ffae}.resume-button{grid-column:2;grid-row:5;width:100%;min-height:36px;background:#91ebff0c;border:1px solid #91ebff44;color:#b9e7ee;border-radius:4px;margin-top:7px;font-size:11px}.home-links{grid-column:2;grid-row:6;display:flex;justify-content:space-between;gap:8px;margin-top:4px}.home-links button{background:none;border:0;color:#97b6a7;min-height:38px;font-size:10px;padding:0 4px}.home-links button:hover{color:var(--green)}.secondary-button{grid-column:2;grid-row:6;display:block;margin:6px auto 0;min-height:36px;border:0;background:transparent;color:#b5cfc1;font-size:11px;text-decoration:underline;text-underline-offset:4px}.result-stats{grid-column:2;grid-row:1/4;display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin:0 0 20px;text-align:center}.result-stats div{font-size:10px;color:#9cbaaa}.result-stats strong{display:block;font:26px var(--mono);color:var(--green);margin-bottom:9px}.choice-panel{grid-column:2;grid-row:1/6;display:flex;flex-direction:column;gap:8px;margin:0 0 6px}.upgrade-card{display:flex;align-items:center;gap:12px;width:100%;padding:11px;text-align:left;background:linear-gradient(110deg,#17312aee,#0e201ce6);color:#d2e9dd;border:1px solid #426553;border-radius:5px;min-height:82px;animation:card-arrive .35s ease both;transition:border-color .15s,background .15s,box-shadow .15s}.upgrade-card:nth-child(2){animation-delay:.06s}.upgrade-card:nth-child(3){animation-delay:.12s}.upgrade-card .upgrade-icon{font:28px var(--mono);color:var(--green);width:32px;flex-shrink:0;text-align:center}.upgrade-card>span:nth-child(2){flex:1}.upgrade-card small{display:block;font-size:8px;color:#82b5a1;margin-bottom:4px;letter-spacing:1px}.upgrade-card strong{font-size:13px}.upgrade-card p{font-size:10px;line-height:1.6;margin:5px 0 0;color:#99b6a8}.upgrade-card>b{font:12px var(--mono);color:#c3e994;white-space:nowrap}.upgrade-card:active{background:#264a38;border-color:var(--green)}.upgrade-card:hover,.upgrade-card:focus-visible{border-color:#b9dc95;box-shadow:0 0 22px #91ebff0b}.upgrade-card:disabled{opacity:.5}.manual{text-align:left;border-top:1px solid #284538;padding-top:5px}.manual p{font-size:11px;line-height:1.8;color:#9ebdaf;margin:10px 0}.manual b{display:block;color:var(--green);font-size:12px;margin-bottom:2px}footer{position:absolute;z-index:9;left:var(--safe-left);right:var(--safe-right);bottom:7px;text-align:center;font-size:8px;color:#6b9180;pointer-events:none}body.playing footer{display:none}
+.rotate-notice{display:none;position:fixed;z-index:30;inset:0;padding:40px 30px max(25px,env(safe-area-inset-bottom));align-items:center;justify-content:center;flex-direction:column;text-align:center;background:radial-gradient(ellipse at 50% 30%,#183c30f5,#071512fa 75%);backdrop-filter:blur(15px)}.rotate-phone{width:94px;height:52px;border:2px solid #c5eaa2;border-radius:10px;transform:rotate(-15deg);margin:0 0 38px;box-shadow:0 0 35px #c5eaa212;display:grid;place-items:center}.rotate-phone:before{content:"";position:absolute;right:5px;top:20px;height:8px;width:2px;background:#c5eaa277}.rotate-phone i{color:var(--green);font:32px var(--mono)}.rotate-kicker{font:8px var(--mono);color:#85b09b;letter-spacing:2px}.rotate-notice h2{font-size:32px;letter-spacing:-1px;line-height:1.4;margin:16px 0}.rotate-notice p{font-size:12px;line-height:2;color:#adc7b5;margin:0 0 28px}.rotate-notice .primary-button{max-width:280px;flex-shrink:0}.rotate-notice small{font-size:10px;line-height:1.8;color:#83a794;margin-top:16px;max-width:275px}
+#score{display:block;transform-origin:left center;transition:color .15s,text-shadow .15s,transform .15s}#score.value-gain{color:#e5ffb3;text-shadow:0 0 15px #d0fa7255;transform:scale(1.035)}#health.shield-hit{animation:shield-break .4s ease-out}#health.shield-hit i:not(.empty){background:#ff96bb;box-shadow:0 0 9px #ff799f77}.xp-track i.energy-gain{box-shadow:0 0 12px #91ebffcc;background:#d3faff}.overlay.result-reveal .overlay-card{animation:result-arrive .55s cubic-bezier(.2,.7,.2,1) both}
+@keyframes card-arrive{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@keyframes charged-breathe{from{transform:scale(1.05);filter:drop-shadow(0 0 3px #91ebff55)}to{transform:scale(1.16);filter:drop-shadow(0 0 8px #d0fa7288)}}@keyframes shield-break{0%{transform:translateX(0)}20%{transform:translateX(-2px)}45%{transform:translateX(2px)}70%{transform:translateX(-1px)}100%{transform:translateX(0)}}@keyframes result-arrive{0%{opacity:0;transform:translateY(12px) scale(.98)}35%{opacity:.15}100%{opacity:1;transform:translateY(0) scale(1)}}
+@media(orientation:portrait){.rotate-notice{display:flex}.game-app{pointer-events:none}.app-header,.overlay{visibility:hidden}}
+@media(max-height:460px) and (orientation:landscape){.overlay-card{max-width:790px;column-gap:40px}.overlay h1{font-size:48px;line-height:1.04;margin:10px 0 14px}.overlay-card>p:not(.overlay-hint){font-size:11px;margin-bottom:10px}.overlay-hint{font-size:9px;margin-top:5px}.overlay-kicker{font-size:7px;letter-spacing:1px}.personal-best{margin-top:14px}.weapon-option{min-height:75px;padding:8px 3px;gap:5px}.weapon-option>b{font-size:23px}.primary-button{height:43px}.upgrade-card{min-height:70px;padding:8px;gap:8px}.upgrade-card .upgrade-icon{width:28px;font-size:24px}.upgrade-card strong{font-size:12px}.upgrade-card p{font-size:9px}.choice-panel{gap:6px}.zone-hint{bottom:calc(var(--safe-bottom) + 22px)}.hud{gap:20px}.hud strong{font-size:22px}}
+@media(max-width:700px) and (orientation:landscape){.overlay{padding-left:20px;padding-right:20px}.overlay-card{column-gap:24px;grid-template-columns:minmax(160px,.85fr) minmax(250px,1.15fr)}.overlay h1{font-size:40px}.overlay-card>p:not(.overlay-hint){font-size:10px}.overlay-hint{font-size:8px}.weapon-option strong{font-size:10px}.weapon-option small{font-size:7px}.hud{gap:14px;width:calc(100% - var(--safe-left) - var(--safe-right) - 180px)}.hud strong{font-size:19px}.mission-row{font-size:7px}.hud-life i{width:4px;gap:3px}.zone-hint{width:180px}.zone-hint span{font-size:7px}.toast{font-size:9px;max-width:72%}}
+@media(max-height:340px) and (orientation:landscape){.overlay{padding-top:calc(var(--safe-top) + 44px);padding-bottom:16px}.overlay h1{font-size:36px;margin:7px 0}.overlay-card>p:not(.overlay-hint){font-size:10px;margin-bottom:6px}.overlay-hint{font-size:8px}.personal-best{margin-top:8px}.weapon-option{min-height:60px;padding:5px 3px;gap:4px}.weapon-option>b{font-size:18px}.home-meta{margin-top:6px}.home-options{margin-bottom:8px}.primary-button{height:38px}.home-links button{min-height:30px}.resume-button{min-height:32px}.hud{height:52px}.arena-heading{top:calc(var(--safe-top) + 58px)}.zone-hint{bottom:calc(var(--safe-bottom) + 20px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}#score.value-gain{transform:none}}
 </style>
 </head>
 <body>
   <main class="game-app">
     <header class="app-header">
-      <div class="brand"><span class="brand-mark">↗</span><div>反击弹幕<small>COREBREAKER / 1.1 / 动效增强</small></div></div>
-      <div class="header-actions"><button id="effects-button" class="icon-button" aria-label="动效增强，点击切换轻量" aria-pressed="true">✦</button><button id="sound-button" class="icon-button" aria-label="关闭音效" aria-pressed="true">♪</button><button id="pause-button" class="icon-button" aria-label="暂停游戏" disabled>Ⅱ</button></div>
+      <div class="brand"><span class="brand-mark">↗</span><div>反击弹幕<small>COREBREAKER / 1.2 / 横屏航程</small></div></div>
+      <div class="header-actions"><button id="fullscreen-button" class="icon-button" aria-label="进入全屏">⛶</button><button id="effects-button" class="icon-button" aria-label="动效增强，点击切换轻量" aria-pressed="true">✦</button><button id="sound-button" class="icon-button" aria-label="关闭音效" aria-pressed="true">♪</button><button id="pause-button" class="icon-button" aria-label="暂停游戏" disabled>Ⅱ</button></div>
     </header>
     <section class="hud" aria-label="游戏状态">
       <div class="hud-score"><span>得分</span><strong id="score">000000</strong></div>
@@ -81,9 +44,9 @@
       <div class="hud-life"><span>护盾</span><div id="health" aria-label="3 格护盾"><i></i><i></i><i></i></div></div>
       <div class="mission-row"><span id="mission-name">零号航程</span><span id="level-label">LV.1</span><div class="xp-track"><i id="xp-fill"></i></div><span id="xp-label">0 / 8</span></div>
     </section>
-    <section class="game-frame" aria-label="竖屏游戏战场">
+    <section class="game-frame" aria-label="横屏全屏游戏战场">
       <div class="stage" id="stage">
-        <canvas id="game" width="600" height="800" tabindex="0" aria-label="反击弹幕。拖动摇杆或战场移动，自动打飞机，按住右侧蓄力、松手反击。"></canvas>
+        <canvas id="game" width="1200" height="650" tabindex="0" aria-label="反击弹幕。左半屏任意处拖动移动，右半屏任意处按住蓄力、松手反击。"></canvas>
         <div class="stage-vignette"></div>
         <div class="arena-heading"><span id="arena-label">反击准备就绪</span><span id="arena-code">SECTOR 01 / 05</span></div>
         <div class="boss-status" id="boss-status" hidden><div><span>零号反应堆</span><span id="boss-hp-text">100%</span></div><i><b id="boss-hp-fill"></b></i></div>
@@ -103,23 +66,39 @@
             <button id="resume-button" class="resume-button" hidden>继续上次航程</button>
             <div id="home-links" class="home-links"><button id="hangar-button">机库改装</button><button id="help-button">飞行手册</button><button id="arcade-button">60 秒街机</button></div>
             <button class="secondary-button" id="retry-button" hidden>重新开始</button>
-            <p class="overlay-hint" id="overlay-hint">左手移动 · 右手蓄力，松手反击 · 约 5–8 分钟一局</p>
+            <p class="overlay-hint" id="overlay-hint">横屏游玩 · 左半屏任意处拖动 · 右半屏按住，松手反击</p>
             <div class="personal-best">航程最高 <strong id="personal-best">000000</strong></div>
           </div>
         </div>
         <div class="toast" id="toast" aria-live="polite"></div>
-        <div class="drag-indicator" id="drag-indicator" hidden><i></i></div>
+        <div id="touch-controls" class="touch-controls" aria-hidden="true">
+          <div class="zone-hint zone-left"><b>左半屏 · 移动</b><span>任意处按下，再拖动</span></div>
+          <div class="zone-hint zone-right"><b>右半屏 · 反击</b><span>任意处按住，松手释放</span></div>
+          <div class="drag-indicator" id="drag-indicator" hidden><i></i><span>移动</span></div>
+          <div class="counter-indicator" id="counter-indicator" hidden>
+            <div id="touch-counter"><span class="counter-arrow">◉</span><span id="counter-button-label">按住蓄力</span></div>
+          </div>
+        </div>
       </div>
       <div class="arena-bottom"><span><b id="wave">01</b><span id="wave-name">掌握反击</span></span><span id="chain-record">最大连锁 0</span></div>
       <div class="time-track"><i id="time-fill"></i></div>
     </section>
-    <section class="touch-panel" id="touch-controls" aria-label="触控操作区">
-      <div class="move-control"><div class="touch-pad" id="move-pad" role="group" aria-label="拖动移动摇杆"><span class="pad-cross"></span><i></i></div><span class="control-label">拖动移动</span></div>
-      <div class="auto-status"><span class="auto-dot"></span><span id="fire-status">自动打飞机</span><small id="counter-hint">清弹由你决定</small><div class="counter-meter"><i id="counter-fill"></i></div><span id="counter-label">反击就绪</span><button id="touch-dash" class="dash-secondary" aria-label="闪避，短暂无敌" disabled>闪避 ↗</button></div>
-      <div class="counter-control"><button id="touch-counter" aria-label="按住蓄力，松手反击" disabled><span class="counter-arrow">◉</span><span id="counter-button-label">按住蓄力</span></button><span class="control-label">松手反击</span></div>
+    <section class="battle-status" aria-label="战斗操作状态">
+      <div class="auto-status"><span class="auto-dot"></span><span id="fire-status">自动打飞机</span><small id="counter-hint">清弹由你决定</small></div>
+      <div class="counter-meter"><i id="counter-fill"></i></div><span id="counter-label">反击就绪</span>
+      <button id="touch-dash" class="dash-secondary" aria-label="闪避，短暂无敌" disabled>闪避 ↗</button>
+      <button id="accessible-counter" class="sr-only" aria-label="立即反击。也可按住空格蓄力，松手反击" disabled>反击</button>
     </section>
     <footer id="field-note">碎晶用于本局升级 · 核心用于机库改装 · 进度保存在本机</footer>
   </main>
+  <aside id="rotate-notice" class="rotate-notice" role="dialog" aria-modal="true" aria-labelledby="rotate-title">
+    <div class="rotate-phone" aria-hidden="true"><i>↗</i></div>
+    <span class="rotate-kicker">COREBREAKER / LANDSCAPE</span>
+    <h2 id="rotate-title">横过来，<br>展开整片战场。</h2>
+    <p>左半屏自由移动<br>右半屏蓄力反击</p>
+    <button id="rotate-fullscreen" class="primary-button"><span>进入全屏横屏</span><span>⛶</span></button>
+    <small id="rotate-help">关闭手机的旋转锁定，再把手机横过来。</small>
+  </aside>
   <script type="module">const WORLD = { width: 1100, height: 700, duration: 60 };
 const clamp = (v, min, max) => Math.max(min, Math.min(max, v));
 const distance = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
@@ -136,7 +115,7 @@ class Game {
   constructor(random = Math.random, world = WORLD) {
     this.random = random;
     this.world = { ...WORLD, ...world };
-    this.mobile = this.world.width < 900;
+    this.mobile = world.mobile ?? this.world.width < 900;
     this.reset();
     this.state = 'ready';
   }
@@ -633,7 +612,7 @@ class Campaign extends Game {
     this.player.maxHp=4+this.config.hull+(this.upgrades.hull||0);this.player.hp=clamp(Number(data.hp)||1,1,this.player.maxHp);
     this.enterSector(data.stageIndex);return true;
   }
-  rayEnd(x,y,angle,length=1100) {
+  rayEnd(x,y,angle,length=Math.hypot(this.world.width,this.world.height)) {
     const dx=Math.cos(angle),dy=Math.sin(angle);let distance=length;
     for(const o of this.obstacles){const ox=x-o.x,oy=y-o.y,b=ox*dx+oy*dy,c=ox*ox+oy*oy-o.r*o.r,disc=b*b-c;if(disc<0)continue;const t=-b-Math.sqrt(disc);if(t>0)distance=Math.min(distance,t);}
     return {x:x+dx*distance,y:y+dy*distance};
@@ -839,11 +818,92 @@ class BattleEffects {
   }
 }
 
+// Pointer ownership is decided once, at touch-down. Moving across the middle
+// never steals the other thumb's job, and cancellation never fires a counter.
+class SplitTouchControls {
+  constructor({ radius = 48, deadZone = 4, beginCounter = () => false, releaseCounter = () => {}, cancelCounter = () => {} } = {}) {
+    this.radius = radius;
+    this.deadZone = deadZone;
+    this.actions = { beginCounter, releaseCounter, cancelCounter };
+    this.move = null;
+    this.counter = null;
+    this.movement = { moveX: 0, moveY: 0, lastX: 0, lastY: 1 };
+  }
+  begin(id, x, y, width) {
+    if (this.move?.id === id || this.counter?.id === id) return false;
+    if (x < width / 2) {
+      if (this.move) return false;
+      this.move = { id, x, y };
+      this.movement.moveX = this.movement.moveY = 0;
+    } else {
+      if (this.counter) return false;
+      this.counter = { id, x, y, active: Boolean(this.actions.beginCounter()) };
+    }
+    return true;
+  }
+  update(id, x, y) {
+    if (this.move?.id !== id) return;
+    const dx = x - this.move.x, dy = y - this.move.y, length = Math.hypot(dx, dy);
+    const amount = Math.max(0, Math.min(1, (length - this.deadZone) / (this.radius - this.deadZone)));
+    this.movement.moveX = length ? dx / length * amount : 0;
+    this.movement.moveY = length ? dy / length * amount : 0;
+    if (amount > 0) {
+      this.movement.lastX = dx / length;
+      this.movement.lastY = dy / length;
+    }
+  }
+  end(id, cancelled = false) {
+    if (this.move?.id === id) {
+      this.move = null;
+      this.movement.moveX = this.movement.moveY = 0;
+      return true;
+    }
+    if (this.counter?.id !== id) return false;
+    const active = this.counter.active;
+    this.counter = null;
+    if (active) this.actions[cancelled ? 'cancelCounter' : 'releaseCounter']();
+    return true;
+  }
+  reset() {
+    const ids = [this.move?.id, this.counter?.id].filter(id => id !== undefined);
+    for (const id of ids) this.end(id, true);
+    return ids;
+  }
+}
+
+function landscapeArena(width, height) {
+  const aspect = Math.max(width, height) / Math.max(1, Math.min(width, height));
+  return { width: Math.round(650 * aspect), height: 650 };
+}
+
+// Browser chrome can change the viewport after fullscreen starts. Reproject
+// positions together so the field keeps its aspect without cropping enemies.
+function fitArena(game, width, height) {
+  const sx = width / game.world.width, sy = height / game.world.height;
+  if (Math.abs(sx - 1) < .00001 && Math.abs(sy - 1) < .00001) return false;
+  const points = new Set([
+    game.player, ...game.enemies, ...game.bullets, ...game.shots,
+    ...game.blasts, ...game.particles, ...game.labels,
+    ...(game.pickups || []), ...(game.hazards || []),
+    ...(game.trails || []), ...(game.obstacles || []),
+    ...game.chainOrigins.values(), game.counter.wave
+  ]);
+  for (const point of points) {
+    if (!point) continue;
+    point.x *= sx; point.y *= sy;
+    if (Number.isFinite(point.endX)) point.endX *= sx;
+    if (Number.isFinite(point.endY)) point.endY *= sy;
+  }
+  game.world.width = width;
+  game.world.height = height;
+  return true;
+}
+
 
 const $ = id => document.getElementById(id);
 const canvas = $('game');
 const ctx = canvas.getContext('2d', { alpha: false });
-const arena = { width: 600, height: 800, duration: 60 };
+const arena = { ...landscapeArena(innerWidth, innerHeight), duration: 60, mobile: true };
 let game = new Campaign(Math.random, arena);
 let profile = freshProfile(), savedCheckpoint = null, selectedWeapon = 'pulse', runId = '', runReward = 0, dashRequested = false, screen = 'home';
 let fxQuality='high', fullChargeAnnounced=false;
@@ -857,12 +917,17 @@ try {
 if (!WEAPONS[selectedWeapon] || !weaponUnlocked(profile, selectedWeapon)) selectedWeapon = 'pulse';
 const keys = new Set();
 const pointer = { x: 550, y: 180, down: false, inside: false };
-const touch = { moveX: 0, moveY: 0, lastX: 0, lastY: 1 };
-let moveGesture = null, autoTarget = null, aimUpdatedAt = -1;
+const touchControls = new SplitTouchControls({
+  beginCounter: () => !counterKeyboard && game.beginCounter(),
+  releaseCounter: () => game.releaseCounter(),
+  cancelCounter: () => game.cancelCounter()
+});
+const touch = touchControls.movement;
+let autoTarget = null, aimUpdatedAt = -1;
 const coarse = matchMedia('(pointer: coarse)').matches;
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const effects=new BattleEffects({quality:fxQuality,reducedMotion});
-let counterPointer = null, counterKeyboard = false, best = profile.best, muted = false, storageAvailable = true;
+let counterKeyboard = false, best = profile.best, muted = false, storageAvailable = true;
 let lastFrame = 0, accumulator = 0, visualTime = 0, toastTimer = 0, view = { width: 1100, height: 700, scale: 1, x: 0, y: 0 };
 let soundContext, masterGain, lastSound = 0;
 const waveNames = ['掌握反击', '诱敌聚拢', '选择时机', '突破包围'];
@@ -901,7 +966,7 @@ function showHome() {
   $('overlay').classList.remove('result-reveal');$('overlay').hidden=false;$('overlay-kicker').textContent='A SMALL SHIP. A SECOND CHANCE.';
   $('overlay-title').innerHTML='零号<span class="title-second">航程.</span>';
   $('overlay-description').innerHTML='把敌人的弹幕，变成你的下一次反击。<br>穿过四个区域，击破零号反应堆。';
-  $('overlay-hint').textContent='左手移动 · 右手蓄力，松手反击 · 约 5–8 分钟一局';
+  $('overlay-hint').textContent='横屏游玩 · 左半屏任意处拖动 · 右半屏按住，松手反击';
   $('home-options').hidden=false;$('home-links').hidden=false;$('choice-panel').hidden=true;
   $('start-button').hidden=false;$('start-button').firstElementChild.textContent='开始航程';
   $('retry-button').hidden=true;$('result-stats').hidden=true;$('pause-button').disabled=true;
@@ -938,7 +1003,7 @@ function showHelp() {
   screen='help';$('home-options').hidden=true;$('home-links').hidden=true;$('resume-button').hidden=true;$('start-button').hidden=true;
   $('overlay-kicker').textContent='PILOT FIELD MANUAL';$('overlay-title').innerHTML='飞行手册<span>。</span>';
   $('overlay-description').textContent='先学会创造退路，再决定要不要冒险。';$('choice-panel').hidden=false;
-  $('choice-panel').innerHTML='<div class="manual"><p><b>移动与闪避</b>左侧拖动移动，中间小按钮闪避。闪避期间短暂无敌。</p><p><b>反击的时机</b>右侧按住蓄力、松手清弹。蓄力时减速停火；圈内数量越多，连锁机会越大。</p><p><b>探索与成长</b>接近蓝色碎晶和补给舱，积累能量选改装。每区结束恢复 1 格护盾并获得改装。</p><p><b>掩体与危险</b>导流柱能挡普通弹幕和狙击光束。红色预警会变成光束或裂隙，反击无法消除。</p><p><b>保存航程</b>进度保存在本机浏览器，可从已保存的区域起点继续。桌面：WASD 移动，空格蓄力，Shift 闪避，P 暂停。</p></div>';
+  $('choice-panel').innerHTML='<div class="manual"><p><b>横屏与移动</b>把手机横过来。左半屏任意位置按下，摇杆就出现在落点；拖动移动，松手停止。中下方小按钮闪避，期间短暂无敌。</p><p><b>反击的时机</b>右半屏任意位置按住蓄力，按钮出现在落点，松手清弹。蓄力时减速停火；圈内数量越多，连锁机会越大。两只手可以同时操作，拖过中线也不会切换职责。</p><p><b>探索与成长</b>接近蓝色碎晶和补给舱，积累能量选改装。每区结束恢复 1 格护盾并获得改装。</p><p><b>掩体与危险</b>导流柱能挡普通弹幕和狙击光束。红色预警会变成光束或裂隙，反击无法消除。</p><p><b>保存航程</b>进度保存在本机浏览器，可从已保存的区域起点继续。桌面：WASD 移动，空格蓄力，Shift 闪避，P 暂停。右上角 ⛶ 切换全屏。</p></div>';
   $('retry-button').hidden=false;$('retry-button').textContent='返回航程';$('overlay-hint').textContent='音效可在右上角关闭。切出应用会自动暂停。';
 }
 function initSound() {
@@ -992,19 +1057,13 @@ function clearInput() {
   fullChargeAnnounced=false;
   dashRequested=false;
   game.cancelCounter();
-  if (counterPointer !== null) {
-    const id = counterPointer; counterPointer = null;
-    if ($('touch-counter').hasPointerCapture(id)) $('touch-counter').releasePointerCapture(id);
+  for (const id of touchControls.reset()) {
+    if (canvas.hasPointerCapture(id)) canvas.releasePointerCapture(id);
   }
-  touch.moveX = 0; touch.moveY = 0;
-  if (moveGesture) {
-    const old = moveGesture; moveGesture = null;
-    if (old.target.hasPointerCapture(old.id)) old.target.releasePointerCapture(old.id);
-  }
-  $('drag-indicator').hidden = true;
-  document.querySelectorAll('.touch-pad i').forEach(el => el.style.transform = '');
+  updateFloatingControls();
 }
 function start(options={}) {
+  if (innerHeight > innerWidth) { requestGameFullscreen(); return; }
   clearInput(); initSound(); effects.reset();
   const arcade=options.mode==='arcade';game=arcade?new Game(Math.random,arena):new Campaign(Math.random,arena);
   if(arcade)game.mode='arcade';
@@ -1027,7 +1086,7 @@ function start(options={}) {
   pointer.x = game.player.x; pointer.y = 180;
   canvas.focus({ preventScroll: true });
   $('field-note').textContent = '蓝色碎晶用于升级 · 留意补给舱 · 松手反击清出道路';
-  toast(arcade?'60 秒街机 · 聚弹，反击，挑战高分':'航程开始 · 左手移动，右手蓄力、松手反击');
+  toast(arcade?'60 秒街机 · 聚弹，反击，挑战高分':'左半屏任意处移动 · 右半屏按住蓄力，松手反击');
   tone(330, .15, 'sine', .35, 660);
   updateHUD();
 }
@@ -1053,6 +1112,7 @@ function pause() {
   $('arena-label').textContent = '挑战已暂停';
 }
 function resume() {
+  if (innerHeight > innerWidth) { requestGameFullscreen(); return; }
   if (!game.resume()) return;
   clearInput(); initSound(); accumulator = 0;
   screen='playing';
@@ -1068,7 +1128,43 @@ function togglePause() { if (game.state === 'playing') pause(); else if (game.st
 function enterFocus() {
   document.body.classList.add('in-game');
   window.scrollTo(0, 0);
+  if (coarse) requestGameFullscreen();
 }
+let fullscreenPending = false, wasFullscreen = false;
+function isFullscreen() { return Boolean(document.fullscreenElement || document.webkitFullscreenElement); }
+async function requestGameFullscreen(showFeedback = false) {
+  if (fullscreenPending) return;
+  fullscreenPending = true;
+  try {
+    const root = document.documentElement;
+    if (!isFullscreen()) {
+      const request = root.requestFullscreen || root.webkitRequestFullscreen;
+      if (request) await request.call(root, { navigationUI: 'hide' });
+    }
+    if (window.screen.orientation?.lock) await window.screen.orientation.lock('landscape');
+  } catch { /* The edge-to-edge layout also works without browser fullscreen. */ }
+  finally {
+    fullscreenPending = false;
+    $('rotate-help').textContent = innerHeight > innerWidth
+      ? '请关闭手机的旋转锁定，再把手机横过来。部分浏览器需要手动旋转。'
+      : '左手移动 · 右手蓄力，松手反击';
+    if (showFeedback && !isFullscreen() && innerWidth > innerHeight) toast('战场已铺满页面 · 此浏览器未开启原生全屏');
+  }
+}
+function updateFullscreenButton() {
+  const active = isFullscreen();
+  $('fullscreen-button').setAttribute('aria-label', active ? '退出全屏' : '进入全屏');
+  if (wasFullscreen && !active && game.state === 'playing') pause();
+  wasFullscreen = active;
+}
+$('fullscreen-button').addEventListener('click', () => {
+  if (!isFullscreen()) { requestGameFullscreen(true); return; }
+  const exit = document.exitFullscreen || document.webkitExitFullscreen;
+  if (exit) Promise.resolve(exit.call(document)).catch(() => {});
+});
+$('rotate-fullscreen').addEventListener('click', () => requestGameFullscreen(true));
+document.addEventListener('fullscreenchange', updateFullscreenButton);
+document.addEventListener('webkitfullscreenchange', updateFullscreenButton);
 $('start-button').addEventListener('click', () => game.state === 'paused' ? resume() : start());
 $('retry-button').addEventListener('click', showHome);
 $('resume-button').addEventListener('click',()=>{if(savedCheckpoint)start({resume:savedCheckpoint});});
@@ -1114,7 +1210,7 @@ window.addEventListener('keydown', event => {
   if (['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(code) && game.state === 'playing') event.preventDefault();
   keys.add(code);
   if (event.repeat) return;
-  if (code === 'Space' && counterPointer === null && game.beginCounter()) counterKeyboard = true;
+  if (code === 'Space' && !touchControls.counter && game.beginCounter()) counterKeyboard = true;
   if ((code==='ShiftLeft'||code==='ShiftRight')&&game.state==='playing')dashRequested=true;
   if (code === 'KeyP' || code === 'Escape') togglePause();
   if (code === 'KeyR') start();
@@ -1130,71 +1226,62 @@ function point(event) {
   const rect = canvas.getBoundingClientRect();
   return { x: clamp((event.clientX - rect.left - view.x) / view.scale, 0, arena.width), y: clamp((event.clientY - rect.top - view.y) / view.scale, 0, arena.height) };
 }
-canvas.addEventListener('pointermove', event => { if (event.pointerType !== 'touch') { Object.assign(pointer, point(event)); pointer.inside = true; } });
+function usesSplitControls(event) {
+  return event.pointerType !== 'mouse' || coarse || innerWidth <= 1100;
+}
+function updateFloatingControls() {
+  const left = $('drag-indicator'), right = $('counter-indicator');
+  left.hidden = !touchControls.move;
+  right.hidden = !touchControls.counter;
+  if (touchControls.move) {
+    const { x, y } = touchControls.move;
+    left.style.left = `${x}px`; left.style.top = `${y}px`;
+    left.firstElementChild.style.transform = `translate(${touch.moveX * touchControls.radius}px, ${touch.moveY * touchControls.radius}px)`;
+  }
+  if (touchControls.counter) {
+    const { x, y, active } = touchControls.counter;
+    right.style.left = `${x}px`; right.style.top = `${y}px`;
+    right.classList.toggle('unavailable', !active);
+  }
+}
 canvas.addEventListener('pointerdown', event => {
-  if (event.pointerType === 'touch' || event.button !== 0 || game.state !== 'playing') return;
+  if (event.button !== 0 || game.state !== 'playing') return;
   event.preventDefault();
-  Object.assign(pointer, point(event)); pointer.down = true; pointer.inside = true;
+  if (usesSplitControls(event)) {
+    const box = canvas.getBoundingClientRect();
+    if (!touchControls.begin(event.pointerId, event.clientX - box.left, event.clientY - box.top, box.width)) return;
+    initSound(); updateFloatingControls();
+  } else {
+    Object.assign(pointer, point(event)); pointer.down = true; pointer.inside = true;
+  }
   canvas.setPointerCapture(event.pointerId);
   canvas.focus({ preventScroll: true });
 });
-const releasePointer = () => { pointer.down = false; };
-canvas.addEventListener('pointerup', releasePointer);
-canvas.addEventListener('pointercancel', releasePointer);
-canvas.addEventListener('lostpointercapture', releasePointer);
+canvas.addEventListener('pointermove', event => {
+  if (touchControls.move?.id === event.pointerId) {
+    const box = canvas.getBoundingClientRect();
+    touchControls.update(event.pointerId, event.clientX - box.left, event.clientY - box.top);
+    updateFloatingControls();
+  } else if (!usesSplitControls(event)) {
+    Object.assign(pointer, point(event)); pointer.inside = true;
+  }
+});
+function finishTouch(event, cancelled = false) {
+  touchControls.end(event.pointerId, cancelled);
+  if (event.pointerType === 'mouse') pointer.down = false;
+  updateFloatingControls();
+}
+canvas.addEventListener('pointerup', event => finishTouch(event));
+canvas.addEventListener('pointercancel', event => finishTouch(event, true));
+canvas.addEventListener('lostpointercapture', event => finishTouch(event, true));
 canvas.addEventListener('pointerleave', () => pointer.inside = false);
 canvas.addEventListener('contextmenu', event => event.preventDefault());
-function bindMovement(target, surface = false) {
-  const knob = surface ? $('drag-indicator').firstElementChild : target.querySelector('i');
-  function update(event) {
-    if (!moveGesture || moveGesture.id !== event.pointerId || moveGesture.target !== target) return;
-    const dx = event.clientX - moveGesture.x, dy = event.clientY - moveGesture.y;
-    const length = Math.hypot(dx, dy), limit = moveGesture.radius;
-    touch.moveX = length < 4 ? 0 : dx / Math.max(limit, length);
-    touch.moveY = length < 4 ? 0 : dy / Math.max(limit, length);
-    knob.style.transform = `translate(${touch.moveX * limit}px, ${touch.moveY * limit}px)`;
-    if (length >= 4) { touch.lastX = dx / length; touch.lastY = dy / length; }
-  }
-  target.addEventListener('pointerdown', event => {
-    if (game.state !== 'playing' || moveGesture || (surface && event.pointerType !== 'touch') || event.button !== 0) return;
-    event.preventDefault();
-    const box = target.getBoundingClientRect();
-    moveGesture = { target, id: event.pointerId, x: surface ? event.clientX : box.left + box.width / 2, y: surface ? event.clientY : box.top + box.height / 2, radius: surface ? 30 : box.width * .3 };
-    target.setPointerCapture(event.pointerId);
-    if (surface) { const el = $('drag-indicator'); el.hidden = false; el.style.left = `${event.clientX - box.left}px`; el.style.top = `${event.clientY - box.top}px`; }
-    update(event);
-  });
-  target.addEventListener('pointermove', update);
-  function end(event) {
-    if (!moveGesture || moveGesture.id !== event.pointerId || moveGesture.target !== target) return;
-    moveGesture = null; touch.moveX = 0; touch.moveY = 0; knob.style.transform = ''; $('drag-indicator').hidden = true;
-  }
-  for (const name of ['pointerup', 'pointercancel', 'lostpointercapture']) target.addEventListener(name, end);
-}
-bindMovement($('move-pad')); bindMovement(canvas, true);
 const counterButton = $('touch-counter');
 function requestDash() { if(game.state==='playing'&&game.player.cooldown<=0)dashRequested=true; }
 $('touch-dash').addEventListener('pointerdown',event=>{event.preventDefault();requestDash();});
 $('touch-dash').addEventListener('click',event=>{if(event.detail===0)requestDash();});
-counterButton.addEventListener('pointerdown', event => {
-  if (event.button !== 0 || counterKeyboard || counterPointer !== null) return;
-  event.preventDefault();
-  if (!game.beginCounter()) return;
-  initSound(); counterPointer = event.pointerId;
-  counterButton.setPointerCapture(event.pointerId);
-});
-counterButton.addEventListener('pointerup', event => {
-  if (counterPointer !== event.pointerId) return;
-  counterPointer = null;
-  game.releaseCounter();
-});
-for (const name of ['pointercancel', 'lostpointercapture']) counterButton.addEventListener(name, event => {
-  if (counterPointer !== event.pointerId) return;
-  counterPointer = null; game.cancelCounter();
-});
-counterButton.addEventListener('click', event => {
-  // Keyboard / assistive activation offers an immediate short counter.
-  if (event.detail === 0 && !counterKeyboard && counterPointer === null && game.beginCounter()) game.releaseCounter();
+$('accessible-counter').addEventListener('click', () => {
+  if (!counterKeyboard && !touchControls.counter && game.beginCounter()) game.releaseCounter();
 });
 function getInput() {
   if (game.elapsed - aimUpdatedAt > .08 || !autoTarget || autoTarget.dead || autoTarget.prime > 0) {
@@ -1259,7 +1346,8 @@ function updateHUD() {
   $('counter-fill').style.width = `${(c.charging ? c.charge / game.chargeTime : 1 - c.cooldown / game.counterCooldown) * 100}%`;
   $('counter-label').textContent = c.charging ? `圈内 ${count} 弹 · 松手引爆` : c.cooldown > 0 ? `冷却 ${c.cooldown.toFixed(1)} 秒` : '反击就绪';
   $('counter-button-label').textContent = c.charging ? '松手反击' : c.cooldown > 0 ? `${c.cooldown.toFixed(1)}s` : '按住蓄力';
-  counterButton.disabled = game.state !== 'playing' || c.cooldown > 0;
+  counterButton.classList.toggle('cooling', c.cooldown > 0);
+  $('accessible-counter').disabled = game.state !== 'playing' || c.cooldown > 0;
   counterButton.classList.toggle('charging', c.charging);
   counterButton.classList.toggle('fully-charged',c.charging&&c.charge/game.chargeTime>=.999);
   counterButton.style.setProperty('--charge-progress',`${(c.charging?c.charge/game.chargeTime:1-c.cooldown/game.counterCooldown)*360}deg`);
@@ -1281,6 +1369,16 @@ function updateHUD() {
 
 function resize() {
   const box = canvas.getBoundingClientRect(), dpr = Math.min(window.devicePixelRatio || 1, 2);
+  if (!box.width || !box.height) return;
+  const changed = Math.abs(view.width - box.width) > 1 || Math.abs(view.height - box.height) > 1;
+  if (changed) {
+    clearInput();
+    const next = landscapeArena(box.width, box.height);
+    if (fitArena(game, next.width, next.height)) effects.reset();
+    Object.assign(arena, next);
+    autoTarget = null; aimUpdatedAt = -1;
+  }
+  if (box.height > box.width && game.state === 'playing') pause();
   canvas.width = Math.round(box.width * dpr); canvas.height = Math.round(box.height * dpr);
   const scale = Math.min(box.width / arena.width, box.height / arena.height);
   view = { width: box.width, height: box.height, scale, x: (box.width - arena.width * scale) / 2, y: (box.height - arena.height * scale) / 2, dpr };
@@ -1458,7 +1556,7 @@ function frame(now) {
     while(accumulator>=1/120 && game.state==='playing') { game.update(1/120,getInput());dashRequested=false;accumulator-=1/120; }
     handleEvents();
   } else accumulator=0;
-  if(toastTimer>0 && game.state==='playing'){toastTimer-=dt;if(toastTimer<=0)$('toast').classList.remove('visible');}
+  if(toastTimer>0){toastTimer-=dt;if(toastTimer<=0)$('toast').classList.remove('visible');}
   if(game.state==='playing'||game.state==='over')effects.update(dt,game);
   if(game.counter.charging&&game.counter.charge/game.chargeTime>=.999){if(!fullChargeAnnounced){tone(660,.13,'sine',.2,880);tone(990,.18,'triangle',.12,1320);fullChargeAnnounced=true;}}else fullChargeAnnounced=false;
   for(const key of Object.keys(feedback))feedback[key]=Math.max(0,feedback[key]-dt);
