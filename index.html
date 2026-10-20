@@ -90,36 +90,69 @@ body:not(.playing) .toast{top:calc(var(--top) + 65px);bottom:auto}
 @media(max-height:650px){.overlay:not(.pause):not(.result) .intro-copy .menu-description{display:none}}
 .portrait-full{pointer-events:auto}
 
-/* Ultimate cut-ins follow the cast snapshot and never receive input. */
+/* The battlefield and portrait/control panel occupy separate layout regions. */
+:root{--dock-height:calc(clamp(124px,20dvh,176px) + env(safe-area-inset-bottom));--rail-width:240px}
 .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
-.spell-cutin{position:absolute;z-index:4;top:max(112px,14%);bottom:calc(var(--bottom) + 154px);width:94%;pointer-events:none!important;user-select:none;will-change:transform,opacity;isolation:isolate;opacity:0}
-.spell-cutin[data-side=right]{right:0}.spell-cutin[data-side=left]{left:0}
-.spell-backplate{position:absolute;inset:9px 0 0;background:linear-gradient(135deg,#172a33c4,#10252dd9 55%,#0c1c23a3);border-top:1px solid color-mix(in srgb,var(--spell-color) 60%,transparent);border-bottom:1px solid color-mix(in srgb,var(--spell-color) 35%,transparent);box-shadow:0 0 35px #091b2466;z-index:-1}
-.spell-cutin[data-side=right] .spell-backplate{clip-path:polygon(23% 0,100% 0,100% 100%,0 92%);mask-image:linear-gradient(90deg,transparent,#000 35%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%)}
-.spell-cutin[data-side=left] .spell-backplate{clip-path:polygon(0 0,77% 0,100% 92%,0 100%);mask-image:linear-gradient(270deg,transparent,#000 35%);-webkit-mask-image:linear-gradient(270deg,transparent,#000 35%)}
-.spell-art{position:absolute;inset:-24px 0 auto;width:100%;height:calc(100% + 24px);object-fit:cover;object-position:center top;filter:drop-shadow(0 4px 12px #0005);pointer-events:none}
-.spell-cutin[data-side=right] .spell-art{mask-image:linear-gradient(90deg,transparent,#000 25%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 25%)}
-.spell-cutin[data-side=left] .spell-art{mask-image:linear-gradient(270deg,transparent,#000 25%);-webkit-mask-image:linear-gradient(270deg,transparent,#000 25%)}
-.spell-copy{position:absolute;bottom:0;left:0;right:0;padding:46px 22px 20px;background:linear-gradient(transparent,#0b1b23eb 50%);text-shadow:0 2px 6px #031018}
-.spell-cutin[data-side=right] .spell-copy{text-align:right;padding-left:48px}.spell-cutin[data-side=left] .spell-copy{text-align:left;padding-right:48px}
-.spell-copy>small{display:block;font:10px var(--sans);letter-spacing:1.5px;color:var(--spell-color)}
-.spell-copy>strong{display:block;font:600 clamp(32px,5dvh,44px)/1.35 "Songti SC",serif;letter-spacing:4px;color:#f5ead0;margin:5px 0}
-.spell-copy>span{font:12px var(--sans);letter-spacing:1px;color:#e1dfc9}.spell-copy>p{font:11px/1.7 var(--sans);letter-spacing:.4px;color:#c3d9ce;margin:8px 0 0}
-.spell-cutin[data-health=wounded] .spell-copy>span{color:#f0c48f}.spell-cutin[data-health=critical] .spell-copy>span{color:#ffc0b9}.spell-cutin[data-health=critical] .spell-backplate{border-color:#f1a5aa70}
-.weapon-status .battle-face{display:flex;flex-direction:column;align-items:center;gap:3px;width:36px;flex:none}
-.battle-face img{display:block;width:36px;height:36px;object-fit:cover;border-radius:3px;border:1px solid #cce8d850}
-.weapon-status .battle-face small{display:block;font:7px/1.2 var(--sans);margin:0;color:#c6ddca;letter-spacing:1px}
-.battle-face[data-health=wounded] img{border-color:#e4b686}.weapon-status .battle-face[data-health=wounded] small{color:#edc29b}
-.battle-face[data-health=critical] img{border-color:#f0a5a1}.weapon-status .battle-face[data-health=critical] small{color:#ffc0b5}
-.spirit-button>span{font-size:22px;letter-spacing:2px}
-@media(max-height:650px){.spell-cutin{top:104px;bottom:calc(var(--bottom) + 85px)}.spell-art{inset:-16px 0 auto;height:calc(100% + 16px)}.spell-copy{padding:36px 18px 14px}.spell-cutin[data-side=right] .spell-copy{padding-right:84px}.spell-copy>strong{font-size:31px;letter-spacing:2px}.spell-copy>small{font-size:8px}.spell-copy>span{font-size:10px}.spell-copy>p{font-size:9px;margin-top:5px;letter-spacing:0}.weapon-status .battle-face{width:31px}.battle-face img{width:31px;height:31px}.weapon-status .battle-face small{font-size:6px}.weapon-status{gap:6px}.spirit-button>span{font-size:19px}}
-@media(max-height:520px){.spell-cutin{top:96px;bottom:calc(var(--bottom) + 80px)}.spell-copy>strong{font-size:27px}.spell-copy>p{display:none}}
+.battle-field{position:relative;width:100%;height:100%;overflow:hidden}
+body.in-run .game-wrap{width:min(100vw,calc((100dvh - var(--dock-height)) * .75))}
+body.in-run .battle-field{height:calc(100% - var(--dock-height))}
+.battle-panel{display:none;position:absolute;left:0;right:0;bottom:0;height:var(--dock-height);padding-bottom:env(safe-area-inset-bottom);grid-template-columns:43% 1fr;background:#101d24;border-top:1px solid #b9c7a947;overflow:hidden;isolation:isolate}
+body.in-run .battle-panel{display:grid}
+.ritual-portrait{position:relative;min-height:0;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at 42% 22%,color-mix(in srgb,var(--weapon) 22%,#17272c),#0b161e 80%);border-right:1px solid #b9c7a923;pointer-events:none}
+.panel-art,.spell-art{position:absolute;left:-12%;top:-2%;width:140%;height:205%;object-fit:cover;object-position:44% top;pointer-events:none;user-select:none}
+.panel-art{opacity:.65;filter:grayscale(.7)}
+.panel-caption{position:absolute;inset:auto 0 0;padding:25px 12px 10px;background:linear-gradient(transparent,#09151be8);text-shadow:0 2px 4px #07131c}
+.panel-caption>small{display:block;font:6px var(--mono);letter-spacing:1px;color:#c3d1c0}
+.panel-caption>strong{display:inline-block;font:500 24px/1.3 "Songti SC",serif;letter-spacing:3px;color:#eee7d5;margin-top:2px}
+.panel-caption>span{font:9px var(--sans);margin-left:8px;color:#ccdfc5}
+.ritual-portrait[data-health=wounded] .panel-caption>span{color:#edc29b}.ritual-portrait[data-health=critical] .panel-caption>span{color:#ffc0b5}
+.panel-controls{min-width:0;display:flex;flex-direction:column;justify-content:space-between;padding:12px 14px;gap:8px}
+.panel-controls .weapon-status{display:block;max-width:none;border:0;background:none;padding:0;border-radius:0}
+.panel-controls .weapon-status strong{font-size:12px;letter-spacing:.6px}
+.panel-controls .weapon-status small{font-size:8px;margin-top:4px;gap:5px}
+.panel-controls .weapon-status small:last-child{margin-top:5px;gap:7px}
+.panel-controls .weapon-status small>b{font-size:10px;margin-right:3px}
+.panel-controls .action-stack{flex-direction:row;justify-content:space-between;gap:10px}
+.panel-controls .spirit-button,.panel-controls .bomb-button{width:68px;height:62px;flex-shrink:0;border-radius:6px;box-shadow:inset 0 0 20px #aed9bc0a}
+.panel-controls .spirit-button>span{font-size:22px;letter-spacing:2px}
+.panel-controls .spirit-button strong,.panel-controls .bomb-button>strong{font-size:9px;letter-spacing:.4px;margin-top:3px}
+.panel-controls .bomb-icon{font-size:25px}
+.panel-controls .spirit-button[aria-pressed=true]{box-shadow:inset 0 0 20px #d9f1c91a,0 0 0 1px #d5e6b340}
+.spell-cutin{position:absolute;inset:0;pointer-events:none!important;overflow:hidden;user-select:none;will-change:opacity;opacity:0}
+.spell-copy{position:absolute;bottom:0;left:0;right:0;padding:28px 12px 10px;background:linear-gradient(transparent,#0b1b23f2 55%);text-shadow:0 2px 5px #031018}
+.spell-copy>small{display:block;font:7px var(--sans);letter-spacing:1px;color:var(--spell-color)}
+.spell-copy>strong{display:block;font:600 23px/1.3 "Songti SC",serif;letter-spacing:1px;color:#f5ead0;margin:3px 0}
+.spell-copy>span{font:9px var(--sans);letter-spacing:.5px;color:#e1dfc9}.spell-copy>p{display:none}
+.spell-cutin[data-health=wounded] .spell-copy>span{color:#f0c48f}.spell-cutin[data-health=critical] .spell-copy>span{color:#ffc0b9}
+.spell-active .panel-art,.spell-active .panel-caption{visibility:hidden}
+.spell-active .ritual-portrait{box-shadow:inset 0 0 32px color-mix(in srgb,var(--weapon) 25%,transparent)}
+body.in-run .toast{bottom:20px}
+body.in-run .flight-hint{top:auto;bottom:18%;font-size:10px;letter-spacing:.5px}
+@media(max-height:650px){
+  .panel-controls{padding:8px 12px;gap:5px}.panel-controls .weapon-status strong{font-size:10px}.panel-controls .weapon-status small{font-size:7px;margin-top:3px}.panel-controls .weapon-status small:last-child{margin-top:3px}
+  .panel-controls .spirit-button,.panel-controls .bomb-button{width:58px;height:54px}.panel-controls .spirit-button>span{font-size:18px}.panel-controls .spirit-button strong,.panel-controls .bomb-button>strong{font-size:8px}.panel-controls .bomb-icon{font-size:22px}
+  .panel-caption{padding:25px 10px 8px}.panel-caption>small{display:none}.panel-caption>strong{font-size:22px}.panel-caption>span{font-size:8px;margin-left:5px}
+  .spell-copy{padding:20px 10px 8px}.spell-copy>strong{font-size:20px}.spell-copy>small{font-size:6px}.spell-copy>span{font-size:8px}
+}
+@media(min-width:900px) and (min-height:540px){
+  body.in-run .game-wrap{width:calc(62.5dvh + var(--rail-width));max-width:100vw}
+  body.in-run .battle-field{height:100%;width:calc(100% - var(--rail-width));margin-left:var(--rail-width)}
+  body.in-run .battle-panel{right:auto;top:0;bottom:0;width:var(--rail-width);height:100%;padding:0;grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) 187px;border-top:0;border-right:1px solid #b9c7a947}
+  .ritual-portrait{border-right:0;border-bottom:1px solid #b9c7a92e}
+  .panel-art,.spell-art{inset:0;width:100%;height:100%;object-position:44% top}
+  .panel-caption{padding:45px 20px 22px}.panel-caption>small{display:block;font-size:8px;letter-spacing:1.5px}.panel-caption>strong{font-size:36px;letter-spacing:5px}.panel-caption>span{font-size:11px}
+  .panel-controls{padding:18px 20px;gap:14px}.panel-controls .weapon-status strong{font-size:14px}.panel-controls .weapon-status small{font-size:9px;margin-top:6px}.panel-controls .weapon-status small:last-child{margin-top:7px}
+  .panel-controls .spirit-button,.panel-controls .bomb-button{width:88px;height:66px}.panel-controls .spirit-button>span{font-size:23px}.panel-controls .spirit-button strong,.panel-controls .bomb-button>strong{font-size:10px}
+  .spell-copy{padding:55px 20px 24px}.spell-copy>small{font-size:9px}.spell-copy>strong{font-size:32px;letter-spacing:2px;margin:6px 0}.spell-copy>span{font-size:11px}.spell-copy>p{display:block;font:11px/1.8 var(--sans);color:#c3d9ce;margin:12px 0 0}
+  body.in-run .cabinet-left{display:none}body.in-run .cabinet-right{left:calc(50% + 31.25dvh + 120px + 35px)}
+}
 </style>
 </head>
 <body>
   <main class="arcade-shell">
     <aside class="cabinet-note cabinet-left" aria-hidden="true"><span class="cabinet-mark">夜 渡</span><span>SPIRITBOUND</span><small>A NIGHT BETWEEN WORLDS<br>DANMAKU / 03</small><i></i><p>灵符开路。<br>借险成势。</p><span class="cabinet-index">契</span></aside>
     <section id="game-wrap" class="game-wrap" aria-label="式神弹幕战场">
+      <div id="battle-field" class="battle-field">
       <canvas id="game" width="480" height="850" tabindex="0" aria-label="夜渡·式契。单指拖动角色，自动灵符攻击。第二指按住战场或式神按钮召唤，松开恢复灵符。结界按钮净化敌弹。"></canvas>
       <div class="field-shade" aria-hidden="true"></div>
       <header class="top-bar">
@@ -131,19 +164,26 @@ body:not(.playing) .toast{top:calc(var(--top) + 65px);bottom:auto}
       <div id="boss-status" class="boss-status" hidden><div><span id="boss-name">妖主显现</span><span id="boss-hp">100%</span></div><div class="boss-track"><i id="boss-fill"></i></div></div>
       <div id="announcement" class="announcement" aria-live="polite" hidden><small id="announcement-kicker"></small><strong id="announcement-title"></strong><span id="announcement-note"></span></div>
       <div id="toast" class="toast" aria-live="polite" hidden></div>
-      <div id="spell-cutin" class="spell-cutin" aria-hidden="true" hidden>
-        <div class="spell-backplate"></div><img id="spell-art" class="spell-art" alt="" draggable="false">
-        <div class="spell-copy"><small id="spell-condition"></small><strong id="spell-name"></strong><span id="spell-character"></span><p id="spell-line"></p></div>
-      </div>
-      <span id="spell-announcer" class="visually-hidden" aria-live="polite"></span>
       <div id="flight-hint" class="flight-hint" aria-hidden="true"><span>↔</span>拖动移动 · 按住「式神」近攻<small>松开恢复远攻 · 第二指按住战场也能召唤</small></div>
-      <div class="battle-bottom">
-        <div class="weapon-status"><div class="battle-face"><img id="battle-portrait" alt="" draggable="false"><small id="battle-health">从容</small></div><span id="weapon-letter" hidden>狐</span><div><strong id="weapon-name">赤羽 · 灵狐</strong><small>灵力 <b id="power-level">1</b><i id="power-pips"><em></em><em></em><em></em><em></em></i></small><small><span id="attack-state">灵符 · 远距</span><span>擦弹 <b id="graze-count">0</b></span></small></div></div>
-        <div class="action-stack"><button id="spirit-button" class="spirit-button" aria-label="按住式神，切换近距离攻击并降低移速；松开恢复远距离灵符攻击" aria-pressed="false" disabled><span>式神</span><strong id="spirit-label">按住近攻</strong></button><button id="bomb-button" class="bomb-button" aria-label="解放结界，净化敌弹" disabled><span class="bomb-icon">✦</span><strong>大招 <b id="bomb-count">2</b></strong></button></div>
       </div>
+      <aside id="battle-panel" class="battle-panel" aria-label="御灵师与战斗操作">
+        <div class="ritual-portrait">
+          <img id="battle-portrait" class="panel-art" alt="" draggable="false">
+          <div class="panel-caption"><small>御灵师 / SPIRITBOUND</small><strong id="panel-character">赤羽</strong><span id="battle-health">从容</span></div>
+          <div id="spell-cutin" class="spell-cutin" aria-hidden="true" hidden>
+            <img id="spell-art" class="spell-art" alt="" draggable="false">
+            <div class="spell-copy"><small id="spell-condition"></small><strong id="spell-name"></strong><span id="spell-character"></span><p id="spell-line"></p></div>
+          </div>
+        </div>
+        <div class="panel-controls">
+          <div class="weapon-status"><span id="weapon-letter" hidden>狐</span><div><strong id="weapon-name">赤羽 · 灵狐</strong><small>灵力 <b id="power-level">1</b><i id="power-pips"><em></em><em></em><em></em><em></em></i></small><small><span id="attack-state">灵符 · 远距</span><span>擦弹 <b id="graze-count">0</b></span></small></div></div>
+          <div class="action-stack"><button id="spirit-button" class="spirit-button" aria-label="按住式神，切换近距离攻击并降低移速；松开恢复远距离灵符攻击" aria-pressed="false" disabled><span>式神</span><strong id="spirit-label">按住近攻</strong></button><button id="bomb-button" class="bomb-button" aria-label="解放结界，净化敌弹" disabled><span class="bomb-icon">✦</span><strong>大招 <b id="bomb-count">2</b></strong></button></div>
+        </div>
+      </aside>
+      <span id="spell-announcer" class="visually-hidden" aria-live="polite"></span>
       <div id="overlay" class="overlay">
         <div class="menu-card">
-          <div class="edition"><span>SPIRITBOUND</span><span>妖夜行记 / 3.3.1</span></div>
+          <div class="edition"><span>SPIRITBOUND</span><span>妖夜行记 / 3.4</span></div>
           <div class="menu-intro">
             <button id="portrait-preview" class="hero-portrait" aria-label="查看御灵师全身立绘"><img id="hero-portrait" alt="" draggable="false"><span>查看立绘 ↗</span></button>
             <div class="intro-copy">
@@ -711,7 +751,7 @@ function flightAnnounce(kicker,title,note='',warning=false,seconds=2.4){
   flight$('announcement').hidden=false;flight$('announcement-kicker').textContent=kicker;flight$('announcement-title').textContent=title;flight$('announcement-note').textContent=note;flight$('announcement').classList.toggle('warning',warning);flight$('announcement').classList.add('visible');flightBannerTime=seconds;
 }
 function flightClearSpell(){
-  flightSpell.clear();flight$('spell-cutin').hidden=true;flight$('spell-cutin').style.opacity='0';flight$('spell-announcer').textContent='';
+  flightSpell.clear();flight$('spell-cutin').hidden=true;flight$('spell-cutin').style.opacity='0';flight$('spell-announcer').textContent='';flight$('battle-panel').classList.remove('spell-active');
 }
 function flightWarmSpell(){
   for(const [tier,art]of Object.entries(SPELL_PORTRAITS[flightGame.player.weapon])){
@@ -728,7 +768,7 @@ function flightShowSpell(event){
   flight$('spell-condition').textContent=`结界解放 / 护符 ${state.lives}`;flight$('spell-name').textContent=spell.name;
   flight$('spell-character').textContent=`${character.name} · ${health.label}`;flight$('spell-line').textContent=spell.lines[state.tier];
   flight$('spell-announcer').textContent=`${character.name}释放${spell.name}，${health.label}，剩余${state.lives}枚护符。`;
-  root.hidden=false;root.style.opacity='0';
+  root.hidden=false;root.style.opacity='0';flight$('battle-panel').classList.add('spell-active');
 }
 function flightUpdateSpell(dt){
   if(flightGame.state!=='playing'){if(flightSpell.state)flightClearSpell();return;}
@@ -754,11 +794,13 @@ function flightHomeOptions(){
 flight$('normal-button').addEventListener('click',()=>{flightHard=false;flightHomeOptions();});
 flight$('hard-button').addEventListener('click',()=>{flightHard=true;flightHomeOptions();});
 function flightShowHome(){
+  document.body.classList.remove('in-run');flightResize();
   flightClearInput();flightRenderer.reset();flightGame=new VerticalShooter(Math.random,{height:flightView.height/flightView.scale});flightGame.player.weapon=flightWeapon;flightGame.state='ready';flightGame.events=[];flightAccumulator=0;document.body.classList.remove('playing','show-hint');
   const overlay=flight$('overlay');overlay.hidden=false;overlay.className='overlay';flight$('overlay-kicker').textContent='SPIRITBOUND / 妖夜行记';flight$('overlay-title').innerHTML='夜渡<span>式契<span class="title-dot">印</span></span>';flight$('overlay-description').innerHTML='灵符开路，式神破阵。<br>在弹幕之间，借险成势。';flight$('overlay-hint').textContent='拖动移动 · 按住式神近攻 · ✦ 大招清弹';flight$('home-options').hidden=false;flight$('result-stats').hidden=true;flight$('home-button').hidden=true;flight$('start-label').textContent='踏入妖夜';flight$('pause-button').disabled=true;flight$('pause-button').setAttribute('aria-label','暂停游戏');flight$('pause-button').textContent='Ⅱ';flight$('announcement').classList.remove('visible');flight$('announcement').hidden=true;flight$('toast').classList.remove('visible');flight$('toast').hidden=true;flightHomeOptions();
 }
 function flightStart(){
   if(coarseFlight&&innerWidth>innerHeight){flightRequestFullscreen();return;}
+  document.body.classList.add('in-run');flightResize();
   flightClearInput();flightSoundInit();flightRenderer.reset();flightGame=new VerticalShooter(Math.random,{height:flightView.height/flightView.scale});flightGame.reset({weapon:flightWeapon,hard:flightHard});flightWarmSpell();flightSettled=false;flightAccumulator=0;flightMusicTime=0;flightBeat=0;flight$('overlay').hidden=true;document.body.classList.add('playing','show-hint');flight$('pause-button').disabled=false;flight$('pause-button').textContent='Ⅱ';flight$('pause-button').setAttribute('aria-label','暂停游戏');flightCanvas.focus({preventScroll:true});if(coarseFlight)flightRequestFullscreen();flightEvents();flightUpdateHUD();
 }
 function flightPause(){
@@ -839,7 +881,7 @@ function flightEvents(){
 function flightUpdateHUD(){
   const g=flightGame,p=g.player,w=FLIGHT_WEAPONS[p.weapon];
   const health=spellHealthTier(p.lives),faceKey=p.weapon+':'+health;
-  if(faceKey!==flightBattleFaceKey){flightBattleFaceKey=faceKey;flight$('battle-portrait').src=SPELL_PORTRAITS[p.weapon][health].face;flight$('battle-portrait').alt=`${flightPortraits[p.weapon].name}，${SPELL_HEALTH[health].label}`;flight$('battle-health').textContent=SPELL_HEALTH[health].label;flight$('battle-portrait').parentElement.dataset.health=health;}
+  if(faceKey!==flightBattleFaceKey){flightBattleFaceKey=faceKey;flight$('battle-portrait').src=SPELL_PORTRAITS[p.weapon][health].image;flight$('battle-portrait').alt=`${flightPortraits[p.weapon].name}，${SPELL_HEALTH[health].label}`;flight$('panel-character').textContent=flightPortraits[p.weapon].name;flight$('battle-health').textContent=SPELL_HEALTH[health].label;flight$('battle-portrait').parentElement.dataset.health=health;}
   flight$('score').textContent=flightScore(g.score);flight$('high-score').textContent=flightScore(Math.max(g.score,flightProfile[flightHard?'hardBest':'best']));
   [...flight$('lives').children].forEach((el,i)=>el.classList.toggle('empty',i>=p.lives));flight$('lives').setAttribute('aria-label',`剩余 ${p.lives} 枚护符`);
   flight$('mission-name').textContent=`${String(g.stageIndex+1).padStart(2,'0')} / ${g.stage.name}`;flight$('mission-progress').style.width=`${g.progress*100}%`;
@@ -861,10 +903,11 @@ flight$('rotate-button').addEventListener('click',()=>flightRequestFullscreen(tr
 document.addEventListener('fullscreenchange',flightFullscreenChange);document.addEventListener('webkitfullscreenchange',flightFullscreenChange);
 function flightResize(){
   const box=flightCanvas.getBoundingClientRect();if(!box.width||!box.height)return;
-  flightClearInput();const dpr=Math.min(devicePixelRatio||1,2),scale=box.width/480;flightCanvas.width=Math.round(box.width*dpr);flightCanvas.height=Math.round(box.height*dpr);flightView={width:box.width,height:box.height,scale,dpr};flightGame.resize(box.height/scale);
+  const dpr=Math.min(devicePixelRatio||1,2);if(flightView.width===box.width&&flightView.height===box.height&&flightView.dpr===dpr&&flightCanvas.width===Math.round(box.width*dpr)&&flightCanvas.height===Math.round(box.height*dpr))return;
+  flightClearInput();const scale=box.width/480;flightCanvas.width=Math.round(box.width*dpr);flightCanvas.height=Math.round(box.height*dpr);flightView={width:box.width,height:box.height,scale,dpr};flightGame.resize(box.height/scale);
   if(coarseFlight&&innerWidth>innerHeight&&flightGame.state==='playing')flightPause();
 }
-new ResizeObserver(flightResize).observe(flight$('game-wrap'));flightResize();
+new ResizeObserver(flightResize).observe(flightCanvas);flightResize();
 function flightMusic(dt){
   if(flightMuted||!flightAudio||flightAudio.state!=='running')return;flightMusicTime+=dt;
   if(flightMusicTime>.38){flightMusicTime-=.38;const notes=[146.83,220,293.66,329.63,440,329.63,293.66,220];flightTone(notes[flightBeat%8],.18,.09,'triangle',notes[flightBeat%8]);if(flightBeat%4===0)flightTone(73.42,.35,.08,'sine',73.42);if(flightBeat%4===3)flightTone(notes[(flightBeat+2)%8]*4,.13,.035,'triangle');flightBeat++;}
