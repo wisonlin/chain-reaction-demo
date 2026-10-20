@@ -146,6 +146,34 @@ body.in-run .flight-hint{top:auto;bottom:18%;font-size:10px;letter-spacing:.5px}
   .spell-copy{padding:55px 20px 24px}.spell-copy>small{font-size:9px}.spell-copy>strong{font-size:32px;letter-spacing:2px;margin:6px 0}.spell-copy>span{font-size:11px}.spell-copy>p{display:block;font:11px/1.8 var(--sans);color:#c3d9ce;margin:12px 0 0}
   body.in-run .cabinet-left{display:none}body.in-run .cabinet-right{left:calc(50% + 31.25dvh + 120px + 35px)}
 }
+/* On phones, every pixel below the HUD remains part of the drag surface. */
+@media(max-width:899px),(max-height:539px){
+  body.in-run .game-wrap{width:min(100vw,62.5dvh)}
+  body.in-run .battle-field{height:100%}
+  body.in-run .battle-panel{display:block;inset:0;height:100%;padding:0;background:none;border:0;z-index:5;pointer-events:none}
+  .battle-panel .ritual-portrait{display:none}
+  .panel-controls{position:absolute;left:16px;right:16px;bottom:var(--bottom);padding:0;flex-direction:row;align-items:flex-end;gap:10px;pointer-events:none}
+  .panel-controls .weapon-status{padding:7px 8px;border:1px solid #a4c5b32b;border-radius:3px;background:#0c1b22b0;pointer-events:none}
+  .panel-controls .weapon-status strong{font-size:10px}
+  .panel-controls .weapon-status small{font-size:7px;margin-top:4px}
+  .panel-controls .weapon-status small:last-child{margin-top:5px;gap:12px}
+  .panel-controls .action-stack{flex-direction:column;gap:12px;pointer-events:none}
+  .panel-controls .spirit-button,.panel-controls .bomb-button{width:70px;height:70px;pointer-events:auto}
+  .panel-controls .spirit-button{border-radius:19px}
+  .panel-controls .bomb-button{border-radius:50%}
+  .panel-controls .spirit-button>span{font-size:22px}
+  .panel-controls .spirit-button strong,.panel-controls .bomb-button>strong{font-size:9px;margin-top:4px}
+  body:not(.playing) .battle-panel{display:none}
+  body.in-run .toast{bottom:calc(var(--bottom) + 172px)}
+}
+@media(max-width:899px) and (max-height:650px),(max-height:539px){
+  .panel-controls .spirit-button,.panel-controls .bomb-button{width:61px;height:61px}
+  .panel-controls .action-stack{gap:9px}
+  .panel-controls .spirit-button>span{font-size:19px}
+  .panel-controls .weapon-status{padding:6px}
+  .panel-controls .weapon-status strong{font-size:9px}
+  body.in-run .toast{bottom:calc(var(--bottom) + 149px)}
+}
 </style>
 </head>
 <body>
@@ -183,7 +211,7 @@ body.in-run .flight-hint{top:auto;bottom:18%;font-size:10px;letter-spacing:.5px}
       <span id="spell-announcer" class="visually-hidden" aria-live="polite"></span>
       <div id="overlay" class="overlay">
         <div class="menu-card">
-          <div class="edition"><span>SPIRITBOUND</span><span>妖夜行记 / 3.4</span></div>
+          <div class="edition"><span>SPIRITBOUND</span><span>妖夜行记 / 3.4.1</span></div>
           <div class="menu-intro">
             <button id="portrait-preview" class="hero-portrait" aria-label="查看御灵师全身立绘"><img id="hero-portrait" alt="" draggable="false"><span>查看立绘 ↗</span></button>
             <div class="intro-copy">
@@ -668,10 +696,26 @@ class FlightRenderer {
       c.restore();
     }
   }
-  render(g,view,time,{dragging=false}={}){
+  spellBackdrop(c,g,cutin){
+    const im=cutin?.image;
+    if(g.state!=='playing'||!im?.complete||!im.naturalWidth||!im.naturalHeight||!(cutin.opacity>0))return;
+    const opacity=Math.min(1,cutin.opacity),h=g.world.height,top=130,height=Math.min(h*.68,h-top-90),width=470;
+    const x=(cutin.side==='right'?35:-25)+(cutin.offset||0),ratio=Math.max(width/im.naturalWidth,height/im.naturalHeight);
+    c.save();
+    // Everything that can hit or be hit is painted after this background-only pass.
+    c.globalAlpha=opacity*.46;c.fillStyle='#07111c';c.fillRect(0,0,480,h);
+    c.beginPath();c.rect(0,top,480,height);c.clip();
+    c.globalAlpha=opacity*.52;c.drawImage(im,x+(width-im.naturalWidth*ratio)/2,top,im.naturalWidth*ratio,im.naturalHeight*ratio);
+    c.globalAlpha=opacity;
+    const fade=c.createLinearGradient(0,top+height*.62,0,top+height);fade.addColorStop(0,'#07111c00');fade.addColorStop(1,'#07111ce8');c.fillStyle=fade;c.fillRect(0,top,480,height);
+    c.globalAlpha=opacity*.78;c.fillStyle='#e7dfc7';c.font='500 28px "Songti SC",serif';c.textAlign=cutin.side==='right'?'right':'left';c.fillText(cutin.name,cutin.side==='right'?448:32,top+height-28);
+    c.restore();
+  }
+  render(g,view,time,{dragging=false,cutin=null}={}){
     const c=this.ctx,{scale,dpr,width,height}=view,h=g.world.height;c.setTransform(dpr,0,0,dpr,0,0);c.fillStyle='#0c1620';c.fillRect(0,0,width,height);c.save();c.scale(scale,scale);
     if(!this.reducedMotion&&g.state==='playing'&&g.shake>0)c.translate((this.random()-.5)*Math.min(4,g.shake),(this.random()-.5)*Math.min(4,g.shake));
     this.terrainPass(c,g,time);
+    this.spellBackdrop(c,g,cutin);
     if(g.state==='ready')for(let i=0;i<3;i++)this.enemy(c,{type:i?'fighter':'sweeper',x:90+i*150+Math.sin(time*.7+i)*23,y:(time*35+i*280)%(h+120)-60,seed:i,flash:0},g,time);
     else for(const e of g.enemies)this.enemy(c,e,g,time);
     for(const s of g.shots){
@@ -703,6 +747,7 @@ const flight$=id=>document.getElementById(id);
 const flightCanvas=flight$('game');
 const coarseFlight=matchMedia('(pointer:coarse)').matches;
 const flightReduced=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const flightWidePanel=matchMedia('(min-width:900px) and (min-height:540px)');
 let flightGame=new VerticalShooter(),flightView={width:390,height:844,scale:390/480,dpr:1};
 const flightDrag=new FlightDragControls(),flightSpirit=new SpiritHoldControls(),flightKeys=new Set();
 const flightRenderer=new FlightRenderer(flightCanvas,{reducedMotion:flightReduced});
@@ -774,6 +819,11 @@ function flightUpdateSpell(dt){
   if(flightGame.state!=='playing'){if(flightSpell.state)flightClearSpell();return;}
   if(!flightSpell.update(dt)){if(!flight$('spell-cutin').hidden)flightClearSpell();return;}
   const frame=flightSpell.frame;flight$('spell-cutin').style.opacity=String(frame.opacity);flight$('spell-cutin').style.transform=`translateX(${frame.offset}px)`;
+}
+function flightCanvasSpell(){
+  const state=flightSpell.state;
+  if(!state||flightWidePanel.matches)return null;
+  return {...flightSpell.frame,side:state.side,image:flightSpellWarm.get(state.weapon+':'+state.tier),name:SPELL_CARDS[state.weapon].name};
 }
 function flightClearInput(){
   flightClearSpell();
@@ -922,7 +972,7 @@ function flightFrame(now){
   if(flightBannerTime>0&&flightGame.state!=='paused'){flightBannerTime-=dt;if(flightBannerTime<=0){flight$('announcement').classList.remove('visible');flight$('announcement').hidden=true;}}
   if(flightToastTime>0){flightToastTime-=dt;if(flightToastTime<=0){flight$('toast').classList.remove('visible');flight$('toast').hidden=true;}}
   flightHudTime+=dt;if(flightHudTime>.08){flightUpdateHUD();flightHudTime=0;}
-  flightRenderer.render(flightGame,flightView,flightVisual,{dragging:flightDrag.id!==null||flightSpirit.active||flightKeys.has('ShiftLeft')||flightKeys.has('ShiftRight')});requestAnimationFrame(flightFrame);
+  flightRenderer.render(flightGame,flightView,flightVisual,{dragging:flightDrag.id!==null||flightSpirit.active||flightKeys.has('ShiftLeft')||flightKeys.has('ShiftRight'),cutin:flightCanvasSpell()});requestAnimationFrame(flightFrame);
 }
 flightShowHome();requestAnimationFrame(flightFrame);
 </script>
