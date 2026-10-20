@@ -92,27 +92,28 @@ body:not(.playing) .toast{top:calc(var(--top) + 65px);bottom:auto}
 
 /* Ultimate cut-ins follow the cast snapshot and never receive input. */
 .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
-.spell-cutin{position:absolute;z-index:5;top:24%;width:62%;height:clamp(220px,37dvh,330px);pointer-events:none!important;user-select:none;will-change:transform,opacity;isolation:isolate;opacity:0}
+.spell-cutin{position:absolute;z-index:4;top:max(112px,14%);bottom:calc(var(--bottom) + 154px);width:94%;pointer-events:none!important;user-select:none;will-change:transform,opacity;isolation:isolate;opacity:0}
 .spell-cutin[data-side=right]{right:0}.spell-cutin[data-side=left]{left:0}
 .spell-backplate{position:absolute;inset:9px 0 0;background:linear-gradient(135deg,#172a33c4,#10252dd9 55%,#0c1c23a3);border-top:1px solid color-mix(in srgb,var(--spell-color) 60%,transparent);border-bottom:1px solid color-mix(in srgb,var(--spell-color) 35%,transparent);box-shadow:0 0 35px #091b2466;z-index:-1}
 .spell-cutin[data-side=right] .spell-backplate{clip-path:polygon(23% 0,100% 0,100% 100%,0 92%);mask-image:linear-gradient(90deg,transparent,#000 35%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 35%)}
 .spell-cutin[data-side=left] .spell-backplate{clip-path:polygon(0 0,77% 0,100% 92%,0 100%);mask-image:linear-gradient(270deg,transparent,#000 35%);-webkit-mask-image:linear-gradient(270deg,transparent,#000 35%)}
-.spell-art{position:absolute;inset:-22px 0 auto;width:100%;height:calc(100% + 12px);object-fit:cover;object-position:center top;filter:drop-shadow(0 4px 8px #0005);pointer-events:none}
+.spell-art{position:absolute;inset:-24px 0 auto;width:100%;height:calc(100% + 24px);object-fit:cover;object-position:center top;filter:drop-shadow(0 4px 12px #0005);pointer-events:none}
 .spell-cutin[data-side=right] .spell-art{mask-image:linear-gradient(90deg,transparent,#000 25%);-webkit-mask-image:linear-gradient(90deg,transparent,#000 25%)}
 .spell-cutin[data-side=left] .spell-art{mask-image:linear-gradient(270deg,transparent,#000 25%);-webkit-mask-image:linear-gradient(270deg,transparent,#000 25%)}
-.spell-copy{position:absolute;bottom:0;left:0;right:0;padding:32px 15px 13px;background:linear-gradient(transparent,#0b1b23eb 45%);text-shadow:0 2px 6px #031018}
-.spell-cutin[data-side=right] .spell-copy{text-align:right;padding-left:40px}.spell-cutin[data-side=left] .spell-copy{text-align:left;padding-right:40px}
-.spell-copy>small{display:block;font:8px var(--sans);letter-spacing:1px;color:var(--spell-color)}
-.spell-copy>strong{display:block;font:600 28px/1.35 "Songti SC",serif;letter-spacing:3px;color:#f5ead0;margin:3px 0}
-.spell-copy>span{font:10px var(--sans);letter-spacing:1px;color:#e1dfc9}.spell-copy>p{font:9px/1.7 var(--sans);letter-spacing:.4px;color:#c3d9ce;margin:6px 0 0}
+.spell-copy{position:absolute;bottom:0;left:0;right:0;padding:46px 22px 20px;background:linear-gradient(transparent,#0b1b23eb 50%);text-shadow:0 2px 6px #031018}
+.spell-cutin[data-side=right] .spell-copy{text-align:right;padding-left:48px}.spell-cutin[data-side=left] .spell-copy{text-align:left;padding-right:48px}
+.spell-copy>small{display:block;font:10px var(--sans);letter-spacing:1.5px;color:var(--spell-color)}
+.spell-copy>strong{display:block;font:600 clamp(32px,5dvh,44px)/1.35 "Songti SC",serif;letter-spacing:4px;color:#f5ead0;margin:5px 0}
+.spell-copy>span{font:12px var(--sans);letter-spacing:1px;color:#e1dfc9}.spell-copy>p{font:11px/1.7 var(--sans);letter-spacing:.4px;color:#c3d9ce;margin:8px 0 0}
 .spell-cutin[data-health=wounded] .spell-copy>span{color:#f0c48f}.spell-cutin[data-health=critical] .spell-copy>span{color:#ffc0b9}.spell-cutin[data-health=critical] .spell-backplate{border-color:#f1a5aa70}
 .weapon-status .battle-face{display:flex;flex-direction:column;align-items:center;gap:3px;width:36px;flex:none}
 .battle-face img{display:block;width:36px;height:36px;object-fit:cover;border-radius:3px;border:1px solid #cce8d850}
 .weapon-status .battle-face small{display:block;font:7px/1.2 var(--sans);margin:0;color:#c6ddca;letter-spacing:1px}
 .battle-face[data-health=wounded] img{border-color:#e4b686}.weapon-status .battle-face[data-health=wounded] small{color:#edc29b}
 .battle-face[data-health=critical] img{border-color:#f0a5a1}.weapon-status .battle-face[data-health=critical] small{color:#ffc0b5}
-@media(max-height:650px){.spell-cutin{top:25%;height:220px;width:63%}.spell-copy{padding-bottom:10px}.spell-copy>strong{font-size:23px;letter-spacing:2px}.spell-copy>small{font-size:7px}.spell-copy>span{font-size:9px}.spell-copy>p{font-size:8px;margin-top:4px;letter-spacing:0}.weapon-status .battle-face{width:31px}.battle-face img{width:31px;height:31px}.weapon-status .battle-face small{font-size:6px}.weapon-status{gap:6px}}
-@media(max-height:520px){.spell-cutin{top:22%;height:190px}.spell-art{inset:-12px 0 auto}.spell-copy>strong{font-size:20px}.spell-copy>p{display:none}}
+.spirit-button>span{font-size:22px;letter-spacing:2px}
+@media(max-height:650px){.spell-cutin{top:104px;bottom:calc(var(--bottom) + 85px)}.spell-art{inset:-16px 0 auto;height:calc(100% + 16px)}.spell-copy{padding:36px 18px 14px}.spell-cutin[data-side=right] .spell-copy{padding-right:84px}.spell-copy>strong{font-size:31px;letter-spacing:2px}.spell-copy>small{font-size:8px}.spell-copy>span{font-size:10px}.spell-copy>p{font-size:9px;margin-top:5px;letter-spacing:0}.weapon-status .battle-face{width:31px}.battle-face img{width:31px;height:31px}.weapon-status .battle-face small{font-size:6px}.weapon-status{gap:6px}.spirit-button>span{font-size:19px}}
+@media(max-height:520px){.spell-cutin{top:96px;bottom:calc(var(--bottom) + 80px)}.spell-copy>strong{font-size:27px}.spell-copy>p{display:none}}
 </style>
 </head>
 <body>
@@ -135,14 +136,14 @@ body:not(.playing) .toast{top:calc(var(--top) + 65px);bottom:auto}
         <div class="spell-copy"><small id="spell-condition"></small><strong id="spell-name"></strong><span id="spell-character"></span><p id="spell-line"></p></div>
       </div>
       <span id="spell-announcer" class="visually-hidden" aria-live="polite"></span>
-      <div id="flight-hint" class="flight-hint" aria-hidden="true"><span>↔</span>单指拖动 · 双指按住召唤式神<small>贴近敌弹提高灵势 · 中央亮点是判定核心</small></div>
+      <div id="flight-hint" class="flight-hint" aria-hidden="true"><span>↔</span>拖动移动 · 按住「式神」近攻<small>松开恢复远攻 · 第二指按住战场也能召唤</small></div>
       <div class="battle-bottom">
         <div class="weapon-status"><div class="battle-face"><img id="battle-portrait" alt="" draggable="false"><small id="battle-health">从容</small></div><span id="weapon-letter" hidden>狐</span><div><strong id="weapon-name">赤羽 · 灵狐</strong><small>灵力 <b id="power-level">1</b><i id="power-pips"><em></em><em></em><em></em><em></em></i></small><small><span id="attack-state">灵符 · 远距</span><span>擦弹 <b id="graze-count">0</b></span></small></div></div>
-        <div class="action-stack"><button id="spirit-button" class="spirit-button" aria-label="按住召唤式神，移速降低；松开恢复灵符攻击" aria-pressed="false" disabled><span>契</span><strong id="spirit-label">按住式神</strong></button><button id="bomb-button" class="bomb-button" aria-label="解放结界，净化敌弹" disabled><span class="bomb-icon">✦</span><strong>大招 <b id="bomb-count">2</b></strong></button></div>
+        <div class="action-stack"><button id="spirit-button" class="spirit-button" aria-label="按住式神，切换近距离攻击并降低移速；松开恢复远距离灵符攻击" aria-pressed="false" disabled><span>式神</span><strong id="spirit-label">按住近攻</strong></button><button id="bomb-button" class="bomb-button" aria-label="解放结界，净化敌弹" disabled><span class="bomb-icon">✦</span><strong>大招 <b id="bomb-count">2</b></strong></button></div>
       </div>
       <div id="overlay" class="overlay">
         <div class="menu-card">
-          <div class="edition"><span>SPIRITBOUND</span><span>妖夜行记 / 3.3</span></div>
+          <div class="edition"><span>SPIRITBOUND</span><span>妖夜行记 / 3.3.1</span></div>
           <div class="menu-intro">
             <button id="portrait-preview" class="hero-portrait" aria-label="查看御灵师全身立绘"><img id="hero-portrait" alt="" draggable="false"><span>查看立绘 ↗</span></button>
             <div class="intro-copy">
@@ -160,7 +161,7 @@ body:not(.playing) .toast{top:calc(var(--top) + 65px);bottom:auto}
           <div id="result-stats" class="result-stats" hidden></div>
           <button id="start-button" class="primary-button"><span id="start-label">踏入妖夜</span><b>↗</b></button>
           <button id="home-button" class="secondary-button" hidden>返回结界</button>
-          <p id="overlay-hint" class="overlay-hint">单指拖动 · 双指式神 · ✦ 结界大招</p>
+          <p id="overlay-hint" class="overlay-hint">拖动移动 · 按住式神近攻 · ✦ 大招清弹</p>
           <div class="menu-bottom"><span>三重妖境 / 三位妖主</span><span>无需安装 · 随时再战</span></div>
         </div>
       </div>
@@ -754,7 +755,7 @@ flight$('normal-button').addEventListener('click',()=>{flightHard=false;flightHo
 flight$('hard-button').addEventListener('click',()=>{flightHard=true;flightHomeOptions();});
 function flightShowHome(){
   flightClearInput();flightRenderer.reset();flightGame=new VerticalShooter(Math.random,{height:flightView.height/flightView.scale});flightGame.player.weapon=flightWeapon;flightGame.state='ready';flightGame.events=[];flightAccumulator=0;document.body.classList.remove('playing','show-hint');
-  const overlay=flight$('overlay');overlay.hidden=false;overlay.className='overlay';flight$('overlay-kicker').textContent='SPIRITBOUND / 妖夜行记';flight$('overlay-title').innerHTML='夜渡<span>式契<span class="title-dot">印</span></span>';flight$('overlay-description').innerHTML='灵符开路，式神破阵。<br>在弹幕之间，借险成势。';flight$('overlay-hint').textContent='单指拖动 · 双指式神 · ✦ 结界大招';flight$('home-options').hidden=false;flight$('result-stats').hidden=true;flight$('home-button').hidden=true;flight$('start-label').textContent='踏入妖夜';flight$('pause-button').disabled=true;flight$('pause-button').setAttribute('aria-label','暂停游戏');flight$('pause-button').textContent='Ⅱ';flight$('announcement').classList.remove('visible');flight$('announcement').hidden=true;flight$('toast').classList.remove('visible');flight$('toast').hidden=true;flightHomeOptions();
+  const overlay=flight$('overlay');overlay.hidden=false;overlay.className='overlay';flight$('overlay-kicker').textContent='SPIRITBOUND / 妖夜行记';flight$('overlay-title').innerHTML='夜渡<span>式契<span class="title-dot">印</span></span>';flight$('overlay-description').innerHTML='灵符开路，式神破阵。<br>在弹幕之间，借险成势。';flight$('overlay-hint').textContent='拖动移动 · 按住式神近攻 · ✦ 大招清弹';flight$('home-options').hidden=false;flight$('result-stats').hidden=true;flight$('home-button').hidden=true;flight$('start-label').textContent='踏入妖夜';flight$('pause-button').disabled=true;flight$('pause-button').setAttribute('aria-label','暂停游戏');flight$('pause-button').textContent='Ⅱ';flight$('announcement').classList.remove('visible');flight$('announcement').hidden=true;flight$('toast').classList.remove('visible');flight$('toast').hidden=true;flightHomeOptions();
 }
 function flightStart(){
   if(coarseFlight&&innerWidth>innerHeight){flightRequestFullscreen();return;}
@@ -763,7 +764,7 @@ function flightStart(){
 function flightPause(){
   if(!flightGame.pause())return;
   flightClearInput();document.body.classList.remove('playing','show-hint');flight$('announcement').classList.remove('visible');flight$('announcement').hidden=true;flight$('toast').classList.remove('visible');flight$('toast').hidden=true;
-  flight$('overlay').hidden=false;flight$('overlay').className='overlay pause';flight$('overlay-kicker').textContent='THE NIGHT HOLDS STILL';flight$('overlay-title').innerHTML='暂歇<span>夜色，等你。</span>';flight$('overlay-description').textContent='结界内时间静止。准备好后，继续穿过妖夜。';flight$('overlay-hint').textContent='拖动移动 · 按住式神 / Shift · 结界 / 空格';flight$('home-options').hidden=true;flight$('result-stats').hidden=true;flight$('home-button').hidden=false;flight$('start-label').textContent='继续作战';flight$('pause-button').textContent='▷';flight$('pause-button').setAttribute('aria-label','继续游戏');
+  flight$('overlay').hidden=false;flight$('overlay').className='overlay pause';flight$('overlay-kicker').textContent='THE NIGHT HOLDS STILL';flight$('overlay-title').innerHTML='暂歇<span>夜色，等你。</span>';flight$('overlay-description').textContent='结界内时间静止。准备好后，继续穿过妖夜。';flight$('overlay-hint').textContent='按住式神 / Shift 近攻 · 松开远攻 · 空格大招';flight$('home-options').hidden=true;flight$('result-stats').hidden=true;flight$('home-button').hidden=false;flight$('start-label').textContent='继续作战';flight$('pause-button').textContent='▷';flight$('pause-button').setAttribute('aria-label','继续游戏');
 }
 function flightResume(){
   if(coarseFlight&&innerWidth>innerHeight){flightRequestFullscreen();return;}if(!flightGame.resume())return;
@@ -844,7 +845,7 @@ function flightUpdateHUD(){
   flight$('mission-name').textContent=`${String(g.stageIndex+1).padStart(2,'0')} / ${g.stage.name}`;flight$('mission-progress').style.width=`${g.progress*100}%`;
   flight$('chain-label').textContent=`灵势 ×${g.tension}`;flight$('chain-label').classList.toggle('max',g.tension===8);flight$('graze-count').textContent=g.grazes;
   const focus=p.spirit||flightInput().focus;flight$('spirit-button').disabled=g.state!=='playing'||g.phase==='clear';flight$('spirit-button').setAttribute('aria-pressed',String(focus));
-  flight$('spirit-label').textContent=focus?'召唤中':'按住式神';flight$('attack-state').textContent=focus?(g.spirit.targetIds.length?'式神锁定':'靠近妖灵锁定'):'灵符 · 远距';
+  flight$('spirit-label').textContent=focus?(g.spirit.targetIds.length?'锁定攻击':'靠近敌人'):'按住近攻';flight$('attack-state').textContent=focus?(g.spirit.targetIds.length?'式神锁定':'式神 · 无目标'):'灵符 · 远距';
   document.documentElement.style.setProperty('--weapon',w.color);flight$('weapon-letter').textContent=w.letter;flight$('weapon-name').textContent=w.name;flight$('power-level').textContent=p.power;[...flight$('power-pips').children].forEach((el,i)=>el.classList.toggle('active',i<p.power));
   flight$('bomb-count').textContent=p.bombs;flight$('bomb-button').disabled=g.state!=='playing'||p.bombs<=0||g.bombCooldown>0||g.phase==='clear';flight$('bomb-button').classList.toggle('cooling',g.bombCooldown>0);flight$('bomb-button').setAttribute('aria-label',`释放大招：结界解放，净化敌弹并攻击妖灵，剩余 ${p.bombs} 枚`);
   const boss=g.boss;flight$('boss-status').hidden=!boss||g.state==='ready';if(boss){flight$('boss-name').textContent=g.stage.boss+(boss.secondPhase?' / 解放':'');flight$('boss-hp').textContent=`${Math.ceil(boss.hp/boss.maxHp*100)}%`;flight$('boss-fill').style.width=`${Math.max(0,boss.hp/boss.maxHp)*100}%`;}
