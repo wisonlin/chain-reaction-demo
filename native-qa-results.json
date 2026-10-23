@@ -1,0 +1,286 @@
+{
+  "schema": 1,
+  "date": "2026-10-24",
+  "build": 2,
+  "passed": true,
+  "sharedRulesTests": 89,
+  "qaToolTests": 3,
+  "devices": [
+    {
+      "target": "iphone",
+      "passedTests": 7,
+      "failedTests": 0,
+      "result": "Passed"
+    },
+    {
+      "target": "ipad",
+      "passedTests": 7,
+      "failedTests": 0,
+      "result": "Passed"
+    }
+  ],
+  "cases": [
+    {
+      "name": "laser-audio",
+      "gate": {
+        "case": "laser-audio",
+        "passed": true,
+        "errors": [],
+        "playingSamples": 711,
+        "p95FrameIntervalMS": 16.66666683740914
+      },
+      "summary": {
+        "engineMS": {
+          "max": 4.691708367317915,
+          "mean": 0.9994253430400258,
+          "p50": 0.8946666494011879,
+          "p95": 2.0861250814050436
+        },
+        "eventsMS": {
+          "max": 3.447208320721984,
+          "mean": 0.018683773348875523,
+          "p50": 0.0003334134817123413,
+          "p95": 0.05541671998798847
+        },
+        "intervalMS": {
+          "max": 42.920000152662396,
+          "mean": 16.901078293396033,
+          "p50": 16.666666604578495,
+          "p95": 16.66666683740914
+        },
+        "observerMS": {
+          "max": 0.6882082670927048,
+          "mean": 0.03596466380458341,
+          "p50": 0.01666671596467495,
+          "p95": 0.1149582676589489
+        },
+        "playingSamples": 711,
+        "renderMS": {
+          "max": 10.61150012537837,
+          "mean": 0.2389968940713109,
+          "p50": 0.19191671162843704,
+          "p95": 0.4534584004431963
+        },
+        "residentMB": 269.828125,
+        "warmupSeconds": 2
+      },
+      "environment": {
+        "device": "Starborne QA iPhone",
+        "simulator": true,
+        "configuration": "Release",
+        "character": "lune",
+        "hard": false,
+        "muted": false,
+        "requestedDuration": 14,
+        "trace": false
+      }
+    },
+    {
+      "name": "homing-hard-audio",
+      "gate": {
+        "case": "homing-hard-audio",
+        "passed": true,
+        "errors": [],
+        "playingSamples": 712,
+        "p95FrameIntervalMS": 16.66666683740914
+      },
+      "summary": {
+        "engineMS": {
+          "max": 7.692541694268584,
+          "mean": 1.2513008576901525,
+          "p50": 1.170541625469923,
+          "p95": 2.293500117957592
+        },
+        "eventsMS": {
+          "max": 6.307499948889017,
+          "mean": 0.021879439924979645,
+          "p50": 0.00029173679649829865,
+          "p95": 0.08558342233300209
+        },
+        "intervalMS": {
+          "max": 43.57300000265241,
+          "mean": 16.877340823882836,
+          "p50": 16.666666604578495,
+          "p95": 16.66666683740914
+        },
+        "observerMS": {
+          "max": 1.6175000928342342,
+          "mean": 0.03842427591489774,
+          "p50": 0.01620827242732048,
+          "p95": 0.12450013309717178
+        },
+        "playingSamples": 712,
+        "renderMS": {
+          "max": 7.590041728690267,
+          "mean": 0.34522039199697924,
+          "p50": 0.31316676177084446,
+          "p95": 0.6382083520293236
+        },
+        "residentMB": 274.828125,
+        "warmupSeconds": 2
+      },
+      "environment": {
+        "device": "Starborne QA iPhone",
+        "simulator": true,
+        "configuration": "Release",
+        "character": "aster",
+        "hard": true,
+        "muted": false,
+        "requestedDuration": 16,
+        "trace": false
+      }
+    }
+  ],
+  "baseline": {
+    "date": "2026-10-24",
+    "description": "Release simulator, iPhone 17 Pro Max, same seed 42 and starting position; first 2 seconds excluded. Main-thread AVAudioPlayer playback vs muted control vs cached PCM scheduling. This is not a physical-device FPS guarantee.",
+    "sourceSHA256": "27215f98653c453dbf063bd323b2357aef3338094ffb9af811281a01e9b81491",
+    "cases": {
+      "audio": {
+        "summary": {
+          "engineMS": {
+            "max": 5.1167500205338,
+            "mean": 0.9263481989193095,
+            "p50": 0.7905417587608099,
+            "p95": 1.9770001526921988
+          },
+          "eventsMS": {
+            "max": 100.89616663753986,
+            "mean": 6.077393086090623,
+            "p50": 0.000250060111284256,
+            "p95": 26.005374966189265
+          },
+          "intervalMS": {
+            "max": 118.56000008992851,
+            "mean": 24.374577417047828,
+            "p50": 16.66666683740914,
+            "p95": 45.80887500196695
+          },
+          "observerMS": {
+            "max": 1.2903749011456966,
+            "mean": 0.043557376863385795,
+            "p50": 0.018875114619731903,
+            "p95": 0.1457498874515295
+          },
+          "playingSamples": 493,
+          "renderMS": {
+            "max": 7.026208331808448,
+            "mean": 0.2524054360823445,
+            "p50": 0.15783333219587803,
+            "p95": 0.6715417839586735
+          },
+          "residentMB": 363.015625,
+          "warmupSeconds": 2
+        },
+        "environment": {
+          "device": "Starborne QA iPhone",
+          "simulator": true,
+          "configuration": "Release",
+          "character": "lune",
+          "hard": false,
+          "muted": false,
+          "requestedDuration": 14,
+          "trace": false
+        }
+      },
+      "muted-control": {
+        "summary": {
+          "engineMS": {
+            "max": 4.589916672557592,
+            "mean": 0.9183900281005389,
+            "p50": 0.7397499866783619,
+            "p95": 1.9125831313431263
+          },
+          "eventsMS": {
+            "max": 3.4312084317207336,
+            "mean": 0.011128912048114763,
+            "p50": 0.00020838342607021332,
+            "p95": 0.005375128239393234
+          },
+          "intervalMS": {
+            "max": 40.35350005142391,
+            "mean": 16.80652680643997,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "observerMS": {
+            "max": 1.6126667615026236,
+            "mean": 0.035282108164229595,
+            "p50": 0.013416633009910583,
+            "p95": 0.13758335262537003
+          },
+          "playingSamples": 715,
+          "renderMS": {
+            "max": 9.081291733309627,
+            "mean": 0.21396742586593528,
+            "p50": 0.14991662465035915,
+            "p95": 0.41954172775149345
+          },
+          "residentMB": 355.140625,
+          "warmupSeconds": 2
+        },
+        "environment": {
+          "device": "Starborne QA iPhone",
+          "simulator": true,
+          "configuration": "Release",
+          "character": "lune",
+          "hard": false,
+          "muted": true,
+          "requestedDuration": 14,
+          "trace": false
+        }
+      },
+      "fixed-audio": {
+        "summary": {
+          "engineMS": {
+            "max": 6.998833501711488,
+            "mean": 0.8238208563051234,
+            "p50": 0.7047916296869516,
+            "p95": 1.8209998961538076
+          },
+          "eventsMS": {
+            "max": 2.5226667057722807,
+            "mean": 0.01340813567798774,
+            "p50": 0.00033318065106868744,
+            "p95": 0.04912493750452995
+          },
+          "intervalMS": {
+            "max": 43.11637510545552,
+            "mean": 16.97269303192737,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "observerMS": {
+            "max": 0.4667916800826788,
+            "mean": 0.02885675800985283,
+            "p50": 0.013124896213412285,
+            "p95": 0.10320823639631271
+          },
+          "playingSamples": 708,
+          "renderMS": {
+            "max": 7.652041735127568,
+            "mean": 0.1957304591555043,
+            "p50": 0.14229165390133858,
+            "p95": 0.4316249396651983
+          },
+          "residentMB": 370.421875,
+          "warmupSeconds": 2
+        },
+        "environment": {
+          "device": "Starborne QA iPhone",
+          "simulator": true,
+          "configuration": "Release",
+          "character": "lune",
+          "hard": false,
+          "muted": false,
+          "requestedDuration": 14,
+          "trace": false
+        }
+      }
+    }
+  },
+  "limitations": [
+    "All timing measurements are from Release simulator builds, not physical iPhone GPU or thermal measurements.",
+    "P95 frame interval is a scheduling measurement and is not a guarantee of displayed frame rate on every device."
+  ]
+}
