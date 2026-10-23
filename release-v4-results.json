@@ -1,0 +1,127 @@
+{
+  "version": "4.0",
+  "nativeBuild": 3,
+  "date": "2026-10-24",
+  "sharedTests": 95,
+  "qaToolTests": 3,
+  "nativeTests": [
+    {
+      "device": "iphone",
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "device": "ipad",
+      "passed": 9,
+      "failed": 0
+    }
+  ],
+  "performance": [
+    {
+      "case": "laser-audio",
+      "passed": true,
+      "samples": 713,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.2199166230857372,
+      "renderP95MS": 0.24766684509813786,
+      "eventsP95MS": 0.03054155968129635,
+      "musicAndSFX": true,
+      "startingPower": 1,
+      "startingStage": 1
+    },
+    {
+      "case": "homing-hard-audio",
+      "passed": true,
+      "samples": 830,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.9885834772139788,
+      "renderP95MS": 0.5813334137201309,
+      "eventsP95MS": 0.07045827805995941,
+      "musicAndSFX": true,
+      "startingPower": 1,
+      "startingStage": 1
+    },
+    {
+      "case": "max-spread-late-audio",
+      "passed": true,
+      "samples": 457,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 7.026291685178876,
+      "renderP95MS": 0.7400834001600742,
+      "eventsP95MS": 0.14491681940853596,
+      "musicAndSFX": true,
+      "startingPower": 6,
+      "startingStage": 3
+    },
+    {
+      "case": "max-homing-late-audio",
+      "passed": true,
+      "samples": 823,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 5.108874989673495,
+      "renderP95MS": 1.2007500045001507,
+      "eventsP95MS": 0.1041668001562357,
+      "musicAndSFX": true,
+      "startingPower": 6,
+      "startingStage": 3
+    }
+  ],
+  "audio": {
+    "voyage": {
+      "input_i": "-18.57",
+      "input_tp": "-8.05",
+      "input_lra": "2.00",
+      "input_thresh": "-28.57",
+      "output_i": "-18.94",
+      "output_tp": "-7.99",
+      "output_lra": "1.90",
+      "output_thresh": "-28.94",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.06"
+    },
+    "guardian": {
+      "input_i": "-18.17",
+      "input_tp": "-4.29",
+      "input_lra": "3.50",
+      "input_thresh": "-28.17",
+      "output_i": "-18.93",
+      "output_tp": "-4.25",
+      "output_lra": "3.50",
+      "output_thresh": "-28.93",
+      "normalization_type": "dynamic",
+      "target_offset": "-0.07"
+    }
+  },
+  "credits": {
+    "license": "CC0-1.0",
+    "sources": [
+      {
+        "title": "Hope (Orchestral battle music)",
+        "author": "MintoDog",
+        "url": "https://opengameart.org/content/hopeorchestral-battle-music",
+        "use": "voyage.m4a — normalized/transcoded complete loop"
+      },
+      {
+        "title": "Determined Pursuit",
+        "author": "Emma_MA",
+        "url": "https://opengameart.org/content/determined-pursuit-epic-orchestra-loop",
+        "use": "guardian.m4a — normalized/transcoded complete loop"
+      },
+      {
+        "title": "Sci-fi Sounds",
+        "author": "Kenney",
+        "url": "https://kenney.nl/assets/sci-fi-sounds",
+        "use": "short lasers, explosions, impact; filtering/resampling"
+      }
+    ],
+    "original": [
+      "pickup.wav",
+      "powerup.wav",
+      "heal.wav"
+    ]
+  },
+  "limitations": [
+    "Simulator measurements do not establish sustained physical-device performance.",
+    "Seeded bot runs are a balance diagnostic, not a human fun rating."
+  ]
+}
