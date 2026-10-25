@@ -1,0 +1,969 @@
+{
+  "date": "2026-10-25",
+  "webVersion": "7.0",
+  "nativeVersion": "4.0.0",
+  "build": 6,
+  "offlineSinglePlayer": true,
+  "regions": 3,
+  "places": 39,
+  "storyChapters": 3,
+  "sideQuests": 3,
+  "sharedTests": 136,
+  "nativeTests": [
+    {
+      "device": "iphone",
+      "passed": 19,
+      "failed": 0
+    },
+    {
+      "device": "ipad",
+      "passed": 19,
+      "failed": 0
+    }
+  ],
+  "performance": [
+    {
+      "case": "legacy-laser-audio",
+      "passed": true,
+      "samples": 704,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.321499865502119,
+      "renderP95MS": 0.40920847095549107,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "laser-audio",
+      "passed": true,
+      "samples": 709,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.249791519716382,
+      "renderP95MS": 0.39241649210453033,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "homing-hard-audio",
+      "passed": true,
+      "samples": 819,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.636583289131522,
+      "renderP95MS": 0.6031666416674852,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "max-spread-late-audio",
+      "passed": true,
+      "samples": 823,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.1673749908804893,
+      "renderP95MS": 0.4569999873638153,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "max-homing-late-audio",
+      "passed": true,
+      "samples": 826,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.787125064060092,
+      "renderP95MS": 0.6053333636373281,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "max-collection-audio",
+      "passed": true,
+      "samples": 827,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.05758323520422,
+      "renderP95MS": 0.4342915490269661,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "world-haven-audio",
+      "passed": true,
+      "samples": 718,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.3917915057390928,
+      "renderP95MS": 0.5592918023467064,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "encounter-haven-audio",
+      "passed": true,
+      "samples": 705,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.273083198815584,
+      "renderP95MS": 0.4542083479464054,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "world-lagoon-audio",
+      "passed": true,
+      "samples": 716,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.4031250029802322,
+      "renderP95MS": 0.5857916548848152,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "encounter-lagoon-audio",
+      "passed": true,
+      "samples": 707,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.3575001396238804,
+      "renderP95MS": 0.482083298265934,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "world-ruins-audio",
+      "passed": true,
+      "samples": 716,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.4591666404157877,
+      "renderP95MS": 0.6069168448448181,
+      "soundAndMusicEnabled": true
+    },
+    {
+      "case": "encounter-ruins-audio",
+      "passed": true,
+      "samples": 712,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.692083129659295,
+      "renderP95MS": 0.5102083086967468,
+      "soundAndMusicEnabled": true
+    }
+  ],
+  "automatedPlay": {
+    "note": "Seeded automated play with Lv.1 starter equipment, normal lives and limited ultimates. A regression diagnostic, not human win rate or fun rating.",
+    "runs": [
+      {
+        "seed": 42,
+        "character": "ember",
+        "region": "haven",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 1,
+        "assists": 4,
+        "blessings": [
+          "graze"
+        ],
+        "weapon": "spread",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 0,
+        "maxTension": 4,
+        "spiritKills": 18,
+        "won": true,
+        "state": "over",
+        "stage": 1,
+        "seconds": 28,
+        "score": 46888,
+        "kills": 34,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.58,
+        "firstPower": 0.27,
+        "maxBullets": 40,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "lune",
+        "region": "haven",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 2,
+        "assists": 5,
+        "blessings": [
+          "resonance"
+        ],
+        "weapon": "laser",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 3,
+        "maxTension": 8,
+        "spiritKills": 17,
+        "won": true,
+        "state": "over",
+        "stage": 1,
+        "seconds": 27.4,
+        "score": 43473,
+        "kills": 34,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.35,
+        "firstPower": 0.27,
+        "maxBullets": 38,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "nerine",
+        "region": "haven",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 3,
+        "assists": 5,
+        "blessings": [
+          "chain"
+        ],
+        "weapon": "homing",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 0,
+        "maxTension": 4,
+        "spiritKills": 4,
+        "won": true,
+        "state": "over",
+        "stage": 1,
+        "seconds": 27.5,
+        "score": 40134,
+        "kills": 34,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.73,
+        "firstPower": 0.25,
+        "maxBullets": 34,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "sol",
+        "region": "haven",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 2,
+        "assists": 5,
+        "blessings": [
+          "graze"
+        ],
+        "weapon": "spread",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 0,
+        "maxTension": 2,
+        "spiritKills": 17,
+        "won": true,
+        "state": "over",
+        "stage": 1,
+        "seconds": 27.7,
+        "score": 46969,
+        "kills": 34,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.58,
+        "firstPower": 0.27,
+        "maxBullets": 39,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "vesper",
+        "region": "haven",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 2,
+        "assists": 5,
+        "blessings": [
+          "resonance"
+        ],
+        "weapon": "laser",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 0,
+        "maxTension": 2,
+        "spiritKills": 15,
+        "won": true,
+        "state": "over",
+        "stage": 1,
+        "seconds": 27.3,
+        "score": 41181,
+        "kills": 33,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.35,
+        "firstPower": 0.27,
+        "maxBullets": 32,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "aster",
+        "region": "haven",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 0,
+        "assists": 5,
+        "blessings": [
+          "resonance"
+        ],
+        "weapon": "homing",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 0,
+        "maxTension": 4,
+        "spiritKills": 6,
+        "won": true,
+        "state": "over",
+        "stage": 1,
+        "seconds": 28,
+        "score": 40422,
+        "kills": 33,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.73,
+        "firstPower": 0.27,
+        "maxBullets": 34,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "ember",
+        "region": "lagoon",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 3,
+        "assists": 6,
+        "blessings": [
+          "graze"
+        ],
+        "weapon": "spread",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 6,
+        "maxTension": 8,
+        "spiritKills": 21,
+        "won": true,
+        "state": "over",
+        "stage": 2,
+        "seconds": 34.2,
+        "score": 65623,
+        "kills": 48,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.58,
+        "firstPower": 0.27,
+        "maxBullets": 77,
+        "maxEnemies": 11,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "lune",
+        "region": "lagoon",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 2,
+        "assists": 5,
+        "blessings": [
+          "chain"
+        ],
+        "weapon": "laser",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 2,
+        "maxTension": 8,
+        "spiritKills": 23,
+        "won": true,
+        "state": "over",
+        "stage": 2,
+        "seconds": 31.8,
+        "score": 53570,
+        "kills": 44,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.35,
+        "firstPower": 0.27,
+        "maxBullets": 69,
+        "maxEnemies": 12,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "nerine",
+        "region": "lagoon",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 1,
+        "assists": 5,
+        "blessings": [
+          "surge"
+        ],
+        "weapon": "homing",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 2,
+        "maxTension": 6,
+        "spiritKills": 7,
+        "won": true,
+        "state": "over",
+        "stage": 2,
+        "seconds": 32.4,
+        "score": 43944,
+        "kills": 45,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.73,
+        "firstPower": 0.25,
+        "maxBullets": 68,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "sol",
+        "region": "lagoon",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 3,
+        "assists": 6,
+        "blessings": [
+          "graze"
+        ],
+        "weapon": "spread",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 10,
+        "maxTension": 8,
+        "spiritKills": 21,
+        "won": true,
+        "state": "over",
+        "stage": 2,
+        "seconds": 33.8,
+        "score": 67491,
+        "kills": 48,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.58,
+        "firstPower": 0.27,
+        "maxBullets": 77,
+        "maxEnemies": 11,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "vesper",
+        "region": "lagoon",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 2,
+        "assists": 5,
+        "blessings": [
+          "chain"
+        ],
+        "weapon": "laser",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 4,
+        "maxTension": 8,
+        "spiritKills": 24,
+        "won": true,
+        "state": "over",
+        "stage": 2,
+        "seconds": 31.4,
+        "score": 49576,
+        "kills": 45,
+        "lives": 2,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.35,
+        "firstPower": 0.27,
+        "maxBullets": 93,
+        "maxEnemies": 14,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "aster",
+        "region": "lagoon",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 0,
+        "assists": 5,
+        "blessings": [
+          "graze"
+        ],
+        "weapon": "homing",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 3,
+        "maxTension": 8,
+        "spiritKills": 5,
+        "won": true,
+        "state": "over",
+        "stage": 2,
+        "seconds": 32.7,
+        "score": 46214,
+        "kills": 45,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.73,
+        "firstPower": 0.27,
+        "maxBullets": 67,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "ember",
+        "region": "ruins",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 6,
+        "assists": 7,
+        "blessings": [
+          "graze"
+        ],
+        "weapon": "spread",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 5,
+        "maxTension": 8,
+        "spiritKills": 35,
+        "won": true,
+        "state": "over",
+        "stage": 3,
+        "seconds": 40.2,
+        "score": 81743,
+        "kills": 70,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.7,
+        "firstPower": 0.27,
+        "maxBullets": 69,
+        "maxEnemies": 11,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "lune",
+        "region": "ruins",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 4,
+        "assists": 6,
+        "blessings": [
+          "chain"
+        ],
+        "weapon": "laser",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 4,
+        "maxTension": 8,
+        "spiritKills": 31,
+        "won": true,
+        "state": "over",
+        "stage": 3,
+        "seconds": 36.3,
+        "score": 95594,
+        "kills": 69,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 2,
+        "firstKill": 1.35,
+        "firstPower": 0.27,
+        "maxBullets": 79,
+        "maxEnemies": 13,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "nerine",
+        "region": "ruins",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 2,
+        "assists": 7,
+        "blessings": [
+          "surge"
+        ],
+        "weapon": "homing",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 4,
+        "maxTension": 8,
+        "spiritKills": 12,
+        "won": true,
+        "state": "over",
+        "stage": 3,
+        "seconds": 36.9,
+        "score": 66888,
+        "kills": 72,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 2,
+        "firstKill": 1.73,
+        "firstPower": 0.25,
+        "maxBullets": 68,
+        "maxEnemies": 10,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "sol",
+        "region": "ruins",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 5,
+        "assists": 7,
+        "blessings": [
+          "resonance"
+        ],
+        "weapon": "spread",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 3,
+        "maxTension": 8,
+        "spiritKills": 39,
+        "won": true,
+        "state": "over",
+        "stage": 3,
+        "seconds": 39.4,
+        "score": 83764,
+        "kills": 68,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.7,
+        "firstPower": 0.27,
+        "maxBullets": 69,
+        "maxEnemies": 12,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "vesper",
+        "region": "ruins",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 4,
+        "assists": 6,
+        "blessings": [
+          "graze"
+        ],
+        "weapon": "laser",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 3,
+        "maxTension": 8,
+        "spiritKills": 39,
+        "won": true,
+        "state": "over",
+        "stage": 3,
+        "seconds": 35.8,
+        "score": 107366,
+        "kills": 67,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 2,
+        "firstKill": 1.35,
+        "firstPower": 0.27,
+        "maxBullets": 85,
+        "maxEnemies": 14,
+        "bossHp": 0
+      },
+      {
+        "seed": 42,
+        "character": "aster",
+        "region": "ruins",
+        "trial": "voyage",
+        "hard": false,
+        "choices": 1,
+        "reactions": 0,
+        "assists": 7,
+        "blessings": [
+          "resonance"
+        ],
+        "weapon": "homing",
+        "height": 1000,
+        "strategy": "forward",
+        "grazes": 2,
+        "maxTension": 8,
+        "spiritKills": 9,
+        "won": true,
+        "state": "over",
+        "stage": 3,
+        "seconds": 37.3,
+        "score": 66836,
+        "kills": 71,
+        "lives": 3,
+        "power": 6,
+        "bombsUsed": 1,
+        "firstKill": 1.73,
+        "firstPower": 0.27,
+        "maxBullets": 57,
+        "maxEnemies": 10,
+        "bossHp": 0
+      }
+    ]
+  },
+  "limitations": [
+    "This prototype is portrait overhead regional exploration.",
+    "Simulator measurements do not establish physical-device GPU, thermal or battery behavior.",
+    "Local saves have no cloud synchronization."
+  ],
+  "comparison": {
+    "date": "2026-10-25",
+    "configuration": "Release",
+    "simulator": true,
+    "soundAndMusicEnabled": true,
+    "seed": 42,
+    "comparisonScene": {
+      "character": "lune",
+      "legacy": true,
+      "durationSeconds": 14,
+      "input": "stationary"
+    },
+    "results": {
+      "before-v6": {
+        "summary": {
+          "playingSamples": 707,
+          "warmupSeconds": 2,
+          "intervalMS": {
+            "max": 89.47712485678494,
+            "mean": 16.9966996702085,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "engineMS": {
+            "max": 6.708708358928561,
+            "mean": 0.9736909529080949,
+            "p50": 0.757874920964241,
+            "p95": 2.3169168271124363
+          },
+          "eventsMS": {
+            "max": 5.973875056952238,
+            "mean": 0.022420730465519883,
+            "p50": 0.003041699528694153,
+            "p95": 0.05479156970977783
+          },
+          "renderMS": {
+            "max": 9.565708227455616,
+            "mean": 0.21316643107466432,
+            "p50": 0.15454157255589962,
+            "p95": 0.448041595518589
+          },
+          "observerMS": {
+            "max": 1.8337499350309372,
+            "mean": 0.04622059290678026,
+            "p50": 0.01904158852994442,
+            "p95": 0.14833337627351284
+          },
+          "residentMB": 279.03125
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 707,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      },
+      "after-v7": {
+        "summary": {
+          "playingSamples": 707,
+          "warmupSeconds": 2,
+          "intervalMS": {
+            "max": 42.72933327592909,
+            "mean": 16.996699669879177,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "engineMS": {
+            "max": 7.090083323419094,
+            "mean": 1.0035567563896552,
+            "p50": 0.7899166084825993,
+            "p95": 2.684124978259206
+          },
+          "eventsMS": {
+            "max": 4.7420416958630085,
+            "mean": 0.02622883931550565,
+            "p50": 0.0031248200684785843,
+            "p95": 0.05670823156833649
+          },
+          "renderMS": {
+            "max": 8.465958293527365,
+            "mean": 0.22684771875828463,
+            "p50": 0.15999982133507729,
+            "p95": 0.46145846135914326
+          },
+          "observerMS": {
+            "max": 0.8165000472217798,
+            "mean": 0.043315235973247546,
+            "p50": 0.018458347767591476,
+            "p95": 0.18274993635714054
+          },
+          "residentMB": 280.9375
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 707,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      },
+      "polished-world-haven": {
+        "summary": {
+          "playingSamples": 716,
+          "warmupSeconds": 2,
+          "intervalMS": {
+            "max": 37.59287507273257,
+            "mean": 16.78305400363768,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "engineMS": {
+            "max": 4.311166703701019,
+            "mean": 0.6189416309001767,
+            "p50": 0.46500004827976227,
+            "p95": 1.5031665097922087
+          },
+          "eventsMS": {
+            "max": 0,
+            "mean": 0,
+            "p50": 0,
+            "p95": 0
+          },
+          "renderMS": {
+            "max": 5.277666728943586,
+            "mean": 0.2637702471566225,
+            "p50": 0.17891661264002323,
+            "p95": 0.6515416316688061
+          },
+          "observerMS": {
+            "max": 4.851666744798422,
+            "mean": 0.025102946069611852,
+            "p50": 4.1676685214042664e-05,
+            "p95": 0.12195832096040249
+          },
+          "residentMB": 306.015625
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 716,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      },
+      "polished-world-lagoon": {
+        "summary": {
+          "playingSamples": 716,
+          "warmupSeconds": 2,
+          "intervalMS": {
+            "max": 40.71387485601008,
+            "mean": 16.78305400363768,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "engineMS": {
+            "max": 4.882833221927285,
+            "mean": 0.7055523215439274,
+            "p50": 0.5028331652283669,
+            "p95": 1.704041613265872
+          },
+          "eventsMS": {
+            "max": 0,
+            "mean": 0,
+            "p50": 0,
+            "p95": 0
+          },
+          "renderMS": {
+            "max": 3.5155415534973145,
+            "mean": 0.3029537941953532,
+            "p50": 0.18758326768875122,
+            "p95": 0.7604584097862244
+          },
+          "observerMS": {
+            "max": 2.323874970898032,
+            "mean": 0.029296554070923415,
+            "p50": 4.1676685214042664e-05,
+            "p95": 0.13758335262537003
+          },
+          "residentMB": 297.3125
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 716,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      },
+      "polished-world-ruins": {
+        "summary": {
+          "playingSamples": 718,
+          "warmupSeconds": 2,
+          "intervalMS": {
+            "max": 36.03904158808291,
+            "mean": 16.73630454958855,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "engineMS": {
+            "max": 4.716083407402039,
+            "mean": 0.5691596449542179,
+            "p50": 0.4600833635777235,
+            "p95": 1.2200833298265934
+          },
+          "eventsMS": {
+            "max": 0,
+            "mean": 0,
+            "p50": 0,
+            "p95": 0
+          },
+          "renderMS": {
+            "max": 3.9290417917072773,
+            "mean": 0.27743001107883986,
+            "p50": 0.1821666955947876,
+            "p95": 0.7297082338482141
+          },
+          "observerMS": {
+            "max": 2.233916660770774,
+            "mean": 0.02290697542634017,
+            "p50": 4.1676685214042664e-05,
+            "p95": 0.11424999684095383
+          },
+          "residentMB": 300.34375
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 718,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      }
+    },
+    "limitations": "Simulator measurements do not establish physical-device GPU, thermal or battery performance."
+  }
+}
