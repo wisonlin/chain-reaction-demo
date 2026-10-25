@@ -1,0 +1,244 @@
+{
+  "webVersion": "6.0",
+  "nativeVersion": "3.0.0",
+  "build": 5,
+  "date": "2026-10-25",
+  "offlineSinglePlayer": true,
+  "sharedTests": 123,
+  "nativeTests": [
+    {
+      "device": "iphone",
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "device": "ipad",
+      "passed": 15,
+      "failed": 0
+    }
+  ],
+  "performance": [
+    {
+      "case": "legacy-laser-audio",
+      "passed": true,
+      "samples": 707,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.927833305671811,
+      "eventsP95MS": 0.05391659215092659,
+      "renderP95MS": 0.37670833989977837,
+      "musicAndSound": true
+    },
+    {
+      "case": "laser-audio",
+      "passed": true,
+      "samples": 718,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.345666591078043,
+      "eventsP95MS": 0.04020822234451771,
+      "renderP95MS": 0.3223333042114973,
+      "musicAndSound": true
+    },
+    {
+      "case": "homing-hard-audio",
+      "passed": true,
+      "samples": 829,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.690041670575738,
+      "eventsP95MS": 0.07916660979390144,
+      "renderP95MS": 0.6395000964403152,
+      "musicAndSound": true
+    },
+    {
+      "case": "max-spread-late-audio",
+      "passed": true,
+      "samples": 829,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.0792916659265757,
+      "eventsP95MS": 0.11679180897772312,
+      "renderP95MS": 0.43895840644836426,
+      "musicAndSound": true
+    },
+    {
+      "case": "max-homing-late-audio",
+      "passed": true,
+      "samples": 831,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 4.241708433255553,
+      "eventsP95MS": 0.07454166188836098,
+      "renderP95MS": 0.7299582939594984,
+      "musicAndSound": true
+    },
+    {
+      "case": "max-collection-audio",
+      "passed": true,
+      "samples": 821,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 4.657583311200142,
+      "eventsP95MS": 0.10929163545370102,
+      "renderP95MS": 0.49754162319004536,
+      "musicAndSound": true
+    }
+  ],
+  "collection": {
+    "heroes": 6,
+    "fourStarHeroes": 3,
+    "fiveStarHeroes": 3,
+    "weapons": 12,
+    "signatureWeapons": 6,
+    "skins": 2,
+    "maxLevel": 60,
+    "maxConstellation": 6,
+    "maxRefinement": 5,
+    "wishBaseFiveStarRate": 0.05,
+    "wishHardPity": 30
+  },
+  "limitations": [
+    "Simulator results do not establish physical-device GPU, thermal or battery behavior.",
+    "All progression is local to an installation, with no cloud synchronization."
+  ],
+  "comparison": {
+    "date": "2026-10-25",
+    "configuration": "Release",
+    "simulator": true,
+    "soundAndMusicEnabled": true,
+    "seed": 42,
+    "comparisonScene": {
+      "character": "lune",
+      "legacy": true,
+      "durationSeconds": 14,
+      "input": "stationary"
+    },
+    "results": {
+      "before-v5": {
+        "summary": {
+          "engineMS": {
+            "max": 5.067041609436274,
+            "mean": 1.0624681687237456,
+            "p50": 0.7735833059996367,
+            "p95": 2.784749958664179
+          },
+          "eventsMS": {
+            "max": 3.0214167200028896,
+            "mean": 0.01906767759378479,
+            "p50": 0.0022498425096273422,
+            "p95": 0.05183345638215542
+          },
+          "intervalMS": {
+            "max": 41.00574995391071,
+            "mean": 16.78305400363768,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "observerMS": {
+            "max": 1.6363749746233225,
+            "mean": 0.045837233215050156,
+            "p50": 0.01904158852994442,
+            "p95": 0.13341684825718403
+          },
+          "playingSamples": 716,
+          "renderMS": {
+            "max": 8.184458361938596,
+            "mean": 0.21983484878053877,
+            "p50": 0.1521250233054161,
+            "p95": 0.5199583247303963
+          },
+          "residentMB": 279.515625,
+          "warmupSeconds": 2
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 716,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      },
+      "after-v6": {
+        "summary": {
+          "engineMS": {
+            "max": 7.3437916580587626,
+            "mean": 1.0649744353594708,
+            "p50": 0.7300833240151405,
+            "p95": 3.113416489213705
+          },
+          "eventsMS": {
+            "max": 5.558000179007649,
+            "mean": 0.0223591326038407,
+            "p50": 0.002500135451555252,
+            "p95": 0.06191665306687355
+          },
+          "intervalMS": {
+            "max": 43.779416708275676,
+            "mean": 16.9487541136877,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "observerMS": {
+            "max": 1.0317082051187754,
+            "mean": 0.037760758176130706,
+            "p50": 0.017916550859808922,
+            "p95": 0.12995838187634945
+          },
+          "playingSamples": 709,
+          "renderMS": {
+            "max": 13.150000013411045,
+            "mean": 0.20807199423137018,
+            "p50": 0.12929178774356842,
+            "p95": 0.45983330346643925
+          },
+          "residentMB": 282.125,
+          "warmupSeconds": 2
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 709,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      },
+      "polished-max-collection": {
+        "summary": {
+          "engineMS": {
+            "max": 8.112916722893715,
+            "mean": 1.9891558455163838,
+            "p50": 1.7739583272486925,
+            "p95": 3.7461251486092806
+          },
+          "eventsMS": {
+            "max": 2.6391667779535055,
+            "mean": 0.020679802091675248,
+            "p50": 0.002541579306125641,
+            "p95": 0.09516673162579536
+          },
+          "intervalMS": {
+            "max": 44.69933337531984,
+            "mean": 16.928341384788137,
+            "p50": 16.666666604578495,
+            "p95": 16.66666683740914
+          },
+          "observerMS": {
+            "max": 0.2417915966361761,
+            "mean": 0.027918727823267667,
+            "p50": 0.015583354979753494,
+            "p95": 0.09600003249943256
+          },
+          "playingSamples": 828,
+          "renderMS": {
+            "max": 7.4067499954253435,
+            "mean": 0.2590750359844614,
+            "p50": 0.23583346046507359,
+            "p95": 0.4395416472107172
+          },
+          "residentMB": 293.53125,
+          "warmupSeconds": 2
+        },
+        "gate": {
+          "passed": true,
+          "errors": [],
+          "playingSamples": 828,
+          "p95FrameIntervalMS": 16.66666683740914
+        }
+      }
+    },
+    "limitations": "Simulator measurements do not establish physical-device GPU, thermal or battery performance."
+  }
+}
