@@ -1,0 +1,305 @@
+{
+  "webVersion": "7.2",
+  "nativeVersion": "4.0.0",
+  "build": 8,
+  "offlineSinglePlayer": true,
+  "sharedTests": 145,
+  "nativeTests": [
+    {
+      "device": "iphone",
+      "passed": 23,
+      "failed": 0
+    },
+    {
+      "device": "ipad",
+      "passed": 23,
+      "failed": 0
+    }
+  ],
+  "performance": [
+    {
+      "case": "legacy-laser-audio",
+      "passed": true
+    },
+    {
+      "case": "laser-audio",
+      "passed": true
+    },
+    {
+      "case": "homing-hard-audio",
+      "passed": true
+    },
+    {
+      "case": "max-spread-late-audio",
+      "passed": true
+    },
+    {
+      "case": "max-homing-late-audio",
+      "passed": true
+    },
+    {
+      "case": "max-collection-audio",
+      "passed": true
+    },
+    {
+      "case": "world-haven-audio",
+      "passed": true
+    },
+    {
+      "case": "encounter-haven-audio",
+      "passed": true
+    },
+    {
+      "case": "world-lagoon-audio",
+      "passed": true
+    },
+    {
+      "case": "encounter-lagoon-audio",
+      "passed": true
+    },
+    {
+      "case": "world-ruins-audio",
+      "passed": true
+    },
+    {
+      "case": "encounter-ruins-audio",
+      "passed": true
+    },
+    {
+      "case": "rescue-laser-audio",
+      "passed": true
+    }
+  ],
+  "comparison": {
+    "configuration": "Release",
+    "seed": 42,
+    "soundAndMusicEnabled": true,
+    "identicalSceneInputs": true,
+    "simulator": true,
+    "baseline": "Retained measurements from shipped Web 7.1 / native build 7; all twelve matching original scenes. New rescue scene has a separate gate.",
+    "results": {
+      "before-legacy-laser-audio": {
+        "passed": true,
+        "samples": 706,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.785124884918332,
+        "renderP95MS": 0.4057500045746565,
+        "observerP95MS": 0.13283337466418743,
+        "measurementSHA256": "af559bcc5df9f2228215e30647c71b2464896c4e5f3000734513727665378437"
+      },
+      "after-legacy-laser-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.395249903202057,
+        "renderP95MS": 0.600041588768363,
+        "observerP95MS": 0.1565832644701004,
+        "measurementSHA256": "8b23d68f265c7f596b77e64d6bb48ad2179b9d3c1f68e7beadc3871b99f99dc7"
+      },
+      "before-laser-audio": {
+        "passed": true,
+        "samples": 708,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.168708248063922,
+        "renderP95MS": 0.4085833206772804,
+        "observerP95MS": 0.11262507177889347,
+        "measurementSHA256": "e82089f119fd6046eaad8506d4654decbc8bb07554cd55f447f21174d40a8977"
+      },
+      "after-laser-audio": {
+        "passed": true,
+        "samples": 713,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.414458431303501,
+        "renderP95MS": 0.7175416685640812,
+        "observerP95MS": 0.14450005255639553,
+        "measurementSHA256": "caf9636c340f1328c3aaa060097aa6e18d93f9a2e2673c55d96c26f886063900"
+      },
+      "before-homing-hard-audio": {
+        "passed": true,
+        "samples": 820,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.6226667687296867,
+        "renderP95MS": 0.665291678160429,
+        "observerP95MS": 0.13120844960212708,
+        "measurementSHA256": "e3517f8a906a355c69a501236722612a98b74272ba96c0bc53214f3507d2b07e"
+      },
+      "after-homing-hard-audio": {
+        "passed": true,
+        "samples": 829,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.3534583635628223,
+        "renderP95MS": 0.8476248476654291,
+        "observerP95MS": 0.14825002290308475,
+        "measurementSHA256": "95d75c28e38fc9c4a93046acd642886bf6a7d87c3cdfe0fb7bfa467f8f6788e1"
+      },
+      "before-max-spread-late-audio": {
+        "passed": true,
+        "samples": 824,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.025125013664365,
+        "renderP95MS": 0.4232083447277546,
+        "observerP95MS": 0.11170818470418453,
+        "measurementSHA256": "69ee56383b194e99f5685ae9e882c073dcdc2a3988da99ac034a3e37e317a516"
+      },
+      "after-max-spread-late-audio": {
+        "passed": true,
+        "samples": 824,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.725166665390134,
+        "renderP95MS": 0.4392499104142189,
+        "observerP95MS": 0.09708339348435402,
+        "measurementSHA256": "0a13a1165c71ae67c4e97bd586fb2c0cbebd002d13c6c63d44d7b1a51c183ffd"
+      },
+      "before-max-homing-late-audio": {
+        "passed": true,
+        "samples": 825,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.967541804537177,
+        "renderP95MS": 0.6176249589771032,
+        "observerP95MS": 0.12350012548267841,
+        "measurementSHA256": "cd4b33bc096348d101be73ca7c751c8ac05096868067cc992755cc92a9070991"
+      },
+      "after-max-homing-late-audio": {
+        "passed": true,
+        "samples": 831,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.896833397448063,
+        "renderP95MS": 0.6375000812113285,
+        "observerP95MS": 0.09729177691042423,
+        "measurementSHA256": "c3145d8ace168d5a76eaa75d64b99443383c8c0fbb315b6fa529503bb57a05b6"
+      },
+      "before-max-collection-audio": {
+        "passed": true,
+        "samples": 824,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.773083444684744,
+        "renderP95MS": 0.4658750258386135,
+        "observerP95MS": 0.108000123873353,
+        "measurementSHA256": "26e96c5a361f86039544ea6047384a8115c2b44d8c90de50ad6b58ccb7f29fac"
+      },
+      "after-max-collection-audio": {
+        "passed": true,
+        "samples": 828,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.8484581746160984,
+        "renderP95MS": 0.4123335238546133,
+        "observerP95MS": 0.09645824320614338,
+        "measurementSHA256": "8958cf51a1936fc3e20f4ae66aeb85045accc6203e7eab70281bc5f73b047715"
+      },
+      "before-world-haven-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.5610000118613243,
+        "renderP95MS": 0.5614999681711197,
+        "observerP95MS": 0.09474996477365494,
+        "measurementSHA256": "c8abccaf1a624cd70819dbe7371fbea0fcef8d7fbc2d44c44b4b262a41a2d31f"
+      },
+      "after-world-haven-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.0145834423601627,
+        "renderP95MS": 0.912083312869072,
+        "observerP95MS": 0.09874999523162842,
+        "measurementSHA256": "bdaf2be761cbe2e1d2face7252bf36394b8c87db45df21253af8dd4544be4d59"
+      },
+      "before-encounter-haven-audio": {
+        "passed": true,
+        "samples": 708,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.5002083275467157,
+        "renderP95MS": 0.4882500506937504,
+        "observerP95MS": 0.1455000601708889,
+        "measurementSHA256": "22fef77244f04f59d03d760222cd81e682b2293a09e92de90a1dcdd255e332e4"
+      },
+      "after-encounter-haven-audio": {
+        "passed": true,
+        "samples": 715,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.807333366945386,
+        "renderP95MS": 0.728958286345005,
+        "observerP95MS": 0.14608330093324184,
+        "measurementSHA256": "a45a7f268baa411a957a3a6b3df7849bd88160f5fd2ff635522da2843540e9c4"
+      },
+      "before-world-lagoon-audio": {
+        "passed": true,
+        "samples": 714,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.7446251586079597,
+        "renderP95MS": 0.9307083673775196,
+        "observerP95MS": 0.1129999291151762,
+        "measurementSHA256": "b3cd8328b8883e55553f8475c6eff5b75ddd743e4a4f032aca2241e9b849871d"
+      },
+      "after-world-lagoon-audio": {
+        "passed": true,
+        "samples": 716,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.086958382278681,
+        "renderP95MS": 0.9586249943822622,
+        "observerP95MS": 0.15170848928391933,
+        "measurementSHA256": "829932797555318993feae9bd5a2227de1ebf5618b62ae841a7c2a71b2833a09"
+      },
+      "before-encounter-lagoon-audio": {
+        "passed": true,
+        "samples": 706,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.223791718482971,
+        "renderP95MS": 0.5307497922331095,
+        "observerP95MS": 0.12508314102888107,
+        "measurementSHA256": "afd0a88dc88bfd028e14f999d334bb11598690152cb32217d017103441769633"
+      },
+      "after-encounter-lagoon-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.1138332560658455,
+        "renderP95MS": 0.47999992966651917,
+        "observerP95MS": 0.1188749447464943,
+        "measurementSHA256": "6e4619c2ddea680c668d3cec71fa0802979cb85c3c2ef54b6f84dfcfef0002d1"
+      },
+      "before-world-ruins-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.9510418642312288,
+        "renderP95MS": 0.9983750060200691,
+        "observerP95MS": 0.12254179455339909,
+        "measurementSHA256": "4da99fc95498c50c49c2279b4e8769a746bab53f9da168e75fbf1d415d8e88af"
+      },
+      "after-world-ruins-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.9779582507908344,
+        "renderP95MS": 0.9109168313443661,
+        "observerP95MS": 0.11870823800563812,
+        "measurementSHA256": "b7253fe7e7ca4f75a181981aa5a7da13e959c236b7adf0aa752cb7d8d0a6248b"
+      },
+      "before-encounter-ruins-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.7416666746139526,
+        "renderP95MS": 0.5287500098347664,
+        "observerP95MS": 0.13858312740921974,
+        "measurementSHA256": "accaee1142570274141cf2c49b3fb88289684a6614298d0f80d2953ae79b5d08"
+      },
+      "after-encounter-ruins-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.1962916254997253,
+        "renderP95MS": 0.4429167602211237,
+        "observerP95MS": 0.12229150161147118,
+        "measurementSHA256": "b65e9a1f4b35778e3cdfd440c1f6fa27e2a93b4aafd7d34bc697e0ec19309cf6"
+      }
+    },
+    "limitations": "Simulator results do not establish physical-device GPU, thermal or battery performance."
+  },
+  "limitations": [
+    "Simulator measurements do not establish physical-device GPU, thermal or battery performance.",
+    "Synthetic input replay cannot establish human understanding or enjoyment.",
+    "The refit screenshots use a simulator-only fixture to reach a paused choice deterministically. No phone installation is claimed."
+  ]
+}
