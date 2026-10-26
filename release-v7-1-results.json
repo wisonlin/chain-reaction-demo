@@ -1,0 +1,156 @@
+{
+  "webVersion": "7.1",
+  "nativeVersion": "4.0.0",
+  "build": 7,
+  "offlineSinglePlayer": true,
+  "sharedTests": 139,
+  "nativeTests": [
+    {
+      "device": "iphone",
+      "passed": 21,
+      "failed": 0
+    },
+    {
+      "device": "ipad",
+      "passed": 21,
+      "failed": 0
+    }
+  ],
+  "performance": [
+    {
+      "case": "legacy-laser-audio",
+      "passed": true
+    },
+    {
+      "case": "laser-audio",
+      "passed": true
+    },
+    {
+      "case": "homing-hard-audio",
+      "passed": true
+    },
+    {
+      "case": "max-spread-late-audio",
+      "passed": true
+    },
+    {
+      "case": "max-homing-late-audio",
+      "passed": true
+    },
+    {
+      "case": "max-collection-audio",
+      "passed": true
+    },
+    {
+      "case": "world-haven-audio",
+      "passed": true
+    },
+    {
+      "case": "encounter-haven-audio",
+      "passed": true
+    },
+    {
+      "case": "world-lagoon-audio",
+      "passed": true
+    },
+    {
+      "case": "encounter-lagoon-audio",
+      "passed": true
+    },
+    {
+      "case": "world-ruins-audio",
+      "passed": true
+    },
+    {
+      "case": "encounter-ruins-audio",
+      "passed": true
+    }
+  ],
+  "comparison": {
+    "configuration": "Release",
+    "seed": 42,
+    "soundAndMusicEnabled": true,
+    "identicalSceneInputs": true,
+    "simulator": true,
+    "baseline": "Retained measurements from the previous shipped build, compared to the matching final QA scenes.",
+    "results": {
+      "before-legacy": {
+        "passed": true,
+        "samples": 707,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.684124978259206,
+        "renderP95MS": 0.46145846135914326,
+        "observerP95MS": 0.18274993635714054,
+        "measurementSHA256": "81cfe30fcf6777f4b945c57134d18639825d85ab2c80932087252aa51c9275e0"
+      },
+      "after-legacy": {
+        "passed": true,
+        "samples": 706,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.785124884918332,
+        "renderP95MS": 0.4057500045746565,
+        "observerP95MS": 0.13283337466418743,
+        "measurementSHA256": "af559bcc5df9f2228215e30647c71b2464896c4e5f3000734513727665378437"
+      },
+      "before-haven": {
+        "passed": true,
+        "samples": 716,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.5031665097922087,
+        "renderP95MS": 0.6515416316688061,
+        "observerP95MS": 0.12195832096040249,
+        "measurementSHA256": "db099c31710bba7abf4d6448f48902d3ddb41c2fbb0edc9a0c8afba744104970"
+      },
+      "after-haven": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.5610000118613243,
+        "renderP95MS": 0.5614999681711197,
+        "observerP95MS": 0.09474996477365494,
+        "measurementSHA256": "c8abccaf1a624cd70819dbe7371fbea0fcef8d7fbc2d44c44b4b262a41a2d31f"
+      },
+      "before-lagoon": {
+        "passed": true,
+        "samples": 716,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.704041613265872,
+        "renderP95MS": 0.7604584097862244,
+        "observerP95MS": 0.13758335262537003,
+        "measurementSHA256": "86e1434e24909e963234276ccd8c9cf2104ec73ccca2fa7e556acc47664d1e28"
+      },
+      "after-lagoon": {
+        "passed": true,
+        "samples": 714,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.7446251586079597,
+        "renderP95MS": 0.9307083673775196,
+        "observerP95MS": 0.1129999291151762,
+        "measurementSHA256": "b3cd8328b8883e55553f8475c6eff5b75ddd743e4a4f032aca2241e9b849871d"
+      },
+      "before-ruins": {
+        "passed": true,
+        "samples": 718,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.2200833298265934,
+        "renderP95MS": 0.7297082338482141,
+        "observerP95MS": 0.11424999684095383,
+        "measurementSHA256": "c7a394a4b4c85ed8b3867289fecb6b6133096faea6ba44adb416854c31d82608"
+      },
+      "after-ruins": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.9510418642312288,
+        "renderP95MS": 0.9983750060200691,
+        "observerP95MS": 0.12254179455339909,
+        "measurementSHA256": "4da99fc95498c50c49c2279b4e8769a746bab53f9da168e75fbf1d415d8e88af"
+      }
+    },
+    "limitations": "Simulator results do not establish physical-device GPU, thermal or battery performance."
+  },
+  "limitations": [
+    "Simulator measurements do not establish physical-device GPU, thermal or battery performance.",
+    "No phone installation is claimed by these automated checks."
+  ]
+}
