@@ -1,0 +1,68 @@
+{
+  "tool": "built-in image_gen",
+  "characters": {
+    "ember": {
+      "prompt": "One production game sprite sheet for ONE original character: an adult woman sky cartographer with copper-red wavy hair, ivory long flight coat, copper-gold armour trim, dark leggings, elegant leather boots, a short ochre cape and a compact compass focus. EXACTLY four separate full-body copies of this same adult character in a strict 2 columns by 2 rows grid on a portrait 1024x1536 canvas. Each cell is 512x768, character centered, entire head and boots visible, generous 35px margin from all cell edges, no overlap between cells. This is a rear-view vertical scrolling aerial shooter: every pose faces UP THE SCREEN, seen from behind at a graceful rear three-quarter angle, never facing the viewer. Top left: calm straight aerial glide, arms subtly out. Top right: banking left with flowing scarf and coat tails. Bottom left: banking right. Bottom right: forward acceleration, coat tails streaming back, no exhaust glow. Keep identical adult anatomy, clothes and identity in all four cells; use precise refined high-end anime fantasy game painting, beautiful tailored fabric, strong coherent silhouette, small readable costume details, no chibi style, no huge head, no wings obscuring the body, no sexualized pose. Opaque painted hair locks and opaque fabric, crisp clean silhouette. Absolutely flat solid #00ff00 chroma-key background everywhere, no shadows, no floor, no particles, no lighting gradient, no labels, no grid lines, no text, no weapons firing. Do not use this key colour anywhere on the character. Full body all four cells, consistent scale and center anchor.",
+      "preparedFrames": 4,
+      "frameDimensions": [
+        384,
+        432
+      ],
+      "transparent": true
+    },
+    "lune": {
+      "prompt": "One production game sprite sheet for ONE original character: an adult woman lightning courier with ice-blue short hair and a long thick braid, silver shoulder armour, a fitted fully-covered navy flight suit, lavender flowing scarf and silver boots. EXACTLY four separate full-body copies of this same adult character in a strict 2 columns by 2 rows grid on a portrait 1024x1536 canvas. Each cell is 512x768, character centered, entire head and boots visible, generous 35px margin from all cell edges, no overlap between cells. This is a rear-view vertical scrolling aerial shooter: every pose faces UP THE SCREEN, seen from behind at a graceful rear three-quarter angle, never facing the viewer. Top left: calm straight aerial glide, arms subtly out. Top right: banking left with flowing scarf and coat tails. Bottom left: banking right. Bottom right: forward acceleration, coat tails streaming back, no exhaust glow. Keep identical adult anatomy, clothes and identity in all four cells; use precise refined high-end anime fantasy game painting, beautiful tailored fabric, strong coherent silhouette, small readable costume details, no chibi style, no huge head, no wings obscuring the body, no sexualized pose. Opaque painted hair locks and opaque fabric, crisp clean silhouette. Absolutely flat solid #00ff00 chroma-key background everywhere, no shadows, no floor, no particles, no lighting gradient, no labels, no grid lines, no text, no weapons firing. Do not use this key colour anywhere on the character. Full body all four cells, consistent scale and center anchor.",
+      "preparedFrames": 4,
+      "frameDimensions": [
+        384,
+        432
+      ],
+      "transparent": true
+    },
+    "nerine": {
+      "prompt": "One production game sprite sheet for ONE original character: an adult woman tide historian with rich dark brown skin, long indigo braided hair, pearl ornaments, a fully-covered teal and ivory layered sea-silk flight dress, dark leggings, pale boots and a small water mirror focus. EXACTLY four separate full-body copies of this same adult character in a strict 2 columns by 2 rows grid on a portrait 1024x1536 canvas. Each cell is 512x768, character centered, entire head and boots visible, generous 35px margin from all cell edges, no overlap between cells. This is a rear-view vertical scrolling aerial shooter: every pose faces UP THE SCREEN, seen from behind at a graceful rear three-quarter angle, never facing the viewer. Top left: calm straight aerial glide, arms subtly out. Top right: banking left with flowing scarf and coat tails. Bottom left: banking right. Bottom right: forward acceleration, coat tails streaming back, no exhaust glow. Keep identical adult anatomy, clothes and identity in all four cells; use precise refined high-end anime fantasy game painting, beautiful tailored fabric, strong coherent silhouette, small readable costume details, no chibi style, no huge head, no wings obscuring the body, no sexualized pose. Opaque painted hair locks and opaque fabric, crisp clean silhouette. Absolutely flat solid #ff00ff chroma-key background everywhere, no shadows, no floor, no particles, no lighting gradient, no labels, no grid lines, no text, no weapons firing. Do not use this key colour anywhere on the character. Full body all four cells, consistent scale and center anchor.",
+      "preparedFrames": 4,
+      "frameDimensions": [
+        384,
+        432
+      ],
+      "transparent": true
+    },
+    "sol": {
+      "prompt": "One production game sprite sheet for ONE original character: an adult woman dawn engineer with strawberry-gold long braid, coral-red tailored flight jacket, cream long split coat tails, charcoal trousers, mechanical brass glove and a flowing burnt-orange scarf. EXACTLY four separate full-body copies of this same adult character in a strict 2 columns by 2 rows grid on a portrait 1024x1536 canvas. Each cell is 512x768, character centered, entire head and boots visible, generous 35px margin from all cell edges, no overlap between cells. This is a rear-view vertical scrolling aerial shooter: every pose faces UP THE SCREEN, seen from behind at a graceful rear three-quarter angle, never facing the viewer. Top left: calm straight aerial glide, arms subtly out. Top right: banking left with flowing scarf and coat tails. Bottom left: banking right. Bottom right: forward acceleration, coat tails streaming back, no exhaust glow. Keep identical adult anatomy, clothes and identity in all four cells; use precise refined high-end anime fantasy game painting, beautiful tailored fabric, strong coherent silhouette, small readable costume details, no chibi style, no huge head, no wings obscuring the body, no sexualized pose. Opaque painted hair locks and opaque fabric, crisp clean silhouette. Absolutely flat solid #00ff00 chroma-key background everywhere, no shadows, no floor, no particles, no lighting gradient, no labels, no grid lines, no text, no weapons firing. Do not use this key colour anywhere on the character. Full body all four cells, consistent scale and center anchor.",
+      "preparedFrames": 4,
+      "frameDimensions": [
+        384,
+        432
+      ],
+      "transparent": true
+    },
+    "vesper": {
+      "prompt": "One production game sprite sheet for ONE original character: an adult man stellar warden with silver-white low ponytail, elegant dark navy split-tail long coat, silver chest armour, long fitted trousers, violet bracers and silver-dark boots, dignified lean adult masculine proportions. EXACTLY four separate full-body copies of this same adult character in a strict 2 columns by 2 rows grid on a portrait 1024x1536 canvas. Each cell is 512x768, character centered, entire head and boots visible, generous 35px margin from all cell edges, no overlap between cells. This is a rear-view vertical scrolling aerial shooter: every pose faces UP THE SCREEN, seen from behind at a graceful rear three-quarter angle, never facing the viewer. Top left: calm straight aerial glide, arms subtly out. Top right: banking left with flowing scarf and coat tails. Bottom left: banking right. Bottom right: forward acceleration, coat tails streaming back, no exhaust glow. Keep identical adult anatomy, clothes and identity in all four cells; use precise refined high-end anime fantasy game painting, beautiful tailored fabric, strong coherent silhouette, small readable costume details, no chibi style, no huge head, no wings obscuring the body, no sexualized pose. Opaque painted hair locks and opaque fabric, crisp clean silhouette. Absolutely flat solid #00ff00 chroma-key background everywhere, no shadows, no floor, no particles, no lighting gradient, no labels, no grid lines, no text, no weapons firing. Do not use this key colour anywhere on the character. Full body all four cells, consistent scale and center anchor.",
+      "preparedFrames": 4,
+      "frameDimensions": [
+        384,
+        432
+      ],
+      "transparent": true
+    },
+    "aster": {
+      "prompt": "One production game sprite sheet for ONE original character: an adult woman wind guide with deep forest-green braided hair, cream short mantle, layered sage-green travel tunic and long split tails, pale mint scarf, dark leggings and brown flight boots. EXACTLY four separate full-body copies of this same adult character in a strict 2 columns by 2 rows grid on a portrait 1024x1536 canvas. Each cell is 512x768, character centered, entire head and boots visible, generous 35px margin from all cell edges, no overlap between cells. This is a rear-view vertical scrolling aerial shooter: every pose faces UP THE SCREEN, seen from behind at a graceful rear three-quarter angle, never facing the viewer. Top left: calm straight aerial glide, arms subtly out. Top right: banking left with flowing scarf and coat tails. Bottom left: banking right. Bottom right: forward acceleration, coat tails streaming back, no exhaust glow. Keep identical adult anatomy, clothes and identity in all four cells; use precise refined high-end anime fantasy game painting, beautiful tailored fabric, strong coherent silhouette, small readable costume details, no chibi style, no huge head, no wings obscuring the body, no sexualized pose. Opaque painted hair locks and opaque fabric, crisp clean silhouette. Absolutely flat solid #ff00ff chroma-key background everywhere, no shadows, no floor, no particles, no lighting gradient, no labels, no grid lines, no text, no weapons firing. Do not use this key colour anywhere on the character. Full body all four cells, consistent scale and center anchor.",
+      "preparedFrames": 4,
+      "frameDimensions": [
+        384,
+        432
+      ],
+      "transparent": true
+    }
+  },
+  "launch": {
+    "generated": true,
+    "dimensions": [
+      1024,
+      1536
+    ],
+    "sha256": "1644f68a548b3d2e474e70eb5fc40890831cc4d1787feeb5b095e3d8b429a727"
+  },
+  "preparation": "Generated raster art, chroma removal, split and fit to a transparent canvas. No third-party character asset is included."
+}
