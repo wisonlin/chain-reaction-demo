@@ -2,7 +2,7 @@
   "webVersion": "8.0",
   "plannedNativeVersion": "5.0.0",
   "plannedNativeBuild": 9,
-  "nativeUploaded": false,
+  "nativeUploaded": true,
   "offlineSinglePlayer": true,
   "sharedTestsPassed": 151,
   "dungeonInputReplay": {
@@ -106,10 +106,423 @@
     ]
   },
   "nativeBuildForTesting": true,
-  "nativeUIAndPerformance": "Not completed: simulator startup blocked while the host Mac is locked. Retained failed boot run.",
+  "nativeUIAndPerformance": "Complete: iPhone and iPad suites and sixteen sound-enabled Release scenes passed.",
   "limitations": [
     "Synthetic replay cannot establish human enjoyment.",
     "Simulator results do not establish physical-device GPU, thermal or battery behavior.",
-    "No new TestFlight build or phone installation is claimed."
-  ]
+    "Native dungeon result screenshots use a simulator-only positioning fixture; normal-resource combat replay is separate.",
+    "Phone installation is not verified."
+  ],
+  "nativeVersion": "5.0.0",
+  "nativeBuild": 9,
+  "nativeTests": [
+    {
+      "device": "iphone",
+      "passed": 28,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "device": "ipad",
+      "passed": 28,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "nativePerformance": [
+    {
+      "case": "legacy-laser-audio",
+      "passed": true,
+      "samples": 709,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.614750061184168,
+      "renderP95MS": 0.44762506149709225,
+      "eventsP95MS": 0.07037515752017498
+    },
+    {
+      "case": "laser-audio",
+      "passed": true,
+      "samples": 712,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.7779166121035814,
+      "renderP95MS": 0.43349992483854294,
+      "eventsP95MS": 0.08183321915566921
+    },
+    {
+      "case": "homing-hard-audio",
+      "passed": true,
+      "samples": 823,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.5604999866336584,
+      "renderP95MS": 0.7119583897292614,
+      "eventsP95MS": 0.10479171760380268
+    },
+    {
+      "case": "max-spread-late-audio",
+      "passed": true,
+      "samples": 823,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.272666595876217,
+      "renderP95MS": 0.44258334673941135,
+      "eventsP95MS": 0.1312915701419115
+    },
+    {
+      "case": "max-homing-late-audio",
+      "passed": true,
+      "samples": 830,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.567291656509042,
+      "renderP95MS": 0.6395832169800997,
+      "eventsP95MS": 0.08320831693708897
+    },
+    {
+      "case": "max-collection-audio",
+      "passed": true,
+      "samples": 823,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.855000017210841,
+      "renderP95MS": 0.47608325257897377,
+      "eventsP95MS": 0.12729177251458168
+    },
+    {
+      "case": "world-haven-audio",
+      "passed": true,
+      "samples": 716,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.795333344489336,
+      "renderP95MS": 0.4993332549929619,
+      "eventsP95MS": 0
+    },
+    {
+      "case": "encounter-haven-audio",
+      "passed": true,
+      "samples": 711,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.06337489746511,
+      "renderP95MS": 0.45833317562937737,
+      "eventsP95MS": 0.08275010623037815
+    },
+    {
+      "case": "world-lagoon-audio",
+      "passed": true,
+      "samples": 712,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.950791571289301,
+      "renderP95MS": 0.5187499336898327,
+      "eventsP95MS": 0
+    },
+    {
+      "case": "encounter-lagoon-audio",
+      "passed": true,
+      "samples": 708,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.461875021457672,
+      "renderP95MS": 0.5546666216105223,
+      "eventsP95MS": 0.09391666390001774
+    },
+    {
+      "case": "world-ruins-audio",
+      "passed": true,
+      "samples": 717,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.1009582560509443,
+      "renderP95MS": 0.5455417558550835,
+      "eventsP95MS": 0
+    },
+    {
+      "case": "encounter-ruins-audio",
+      "passed": true,
+      "samples": 709,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 4.36833337880671,
+      "renderP95MS": 0.5826668348163366,
+      "eventsP95MS": 0.10691676288843155
+    },
+    {
+      "case": "rescue-laser-audio",
+      "passed": true,
+      "samples": 822,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.1503750942647457,
+      "renderP95MS": 0.4633332137018442,
+      "eventsP95MS": 0.08212495595216751
+    },
+    {
+      "case": "modern-rescue-audio",
+      "passed": true,
+      "samples": 817,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.500041551887989,
+      "renderP95MS": 0.43916678987443447,
+      "eventsP95MS": 0.0757917296141386
+    },
+    {
+      "case": "dungeon-archive-audio",
+      "passed": true,
+      "samples": 821,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.177166683599353,
+      "renderP95MS": 0.41924999095499516,
+      "eventsP95MS": 0.06829178892076015
+    },
+    {
+      "case": "dungeon-rift-extreme-audio",
+      "passed": true,
+      "samples": 825,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 4.023833433166146,
+      "renderP95MS": 0.7046665996313095,
+      "eventsP95MS": 0.13175001367926598
+    }
+  ],
+  "comparison": {
+    "configuration": "Release",
+    "seed": 42,
+    "soundAndMusicEnabled": true,
+    "identicalSceneInputs": true,
+    "simulator": true,
+    "baseline": "Retained measurements from shipped Web 7.2 / native build 8; all thirteen matching original scenes. Three new modern scenes have separate gates.",
+    "results": {
+      "before-legacy-laser-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.395249903202057,
+        "renderP95MS": 0.600041588768363,
+        "observerP95MS": 0.1565832644701004,
+        "measurementSHA256": "8b23d68f265c7f596b77e64d6bb48ad2179b9d3c1f68e7beadc3871b99f99dc7"
+      },
+      "after-legacy-laser-audio": {
+        "passed": true,
+        "samples": 709,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.614750061184168,
+        "renderP95MS": 0.44762506149709225,
+        "observerP95MS": 0.17241667956113815,
+        "measurementSHA256": "4077b71ef49e300ce2463f2f150cb1fa89b79afafe347339a54266959c1fdd6f"
+      },
+      "before-laser-audio": {
+        "passed": true,
+        "samples": 713,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.414458431303501,
+        "renderP95MS": 0.7175416685640812,
+        "observerP95MS": 0.14450005255639553,
+        "measurementSHA256": "caf9636c340f1328c3aaa060097aa6e18d93f9a2e2673c55d96c26f886063900"
+      },
+      "after-laser-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.7779166121035814,
+        "renderP95MS": 0.43349992483854294,
+        "observerP95MS": 0.15345844440162182,
+        "measurementSHA256": "dcc5d0e6a26c613c6bf7a41c44442c3025bf17615f9a7978fbdb105abc9b8e07"
+      },
+      "before-homing-hard-audio": {
+        "passed": true,
+        "samples": 829,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.3534583635628223,
+        "renderP95MS": 0.8476248476654291,
+        "observerP95MS": 0.14825002290308475,
+        "measurementSHA256": "95d75c28e38fc9c4a93046acd642886bf6a7d87c3cdfe0fb7bfa467f8f6788e1"
+      },
+      "after-homing-hard-audio": {
+        "passed": true,
+        "samples": 823,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.5604999866336584,
+        "renderP95MS": 0.7119583897292614,
+        "observerP95MS": 0.15699979849159718,
+        "measurementSHA256": "56f2a2310662963251dac790c27704081bab47792d9ec57df86e28abcee66df7"
+      },
+      "before-max-spread-late-audio": {
+        "passed": true,
+        "samples": 824,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.725166665390134,
+        "renderP95MS": 0.4392499104142189,
+        "observerP95MS": 0.09708339348435402,
+        "measurementSHA256": "0a13a1165c71ae67c4e97bd586fb2c0cbebd002d13c6c63d44d7b1a51c183ffd"
+      },
+      "after-max-spread-late-audio": {
+        "passed": true,
+        "samples": 823,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.272666595876217,
+        "renderP95MS": 0.44258334673941135,
+        "observerP95MS": 0.13412488624453545,
+        "measurementSHA256": "9dcf4d679227ec7d6084f22da898b851ab1f3653d6594fe9dd40cff36090f7a7"
+      },
+      "before-max-homing-late-audio": {
+        "passed": true,
+        "samples": 831,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.896833397448063,
+        "renderP95MS": 0.6375000812113285,
+        "observerP95MS": 0.09729177691042423,
+        "measurementSHA256": "c3145d8ace168d5a76eaa75d64b99443383c8c0fbb315b6fa529503bb57a05b6"
+      },
+      "after-max-homing-late-audio": {
+        "passed": true,
+        "samples": 830,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.567291656509042,
+        "renderP95MS": 0.6395832169800997,
+        "observerP95MS": 0.1240831334143877,
+        "measurementSHA256": "afd06f551b9d53b938eb18752d43a17ce6e96e65730f3b08525381fc51cd9fae"
+      },
+      "before-max-collection-audio": {
+        "passed": true,
+        "samples": 828,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.8484581746160984,
+        "renderP95MS": 0.4123335238546133,
+        "observerP95MS": 0.09645824320614338,
+        "measurementSHA256": "8958cf51a1936fc3e20f4ae66aeb85045accc6203e7eab70281bc5f73b047715"
+      },
+      "after-max-collection-audio": {
+        "passed": true,
+        "samples": 823,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.855000017210841,
+        "renderP95MS": 0.47608325257897377,
+        "observerP95MS": 0.12654182501137257,
+        "measurementSHA256": "6746e64ef366e1069046a5847ce1afcceeec69fc5e2631b5ff6de426e377c1f9"
+      },
+      "before-world-haven-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.0145834423601627,
+        "renderP95MS": 0.912083312869072,
+        "observerP95MS": 0.09874999523162842,
+        "measurementSHA256": "bdaf2be761cbe2e1d2face7252bf36394b8c87db45df21253af8dd4544be4d59"
+      },
+      "after-world-haven-audio": {
+        "passed": true,
+        "samples": 716,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.795333344489336,
+        "renderP95MS": 0.4993332549929619,
+        "observerP95MS": 0.1327083446085453,
+        "measurementSHA256": "83ab5b7d4f67cf3adc2aa0fc26c3a82a3404dfa652bfd68e2ce9dc246d32ce80"
+      },
+      "before-encounter-haven-audio": {
+        "passed": true,
+        "samples": 715,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.807333366945386,
+        "renderP95MS": 0.728958286345005,
+        "observerP95MS": 0.14608330093324184,
+        "measurementSHA256": "a45a7f268baa411a957a3a6b3df7849bd88160f5fd2ff635522da2843540e9c4"
+      },
+      "after-encounter-haven-audio": {
+        "passed": true,
+        "samples": 711,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.06337489746511,
+        "renderP95MS": 0.45833317562937737,
+        "observerP95MS": 0.15791668556630611,
+        "measurementSHA256": "c2590d420569300ddda806503ea140f7d4016b5e3b0dd4f7113b71135efece21"
+      },
+      "before-world-lagoon-audio": {
+        "passed": true,
+        "samples": 716,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.086958382278681,
+        "renderP95MS": 0.9586249943822622,
+        "observerP95MS": 0.15170848928391933,
+        "measurementSHA256": "829932797555318993feae9bd5a2227de1ebf5618b62ae841a7c2a71b2833a09"
+      },
+      "after-world-lagoon-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.950791571289301,
+        "renderP95MS": 0.5187499336898327,
+        "observerP95MS": 0.17529167234897614,
+        "measurementSHA256": "a7fbe1ee73afd12443d1928053abe7b01b4baed03cda636161c376c97322c28c"
+      },
+      "before-encounter-lagoon-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.1138332560658455,
+        "renderP95MS": 0.47999992966651917,
+        "observerP95MS": 0.1188749447464943,
+        "measurementSHA256": "6e4619c2ddea680c668d3cec71fa0802979cb85c3c2ef54b6f84dfcfef0002d1"
+      },
+      "after-encounter-lagoon-audio": {
+        "passed": true,
+        "samples": 708,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.461875021457672,
+        "renderP95MS": 0.5546666216105223,
+        "observerP95MS": 0.1488332636654377,
+        "measurementSHA256": "351efcd68753497a28e977adccb79992df3f12b2b935869691173562ef03e5b5"
+      },
+      "before-world-ruins-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.9779582507908344,
+        "renderP95MS": 0.9109168313443661,
+        "observerP95MS": 0.11870823800563812,
+        "measurementSHA256": "b7253fe7e7ca4f75a181981aa5a7da13e959c236b7adf0aa752cb7d8d0a6248b"
+      },
+      "after-world-ruins-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.1009582560509443,
+        "renderP95MS": 0.5455417558550835,
+        "observerP95MS": 0.12262491509318352,
+        "measurementSHA256": "8c44466ddb2a683fef2ddfd4bbff43da38e1d157529e7771f676748cc435a950"
+      },
+      "before-encounter-ruins-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.1962916254997253,
+        "renderP95MS": 0.4429167602211237,
+        "observerP95MS": 0.12229150161147118,
+        "measurementSHA256": "b65e9a1f4b35778e3cdfd440c1f6fa27e2a93b4aafd7d34bc697e0ec19309cf6"
+      },
+      "after-encounter-ruins-audio": {
+        "passed": true,
+        "samples": 709,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 4.36833337880671,
+        "renderP95MS": 0.5826668348163366,
+        "observerP95MS": 0.1643751747906208,
+        "measurementSHA256": "b9ee2c585ea4a1e6fa625a728ce1bcf6487b587413c6fc6cdc69ed7b25cdfc9a"
+      },
+      "before-rescue-laser-audio": {
+        "passed": true,
+        "samples": 821,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.5363333988934755,
+        "renderP95MS": 0.37687504664063454,
+        "observerP95MS": 0.1262498553842306,
+        "measurementSHA256": "7fffef2bfc18df3347aa8b52ded24356e05a6a03773d3b6ab376f50d6a19d6fc"
+      },
+      "after-rescue-laser-audio": {
+        "passed": true,
+        "samples": 822,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.1503750942647457,
+        "renderP95MS": 0.4633332137018442,
+        "observerP95MS": 0.18845847807824612,
+        "measurementSHA256": "c8d1c9f646d2e2f196d36e3bcf86e8f0b7386827bee6c332cc7444c599ec8bad"
+      }
+    },
+    "limitations": "Simulator results do not establish physical-device GPU, thermal or battery performance."
+  },
+  "internalTestFlight": {
+    "processingState": "VALID",
+    "internalBuildState": "IN_BETA_TESTING",
+    "groupAndExistingTesterVerified": true
+  }
 }
