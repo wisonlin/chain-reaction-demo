@@ -1,0 +1,110 @@
+{
+  "version": "8.0",
+  "nativeVersion": "5.0.0",
+  "build": 9,
+  "request": "先列细计划，再逐项重做清爽的启动、大厅、地图、角色配置、冒险、副本、战斗辨识和人物质量。",
+  "navigation": "启动 → 大厅；五个页签：冒险、副本、角色、营地、设置。页签只存在于大厅。",
+  "loop": "选择明确目标的地图 → 单指战斗 → 领取材料与成绩 → 升级角色/武器或调整队伍 → 更高难度",
+  "references": [
+    {
+      "title": "Archero 2 官方商店介绍",
+      "url": "https://apps.apple.com/us/app/archero-2/id6502820653",
+      "lesson": "将章节、倒计时生存与奖励副本分开，战斗中的技能选择会改变本局。"
+    },
+    {
+      "title": "Sky Force Reloaded 官方商店介绍",
+      "url": "https://apps.apple.com/us/app/sky-force-reloaded/id976116090",
+      "lesson": "关卡任务、难度解锁、机体差异和装备升级，构成重复挑战的理由。"
+    }
+  ],
+  "phases": [
+    {
+      "id": 1,
+      "name": "启动和大厅",
+      "status": "web_verified_native_pending",
+      "tasks": [
+        "独立启动画面，明确进入游戏",
+        "地图作为默认大厅内容",
+        "固定五页签；每页只做一件事",
+        "安全区、单手触达、返回路径"
+      ],
+      "acceptance": "首次启动先见启动页；进入后看到地图；切换页签不误开战；战斗不显示大厅导航。"
+    },
+    {
+      "id": 2,
+      "name": "角色和编队",
+      "status": "web_verified_native_pending",
+      "tasks": [
+        "六角色列表和详情",
+        "全身展示、等级、星级、武器槽",
+        "直接进入对应角色的升级、武器、命座和衣装",
+        "独立出战编队确认"
+      ],
+      "acceptance": "浏览不改变主战；只有明确选择才改变队伍；换武器和升级能跨重启保留。"
+    },
+    {
+      "id": 3,
+      "name": "冒险和副本",
+      "status": "web_verified_native_pending",
+      "tasks": [
+        "三张章节地图及解锁条件",
+        "三类材料副本与三档难度",
+        "出战前显示主要掉落和挑战规则",
+        "本机成绩、星级、首次难度解锁",
+        "结算后再次挑战和去养成"
+      ],
+      "acceptance": "刷取有明确用途；奖励按实际战斗结算一次；重启保留；无体力等待和联网。"
+    },
+    {
+      "id": 4,
+      "name": "战斗辨识和能量",
+      "status": "web_verified_native_pending",
+      "tasks": [
+        "红橙敌弹、青色己方火力",
+        "绿色加号回血、方形火力、金色材料",
+        "能量积累与共鸣时间窗",
+        "简化HUD、保留清晰判定点"
+      ],
+      "acceptance": "形状和颜色都能区分危险与奖励；能量满时有可测量效果；大招依然有限。"
+    },
+    {
+      "id": 5,
+      "name": "技巧和难度",
+      "status": "web_verified_native_pending",
+      "tasks": [
+        "危险攻击提前预警",
+        "瞄准、诱导扇射、穿弹幕空隙和大招时机",
+        "难度改变节奏与弹速",
+        "可理解的失败与结算评级"
+      ],
+      "acceptance": "同配置可通过操作改善结果；不用只堆血量制造难度；普通、困难、极限区别可见。"
+    },
+    {
+      "id": 6,
+      "name": "美术和交付",
+      "status": "in_progress",
+      "tasks": [
+        "imagegen 启动主视觉",
+        "六角色飞行姿态精修",
+        "小屏轮廓、动作混合与特效控制",
+        "iPhone/iPad 自动化和开声音Release对照",
+        "公开HTTPS试玩和内部TestFlight"
+      ],
+      "acceptance": "没有占位按钮；资源随包离线；只发布指定截图与报告；保留失败日志与实测限制。"
+    }
+  ],
+  "preserve": [
+    "竖屏自动射击",
+    "单指相对拖动和移动响应",
+    "扫掠碰撞",
+    "有限大招",
+    "原三关完整航行及顺序",
+    "本机旧存档",
+    "完全离线单人"
+  ],
+  "verification": {
+    "web": "151 shared tests passed; 108 normal-resource dungeon input replays completed; responsive browser flows verified at 390x844 and 320x568.",
+    "native": "Native test targets compile. Full simulator execution pending Mac unlock; first blocked run retained.",
+    "distribution": "Web 8.0 public demo being published; iOS 5.0.0 (9) has not been uploaded."
+  }
+}
