@@ -1,0 +1,511 @@
+{
+  "webVersion": "9.0",
+  "nativeVersion": "6.0.0",
+  "nativeBuild": 10,
+  "scope": "Two tabs: characters/equipment and levels. Selected single-stage combat, local equipment drops.",
+  "offline": true,
+  "sharedTests": 158,
+  "nativeTests": [
+    {
+      "device": "iphone",
+      "passed": 22,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "device": "ipad",
+      "passed": 22,
+      "failed": 0,
+      "skipped": 0
+    }
+  ],
+  "releaseAudioPerformance": [
+    {
+      "case": "legacy-laser-audio",
+      "passed": true,
+      "samples": 712,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.8348749727010727,
+      "renderP95MS": 0.3836667165160179,
+      "eventsP95MS": 0.04366668872535229
+    },
+    {
+      "case": "laser-audio",
+      "passed": true,
+      "samples": 718,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.0716249234974384,
+      "renderP95MS": 0.2052083145827055,
+      "eventsP95MS": 0.03266660496592522
+    },
+    {
+      "case": "homing-hard-audio",
+      "passed": true,
+      "samples": 831,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.2237084340304136,
+      "renderP95MS": 0.7992500904947519,
+      "eventsP95MS": 0.08445838466286659
+    },
+    {
+      "case": "max-spread-late-audio",
+      "passed": true,
+      "samples": 835,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.562541678547859,
+      "renderP95MS": 0.5462500266730785,
+      "eventsP95MS": 0.12762518599629402
+    },
+    {
+      "case": "max-homing-late-audio",
+      "passed": true,
+      "samples": 837,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.5172500647604465,
+      "renderP95MS": 0.722500029951334,
+      "eventsP95MS": 0.0700000673532486
+    },
+    {
+      "case": "max-collection-audio",
+      "passed": true,
+      "samples": 835,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 4.615833284333348,
+      "renderP95MS": 0.5677083972841501,
+      "eventsP95MS": 0.11004158295691013
+    },
+    {
+      "case": "world-haven-audio",
+      "passed": true,
+      "samples": 720,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.2660000938922167,
+      "renderP95MS": 0.48120832070708275,
+      "eventsP95MS": 0
+    },
+    {
+      "case": "encounter-haven-audio",
+      "passed": true,
+      "samples": 712,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.9563334062695503,
+      "renderP95MS": 0.49887504428625107,
+      "eventsP95MS": 0.05162484012544155
+    },
+    {
+      "case": "world-lagoon-audio",
+      "passed": true,
+      "samples": 717,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.1917082592844963,
+      "renderP95MS": 0.4332917742431164,
+      "eventsP95MS": 0
+    },
+    {
+      "case": "encounter-lagoon-audio",
+      "passed": true,
+      "samples": 717,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.084791660308838,
+      "renderP95MS": 0.3427916672080755,
+      "eventsP95MS": 0.0702498946338892
+    },
+    {
+      "case": "world-ruins-audio",
+      "passed": true,
+      "samples": 720,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 0.676833325996995,
+      "renderP95MS": 0.3324998542666435,
+      "eventsP95MS": 0
+    },
+    {
+      "case": "encounter-ruins-audio",
+      "passed": true,
+      "samples": 715,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.324208315461874,
+      "renderP95MS": 0.5080834962427616,
+      "eventsP95MS": 0.05533336661756039
+    },
+    {
+      "case": "rescue-laser-audio",
+      "passed": true,
+      "samples": 835,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.8838748801499605,
+      "renderP95MS": 0.30458346009254456,
+      "eventsP95MS": 0.05304161459207535
+    },
+    {
+      "case": "modern-rescue-audio",
+      "passed": true,
+      "samples": 834,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.9722916185855865,
+      "renderP95MS": 0.29045832343399525,
+      "eventsP95MS": 0.050999922677874565
+    },
+    {
+      "case": "dungeon-archive-audio",
+      "passed": true,
+      "samples": 837,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.7412500455975533,
+      "renderP95MS": 0.25349995121359825,
+      "eventsP95MS": 0.0363748986274004
+    },
+    {
+      "case": "dungeon-rift-extreme-audio",
+      "passed": true,
+      "samples": 835,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.082583425566554,
+      "renderP95MS": 0.5413333419710398,
+      "eventsP95MS": 0.11012493632733822
+    },
+    {
+      "case": "simple-first-stage-audio",
+      "passed": true,
+      "samples": 836,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.618541708216071,
+      "renderP95MS": 0.33808336593210697,
+      "eventsP95MS": 0.03520841710269451
+    }
+  ],
+  "matchingSeedComparisons": {
+    "configuration": "Release",
+    "seed": 42,
+    "soundAndMusicEnabled": true,
+    "identicalSceneInputs": true,
+    "simulator": true,
+    "baseline": "Retained measurements from shipped Web 8.0 / native build 9; all sixteen matching seeded scenes. Simple first stage has its own gate.",
+    "results": {
+      "before-legacy-laser-audio": {
+        "passed": true,
+        "samples": 709,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.614750061184168,
+        "renderP95MS": 0.44762506149709225,
+        "observerP95MS": 0.17241667956113815,
+        "measurementSHA256": "4077b71ef49e300ce2463f2f150cb1fa89b79afafe347339a54266959c1fdd6f"
+      },
+      "after-legacy-laser-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.8348749727010727,
+        "renderP95MS": 0.3836667165160179,
+        "observerP95MS": 0.1266668550670147,
+        "measurementSHA256": "46bf5bd01ba0026afed99a10212ab23312badae17a2b3703a77c001368453033"
+      },
+      "before-laser-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.7779166121035814,
+        "renderP95MS": 0.43349992483854294,
+        "observerP95MS": 0.15345844440162182,
+        "measurementSHA256": "dcc5d0e6a26c613c6bf7a41c44442c3025bf17615f9a7978fbdb105abc9b8e07"
+      },
+      "after-laser-audio": {
+        "passed": true,
+        "samples": 718,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.0716249234974384,
+        "renderP95MS": 0.2052083145827055,
+        "observerP95MS": 0.08374988101422787,
+        "measurementSHA256": "4cb311048d57b5c6a41a26b48dd1676e43d74a9d83f25441d9143fd94bfe5a90"
+      },
+      "before-homing-hard-audio": {
+        "passed": true,
+        "samples": 823,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.5604999866336584,
+        "renderP95MS": 0.7119583897292614,
+        "observerP95MS": 0.15699979849159718,
+        "measurementSHA256": "56f2a2310662963251dac790c27704081bab47792d9ec57df86e28abcee66df7"
+      },
+      "after-homing-hard-audio": {
+        "passed": true,
+        "samples": 831,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.2237084340304136,
+        "renderP95MS": 0.7992500904947519,
+        "observerP95MS": 0.10612490586936474,
+        "measurementSHA256": "1163960dd66d1c12e12bf147108ff45f83a192951c6e47066786a1796f872603"
+      },
+      "before-max-spread-late-audio": {
+        "passed": true,
+        "samples": 823,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.272666595876217,
+        "renderP95MS": 0.44258334673941135,
+        "observerP95MS": 0.13412488624453545,
+        "measurementSHA256": "9dcf4d679227ec7d6084f22da898b851ab1f3653d6594fe9dd40cff36090f7a7"
+      },
+      "after-max-spread-late-audio": {
+        "passed": true,
+        "samples": 835,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.562541678547859,
+        "renderP95MS": 0.5462500266730785,
+        "observerP95MS": 0.08925003930926323,
+        "measurementSHA256": "c4f1d613910ffdaee4edf91029067b5c844a7c424400915df3bd2c13870cd5f1"
+      },
+      "before-max-homing-late-audio": {
+        "passed": true,
+        "samples": 830,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.567291656509042,
+        "renderP95MS": 0.6395832169800997,
+        "observerP95MS": 0.1240831334143877,
+        "measurementSHA256": "afd06f551b9d53b938eb18752d43a17ce6e96e65730f3b08525381fc51cd9fae"
+      },
+      "after-max-homing-late-audio": {
+        "passed": true,
+        "samples": 837,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.5172500647604465,
+        "renderP95MS": 0.722500029951334,
+        "observerP95MS": 0.08583324961364269,
+        "measurementSHA256": "106f67b6e23e82f025ac1dffacab7c48dccc06042582e4be5725d72e4552d8a8"
+      },
+      "before-max-collection-audio": {
+        "passed": true,
+        "samples": 823,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.855000017210841,
+        "renderP95MS": 0.47608325257897377,
+        "observerP95MS": 0.12654182501137257,
+        "measurementSHA256": "6746e64ef366e1069046a5847ce1afcceeec69fc5e2631b5ff6de426e377c1f9"
+      },
+      "after-max-collection-audio": {
+        "passed": true,
+        "samples": 835,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 4.615833284333348,
+        "renderP95MS": 0.5677083972841501,
+        "observerP95MS": 0.09087496437132359,
+        "measurementSHA256": "32e99462590c85afc7360376a7a828d3fdc5ed1009e395cd1a2bb0a706c1dd70"
+      },
+      "before-world-haven-audio": {
+        "passed": true,
+        "samples": 716,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.795333344489336,
+        "renderP95MS": 0.4993332549929619,
+        "observerP95MS": 0.1327083446085453,
+        "measurementSHA256": "83ab5b7d4f67cf3adc2aa0fc26c3a82a3404dfa652bfd68e2ce9dc246d32ce80"
+      },
+      "after-world-haven-audio": {
+        "passed": true,
+        "samples": 720,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.2660000938922167,
+        "renderP95MS": 0.48120832070708275,
+        "observerP95MS": 0.0796664971858263,
+        "measurementSHA256": "7250f4be081b466a25d9ae11707c18be2a8680742f31eb1740c5f025913414c1"
+      },
+      "before-encounter-haven-audio": {
+        "passed": true,
+        "samples": 711,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.06337489746511,
+        "renderP95MS": 0.45833317562937737,
+        "observerP95MS": 0.15791668556630611,
+        "measurementSHA256": "c2590d420569300ddda806503ea140f7d4016b5e3b0dd4f7113b71135efece21"
+      },
+      "after-encounter-haven-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.9563334062695503,
+        "renderP95MS": 0.49887504428625107,
+        "observerP95MS": 0.12704171240329742,
+        "measurementSHA256": "a6a39a7fc6dee93296800583f1b8285c53acf3cec531f42098efb930e0f9243a"
+      },
+      "before-world-lagoon-audio": {
+        "passed": true,
+        "samples": 712,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.950791571289301,
+        "renderP95MS": 0.5187499336898327,
+        "observerP95MS": 0.17529167234897614,
+        "measurementSHA256": "a7fbe1ee73afd12443d1928053abe7b01b4baed03cda636161c376c97322c28c"
+      },
+      "after-world-lagoon-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.1917082592844963,
+        "renderP95MS": 0.4332917742431164,
+        "observerP95MS": 0.07316679693758488,
+        "measurementSHA256": "efdcb7dfa7c03887f3b7a98d3fa6565a34ea1d6342ec770aedc12f9c929f3209"
+      },
+      "before-encounter-lagoon-audio": {
+        "passed": true,
+        "samples": 708,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.461875021457672,
+        "renderP95MS": 0.5546666216105223,
+        "observerP95MS": 0.1488332636654377,
+        "measurementSHA256": "351efcd68753497a28e977adccb79992df3f12b2b935869691173562ef03e5b5"
+      },
+      "after-encounter-lagoon-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.084791660308838,
+        "renderP95MS": 0.3427916672080755,
+        "observerP95MS": 0.09175017476081848,
+        "measurementSHA256": "235669caaee786510da044e6a36dc7028f189f1f19d5c291150bb5bf2d90bcf1"
+      },
+      "before-world-ruins-audio": {
+        "passed": true,
+        "samples": 717,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 2.1009582560509443,
+        "renderP95MS": 0.5455417558550835,
+        "observerP95MS": 0.12262491509318352,
+        "measurementSHA256": "8c44466ddb2a683fef2ddfd4bbff43da38e1d157529e7771f676748cc435a950"
+      },
+      "after-world-ruins-audio": {
+        "passed": true,
+        "samples": 720,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 0.676833325996995,
+        "renderP95MS": 0.3324998542666435,
+        "observerP95MS": 0.07170834578573704,
+        "measurementSHA256": "2fc20d47e152f1f9cb5f7a4fceb28d4dcce1f2c5ed0d33f1f13b4977ce3d9d89"
+      },
+      "before-encounter-ruins-audio": {
+        "passed": true,
+        "samples": 709,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 4.36833337880671,
+        "renderP95MS": 0.5826668348163366,
+        "observerP95MS": 0.1643751747906208,
+        "measurementSHA256": "b9ee2c585ea4a1e6fa625a728ce1bcf6487b587413c6fc6cdc69ed7b25cdfc9a"
+      },
+      "after-encounter-ruins-audio": {
+        "passed": true,
+        "samples": 715,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.324208315461874,
+        "renderP95MS": 0.5080834962427616,
+        "observerP95MS": 0.11708331294357777,
+        "measurementSHA256": "42e9c077e01fdd6dec69477b1ab89a173bfc9147f9518469052ef1c659ae1515"
+      },
+      "before-rescue-laser-audio": {
+        "passed": true,
+        "samples": 822,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.1503750942647457,
+        "renderP95MS": 0.4633332137018442,
+        "observerP95MS": 0.18845847807824612,
+        "measurementSHA256": "c8d1c9f646d2e2f196d36e3bcf86e8f0b7386827bee6c332cc7444c599ec8bad"
+      },
+      "after-rescue-laser-audio": {
+        "passed": true,
+        "samples": 835,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.8838748801499605,
+        "renderP95MS": 0.30458346009254456,
+        "observerP95MS": 0.09349989704787731,
+        "measurementSHA256": "31902d3ea68a234dc77f777ac93f63377c8bf2b2e570ab8a93bba5463c2bf372"
+      },
+      "before-modern-rescue-audio": {
+        "passed": true,
+        "samples": 817,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.500041551887989,
+        "renderP95MS": 0.43916678987443447,
+        "observerP95MS": 0.15837512910366058,
+        "measurementSHA256": "f69f1cd4ecdc42a7ca9f06d8568413afb226a3ea5b38d795ec7003a626be6327"
+      },
+      "after-modern-rescue-audio": {
+        "passed": true,
+        "samples": 834,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.9722916185855865,
+        "renderP95MS": 0.29045832343399525,
+        "observerP95MS": 0.09099999442696571,
+        "measurementSHA256": "39a94f78367afc32f7e1b2ac57927dec88a31fd97be408460996ff8925531e0f"
+      },
+      "before-dungeon-archive-audio": {
+        "passed": true,
+        "samples": 821,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.177166683599353,
+        "renderP95MS": 0.41924999095499516,
+        "observerP95MS": 0.14187488704919815,
+        "measurementSHA256": "e7c43d51fa3e628fa681b7a6a1c2a5023acad2469e36c06cb880ba287aadc41c"
+      },
+      "after-dungeon-archive-audio": {
+        "passed": true,
+        "samples": 837,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 1.7412500455975533,
+        "renderP95MS": 0.25349995121359825,
+        "observerP95MS": 0.08904165588319302,
+        "measurementSHA256": "614f53ad12206441b295ac548c561bf19f88a8550827846e5bc25fbff8be06ed"
+      },
+      "before-dungeon-rift-extreme-audio": {
+        "passed": true,
+        "samples": 825,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 4.023833433166146,
+        "renderP95MS": 0.7046665996313095,
+        "observerP95MS": 0.13779150322079659,
+        "measurementSHA256": "afaef6cd32eb937561d0642c56612ff381c36fe0d69fbc6e8cd9a221ed9259b7"
+      },
+      "after-dungeon-rift-extreme-audio": {
+        "passed": true,
+        "samples": 835,
+        "intervalP95MS": 16.66666683740914,
+        "engineP95MS": 3.082583425566554,
+        "renderP95MS": 0.5413333419710398,
+        "observerP95MS": 0.09062513709068298,
+        "measurementSHA256": "5efaed8680a1dd867a74e1e8f13bc78b435865a49ff38af13d26d90739610b84"
+      }
+    },
+    "limitations": "Simulator results do not establish physical-device GPU, thermal or battery performance."
+  },
+  "normalResourceReplay": {
+    "runs": 54,
+    "extraInvulnerability": false,
+    "summary": [
+      {
+        "level": 0,
+        "dodgeWins": 9,
+        "stationaryWins": 0,
+        "meanSeconds": 29
+      },
+      {
+        "level": 1,
+        "dodgeWins": 9,
+        "stationaryWins": 7,
+        "meanSeconds": 42
+      },
+      {
+        "level": 2,
+        "dodgeWins": 8,
+        "stationaryWins": 6,
+        "meanSeconds": 46
+      }
+    ]
+  },
+  "testFlight": {
+    "processingState": "VALID",
+    "internalBuildState": "IN_BETA_TESTING",
+    "existingInternalGroupAndTesterVerified": true
+  },
+  "limitations": [
+    "UI reward image uses an explicit simulator-only win fixture; normal-resource replay is separate.",
+    "Synthetic inputs cannot establish human enjoyment.",
+    "Simulator results do not establish physical-device GPU or thermal behavior.",
+    "Phone installation is not verified."
+  ]
+}
