@@ -21,7 +21,7 @@
     {
       "id": 1,
       "name": "启动和大厅",
-      "status": "web_verified_native_pending",
+      "status": "complete",
       "tasks": [
         "独立启动画面，明确进入游戏",
         "地图作为默认大厅内容",
@@ -33,7 +33,7 @@
     {
       "id": 2,
       "name": "角色和编队",
-      "status": "web_verified_native_pending",
+      "status": "complete",
       "tasks": [
         "六角色列表和详情",
         "全身展示、等级、星级、武器槽",
@@ -45,7 +45,7 @@
     {
       "id": 3,
       "name": "冒险和副本",
-      "status": "web_verified_native_pending",
+      "status": "complete",
       "tasks": [
         "三张章节地图及解锁条件",
         "三类材料副本与三档难度",
@@ -58,7 +58,7 @@
     {
       "id": 4,
       "name": "战斗辨识和能量",
-      "status": "web_verified_native_pending",
+      "status": "complete",
       "tasks": [
         "红橙敌弹、青色己方火力",
         "绿色加号回血、方形火力、金色材料",
@@ -70,7 +70,7 @@
     {
       "id": 5,
       "name": "技巧和难度",
-      "status": "web_verified_native_pending",
+      "status": "complete",
       "tasks": [
         "危险攻击提前预警",
         "瞄准、诱导扇射、穿弹幕空隙和大招时机",
@@ -82,7 +82,7 @@
     {
       "id": 6,
       "name": "美术和交付",
-      "status": "in_progress",
+      "status": "complete",
       "tasks": [
         "imagegen 启动主视觉",
         "六角色飞行姿态精修",
@@ -104,7 +104,7 @@
   ],
   "verification": {
     "web": "151 shared tests passed; 108 normal-resource dungeon input replays completed; responsive browser flows verified at 390x844 and 320x568.",
-    "native": "Native test targets compile. Full simulator execution pending Mac unlock; first blocked run retained.",
-    "distribution": "Web 8.0 public demo being published; iOS 5.0.0 (9) has not been uploaded."
+    "native": "28 checks passed on each dedicated iPhone and iPad simulator; sixteen Release scenes with sound and music passed; thirteen same-seed comparisons retained.",
+    "distribution": "Web 8.0 public demo verified; iOS 5.0.0 (9) VALID and IN_BETA_TESTING, linked to existing internal group and tester. Installation not claimed."
   }
 }
