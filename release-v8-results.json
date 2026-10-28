@@ -1,0 +1,114 @@
+{
+  "webVersion": "8.0",
+  "plannedNativeVersion": "5.0.0",
+  "plannedNativeBuild": 9,
+  "nativeUploaded": false,
+  "offlineSinglePlayer": true,
+  "sharedTestsPassed": 151,
+  "dungeonInputReplay": {
+    "runs": 108,
+    "normalResources": true,
+    "extraInvulnerability": false,
+    "summary": [
+      {
+        "dungeon": "archive",
+        "tier": 1,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 30,
+        "meanDamage": 2
+      },
+      {
+        "dungeon": "archive",
+        "tier": 2,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 36,
+        "meanDamage": 2.2
+      },
+      {
+        "dungeon": "archive",
+        "tier": 3,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 36,
+        "meanDamage": 2
+      },
+      {
+        "dungeon": "forge",
+        "tier": 1,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 29,
+        "meanDamage": 2.1
+      },
+      {
+        "dungeon": "forge",
+        "tier": 2,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 33,
+        "meanDamage": 2
+      },
+      {
+        "dungeon": "forge",
+        "tier": 3,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 36,
+        "meanDamage": 2.3
+      },
+      {
+        "dungeon": "rift",
+        "tier": 1,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 32,
+        "meanDamage": 2.9
+      },
+      {
+        "dungeon": "rift",
+        "tier": 2,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 35,
+        "meanDamage": 3.1
+      },
+      {
+        "dungeon": "rift",
+        "tier": 3,
+        "dodgeWins": 6,
+        "stationaryWins": 0,
+        "meanSeconds": 38,
+        "meanDamage": 3.3
+      }
+    ],
+    "limitations": "Synthetic input cannot establish human difficulty, readability or enjoyment."
+  },
+  "browserChecks": {
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        568
+      ]
+    ],
+    "flows": [
+      "Title then map hub; lobby tabs never start combat.",
+      "Chapter unlock information.",
+      "Browse and upgrade Lune while Ember/Nerine squad stays unchanged; level persists after reload.",
+      "Material dungeon selection, target drops and difficulty locks.",
+      "Single-thumb relative drag, distinct pickups, compact HUD, bounded resonance and blessing draft."
+    ]
+  },
+  "nativeBuildForTesting": true,
+  "nativeUIAndPerformance": "Not completed: simulator startup blocked while the host Mac is locked. Retained failed boot run.",
+  "limitations": [
+    "Synthetic replay cannot establish human enjoyment.",
+    "Simulator results do not establish physical-device GPU, thermal or battery behavior.",
+    "No new TestFlight build or phone installation is claimed."
+  ]
+}
