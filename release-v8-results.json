@@ -23,15 +23,15 @@
         "tier": 2,
         "dodgeWins": 6,
         "stationaryWins": 0,
-        "meanSeconds": 36,
-        "meanDamage": 2.2
+        "meanSeconds": 32,
+        "meanDamage": 2
       },
       {
         "dungeon": "archive",
         "tier": 3,
         "dodgeWins": 6,
         "stationaryWins": 0,
-        "meanSeconds": 36,
+        "meanSeconds": 35,
         "meanDamage": 2
       },
       {
@@ -48,7 +48,7 @@
         "dodgeWins": 6,
         "stationaryWins": 0,
         "meanSeconds": 33,
-        "meanDamage": 2
+        "meanDamage": 2.1
       },
       {
         "dungeon": "forge",
@@ -72,15 +72,15 @@
         "dodgeWins": 6,
         "stationaryWins": 0,
         "meanSeconds": 35,
-        "meanDamage": 3.1
+        "meanDamage": 2.8
       },
       {
         "dungeon": "rift",
         "tier": 3,
         "dodgeWins": 6,
         "stationaryWins": 0,
-        "meanSeconds": 38,
-        "meanDamage": 3.3
+        "meanSeconds": 39,
+        "meanDamage": 3.4
       }
     ],
     "limitations": "Synthetic input cannot establish human difficulty, readability or enjoyment."
@@ -101,7 +101,8 @@
       "Chapter unlock information.",
       "Browse and upgrade Lune while Ember/Nerine squad stays unchanged; level persists after reload.",
       "Material dungeon selection, target drops and difficulty locks.",
-      "Single-thumb relative drag, distinct pickups, compact HUD, bounded resonance and blessing draft."
+      "Single-thumb relative drag, distinct pickups, compact HUD, bounded resonance and blessing draft.",
+      "Actual archive clear, real rewards, result-to-growth route, hero upgrade, reload and tier-two unlock."
     ]
   },
   "nativeBuildForTesting": true,
