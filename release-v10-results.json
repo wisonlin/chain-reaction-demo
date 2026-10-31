@@ -1,0 +1,173 @@
+{
+  "checkedAt": "2026-10-31T15:33:14.663648+00:00",
+  "webVersion": "10.0",
+  "nativeVersion": "6.1.0",
+  "nativeBuild": 11,
+  "published": true,
+  "offlineSinglePlayer": true,
+  "scope": "Flight Deck UI; preserve two tabs, six characters and three-stage shooter rules.",
+  "sharedChecks": 158,
+  "nativeChecksPerDevice": 24,
+  "nativeFailures": 0,
+  "nativeSkipped": 0,
+  "webChecks": 13,
+  "releaseAudioCases": 17,
+  "matchingSeedComparisons": 17,
+  "seed": 42,
+  "performance": [
+    {
+      "case": "legacy-laser-audio",
+      "samples": 704,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.601624932140112,
+      "renderP95MS": 0.4331665113568306
+    },
+    {
+      "case": "laser-audio",
+      "samples": 704,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.581625012680888,
+      "renderP95MS": 0.4836665466427803
+    },
+    {
+      "case": "homing-hard-audio",
+      "samples": 821,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.1201248057186604,
+      "renderP95MS": 0.7033748552203178
+    },
+    {
+      "case": "max-spread-late-audio",
+      "samples": 821,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.375458298251033,
+      "renderP95MS": 0.46479166485369205
+    },
+    {
+      "case": "max-homing-late-audio",
+      "samples": 828,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.385041607543826,
+      "renderP95MS": 0.708041712641716
+    },
+    {
+      "case": "max-collection-audio",
+      "samples": 821,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.4281667321920395,
+      "renderP95MS": 0.43708342127501965
+    },
+    {
+      "case": "world-haven-audio",
+      "samples": 713,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.6451666597276926,
+      "renderP95MS": 0.7858749013394117
+    },
+    {
+      "case": "encounter-haven-audio",
+      "samples": 704,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.945499960333109,
+      "renderP95MS": 0.4820418544113636
+    },
+    {
+      "case": "world-lagoon-audio",
+      "samples": 717,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.910333288833499,
+      "renderP95MS": 0.8370832074433565
+    },
+    {
+      "case": "encounter-lagoon-audio",
+      "samples": 706,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.3232916612178087,
+      "renderP95MS": 0.479208305478096
+    },
+    {
+      "case": "world-ruins-audio",
+      "samples": 716,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 1.966958399862051,
+      "renderP95MS": 0.6220000796020031
+    },
+    {
+      "case": "encounter-ruins-audio",
+      "samples": 707,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.0519585125148296,
+      "renderP95MS": 0.5243334453552961
+    },
+    {
+      "case": "rescue-laser-audio",
+      "samples": 825,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.661833306774497,
+      "renderP95MS": 0.46612508594989777
+    },
+    {
+      "case": "modern-rescue-audio",
+      "samples": 825,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.7042499277740717,
+      "renderP95MS": 0.43770833872258663
+    },
+    {
+      "case": "dungeon-archive-audio",
+      "samples": 816,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 2.771499799564481,
+      "renderP95MS": 0.4419167526066303
+    },
+    {
+      "case": "dungeon-rift-extreme-audio",
+      "samples": 818,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.1067917589098215,
+      "renderP95MS": 0.6544999778270721
+    },
+    {
+      "case": "simple-first-stage-audio",
+      "samples": 823,
+      "passed": true,
+      "intervalP95MS": 16.66666683740914,
+      "engineP95MS": 3.3595834393054247,
+      "renderP95MS": 0.42629148811101913
+    }
+  ],
+  "combatCoreUnchanged": true,
+  "coreSHA256": "41ce636207b41e01532a462daa4f5fdde4f1470440e51a597f545dc0be6fbf24",
+  "webBundleSHA256": "898a494b92f4ec999eefb96a65783a47b60965b837ba3ea944af44f3dbd90321",
+  "testedRuntimeFilesMatched": 108,
+  "signatureVerified": true,
+  "physicalDiagnosticsDisabled": true,
+  "livePublicUIVerified": true,
+  "internalTestFlight": {
+    "processingState": "VALID",
+    "internalBuildState": "IN_BETA_TESTING",
+    "existingGroupAndTesterVerified": true
+  },
+  "appStoreFormalSubmission": false,
+  "limitations": [
+    "No physical GPU, thermal, battery or long-session measurements.",
+    "Phone installation is not confirmed.",
+    "Native reward screenshot uses the explicit simulator-only win fixture."
+  ]
+}
