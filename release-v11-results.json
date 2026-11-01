@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-11-01T00:24:46.139347+00:00",
+  "webVersion": "11.0",
+  "nativeVersion": "6.2.0",
+  "nativeBuild": "12",
+  "offlineSinglePlayer": true,
+  "sourceAcceptedForRelease": true,
+  "acceptedCodeSHA256": "7457593c23078a38374b66156190037fadf344ca41f4cfcf87a134f267c2d0e0",
+  "webBundleSHA256": "95f9f19740499776a316621a25166fe36c577d574f1125eedf10a8c1af4b580b",
+  "runtimeJSAndCSSMatchAcceptedCandidate": true,
+  "sharedChecks": 158,
+  "nativeChecksPerDevice": 27,
+  "nativeFailures": 0,
+  "nativeSkipped": 0,
+  "releaseAudioCases": 17,
+  "matchingSeedComparisons": 17,
+  "seed": 42,
+  "internalTestFlight": {
+    "ready": false,
+    "processingState": "NOT_YET_VERIFIED",
+    "internalBuildState": "NOT_YET_VERIFIED",
+    "existingGroupLinked": false,
+    "existingTesterMembershipVerified": false
+  },
+  "appStoreFormalSubmission": false,
+  "limitations": [
+    "Simulator and automated checks; no physical-device GPU, thermal, battery or long-session claim.",
+    "Native reward UI evidence uses the existing simulator-only victory fixture.",
+    "No new independent manual native playthrough; host GUI remained locked.",
+    "Phone installation is not confirmed."
+  ]
+}
