@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-01T00:24:46.139347+00:00",
+  "checkedAt": "2026-11-01T00:32:23.454680+00:00",
   "webVersion": "11.0",
   "nativeVersion": "6.2.0",
   "nativeBuild": "12",
@@ -16,11 +16,11 @@
   "matchingSeedComparisons": 17,
   "seed": 42,
   "internalTestFlight": {
-    "ready": false,
-    "processingState": "NOT_YET_VERIFIED",
-    "internalBuildState": "NOT_YET_VERIFIED",
-    "existingGroupLinked": false,
-    "existingTesterMembershipVerified": false
+    "ready": true,
+    "processingState": "VALID",
+    "internalBuildState": "IN_BETA_TESTING",
+    "existingGroupLinked": true,
+    "existingTesterMembershipVerified": true
   },
   "appStoreFormalSubmission": false,
   "limitations": [
