@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-11-01T14:15:22.218061+00:00",
+  "webVersion": "12.0",
+  "nativeVersion": "6.3.0",
+  "nativeBuild": "13",
+  "offlineSinglePlayer": true,
+  "webBundleSHA256": "270bf939d6f7ad8a43449e166f7079bd19dab711afce8b66d73cf8d3d8ae9447",
+  "runtimeJSAndCSSMatchAcceptedCandidate": true,
+  "defaultStartActions": 1,
+  "heroSwitchActions": 2,
+  "rewardContinuePrimaryActions": 1,
+  "sharedChecks": 163,
+  "nativeChecksPerDevice": 29,
+  "nativeSmallTargetedChecks": 8,
+  "releaseAudioCases": 17,
+  "nativeEvidenceReusedBecauseSourceUnchanged": true,
+  "internalTestFlight": {
+    "ready": true,
+    "processingState": "VALID",
+    "internalBuildState": "IN_BETA_TESTING",
+    "existingGroupLinked": true,
+    "existingTesterMembershipVerified": true
+  },
+  "phoneInstallationConfirmed": false,
+  "appStoreFormalSubmission": false,
+  "limitations": [
+    "Automated and simulator evidence; no physical-device thermal/battery/long-session claims.",
+    "Native reward validation uses a simulator victory fixture; displayed Web reward comes from ordinary input replay."
+  ]
+}
