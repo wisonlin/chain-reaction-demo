@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>星渡 8.3 · 原生体验改进</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif;color:#173d42;background:#f4f0e5}*{box-sizing:border-box}body{margin:0}main{max-width:1100px;margin:auto;padding:30px 18px 50px}h1{font-family:serif;font-size:clamp(30px,6vw,54px);line-height:1.2;font-weight:500;margin:14px 0}h2{font-size:24px;font-weight:600;margin:40px 0 12px}p{font-size:17px;line-height:1.7;max-width:720px}.status{display:inline-block;border:1px solid #97b7ad;border-radius:30px;padding:9px 15px;font-size:14px;background:#e4ece0}.muted{color:#496568}nav{display:flex;gap:10px;flex-wrap:wrap;margin:22px 0}nav a{padding:12px 16px;border:1px solid #bdccc5;border-radius:10px;color:inherit;text-decoration:none;background:#fff9eb}a:focus-visible,button:focus-visible{outline:3px solid #b74932;outline-offset:4px}video{display:block;width:min(100%,430px);max-height:75vh;border-radius:16px;background:#102b40;margin:24px 0}.screens{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}figure{margin:0;min-width:0}figure a{display:block;border-radius:12px;overflow:hidden;background:#e1e8df;box-shadow:0 7px 24px #173d4212}figure img{display:block;width:100%;height:auto}figcaption{font-size:15px;line-height:1.6;padding:10px 2px 15px}figcaption strong{display:block;font-size:17px}.costumes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.note{border-top:1px solid #bdccc5;margin-top:34px;padding-top:18px;font-size:14px}footer{margin-top:30px;color:#496568;font-size:14px}footer a{color:inherit}@media(max-width:620px){.screens{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.costumes{grid-template-columns:1fr}main{padding-top:22px}p{font-size:16px}figcaption{font-size:14px}figcaption strong{font-size:16px}}
+</style>
+<main>
+<span class="status">TestFlight 8.3.0（22）· 已向现有内部测试组提供</span>
+<h1>看清战斗，换上新的日常。</h1>
+<p class="muted">战斗中能看到当前人物、等级和本局金币；暂停后可以继续，也可以保留已拾取资源退出。职业衣装与星轨寻访，随这次原生版本一起更新。</p>
+<nav aria-label="本页内容"><a href="#battle">战斗与退出</a><a href="#recruit">招募与演出</a><a href="#wardrobe">职业衣装</a></nav>
+<video controls playsinline preload="metadata" poster="native-83-recruit.webp" aria-label="原生版战斗、招募和换装实际操作视频"><source src="native-83-demo.mp4" type="video/mp4"></video>
+<p class="muted">以下为原生模拟器画面与实录。手机试玩请在 TestFlight 更新此版本；图片可点击放大。</p>
+<h2 id="battle">战斗信息与暂停退出</h2>
+<div class="screens">
+<figure><a href="native-83-hud.webp" aria-label="放大战斗信息界面"><img src="native-83-hud.webp" alt="实际战斗中的人物头像、等级、本局金币、生命条和暂停按钮" width="880" height="1912" loading="lazy"></a><figcaption><strong>当前人物与本局收获</strong>头像、等级、拾取金币和生命条保持可见。</figcaption></figure>
+<figure><a href="native-83-pause.webp" aria-label="放大暂停与退出确认"><img src="native-83-pause.webp" alt="暂停界面上的退出确认与保留收获说明" width="880" height="1912" loading="lazy"></a><figcaption><strong>随时暂停与退出</strong>退出保留已拾取资源，继续暂停则保留现场。</figcaption></figure>
+</div>
+<h2 id="recruit">选一个奖池，再开始寻访</h2>
+<p class="muted">角色、武器和衣装分别浏览，一次只显示当前奖池的抽取按钮。结果先保存到本机，再播放独立的星轨汇聚演出；跳过或关闭都不会改变本次奖励。</p>
+<div class="screens">
+<figure><a href="native-83-recruit.webp" aria-label="放大分段奖池"><img src="native-83-recruit.webp" alt="角色、武器、衣装三个奖池与当前抽取价格" width="880" height="1912" loading="lazy"></a><figcaption><strong>一个清楚的奖池</strong>价格、可能获得的内容和保底放在一起。</figcaption></figure>
+<figure><a href="native-83-ceremony.webp" aria-label="放大实际招募演出"><img src="native-83-ceremony.webp" alt="SpriteKit星轨汇聚、光环绽放和跳过按钮" width="880" height="1912" loading="lazy"></a><figcaption><strong>独立星轨演出</strong>原生星轨、光环和粒子；可随时跳过。</figcaption></figure>
+<figure><a href="native-83-result.webp" aria-label="放大实际保存的招募结果"><img src="native-83-result.webp" alt="本次获得的奖励、金币消耗前后和本机保存状态" width="880" height="1912" loading="lazy"></a><figcaption><strong>实际获得了什么</strong>奖励、所属人物与扣费前后一并显示。</figcaption></figure>
+</div>
+<h2 id="wardrobe">20位旅人，各自三种主题</h2>
+<p class="muted">保留初始衣装，重画另外40套职业主题：医护、学院、咖啡师、研究员、舰长、花艺师等。每套都包含独立绘制的正面全身与战斗背面，换装不增加战斗属性。</p>
+<div class="screens"><figure><a href="native-83-wardrobe.webp" aria-label="放大原生职业衣装预览"><img src="native-83-wardrobe.webp" alt="原生装备页的职业主题、正面全身和战斗背面切换" width="880" height="1912" loading="lazy"></a><figcaption><strong>先预览，再换装</strong>职业名称、完整立绘与拥有状态放在同一页。</figcaption></figure></div>
+<div class="costumes">
+<figure><a href="native-83-outfits-1.webp" aria-label="放大岚珀、霁弦、澜歌、绯穗的三套主题"><img src="native-83-outfits-1.webp" alt="岚珀、霁弦、澜歌、绯穗三套职业衣装正背对照" loading="lazy"></a><figcaption>岚珀 · 霁弦 · 澜歌 · 绯穗</figcaption></figure>
+<figure><a href="native-83-outfits-2.webp" aria-label="放大夜珩、青翎、铃苒、珊瑚的三套主题"><img src="native-83-outfits-2.webp" alt="夜珩、青翎、铃苒、珊瑚三套职业衣装正背对照" loading="lazy"></a><figcaption>夜珩 · 青翎 · 铃苒 · 珊瑚</figcaption></figure>
+<figure><a href="native-83-outfits-3.webp" aria-label="放大焰绫、鸢璃、霜翎、丹蔷的三套主题"><img src="native-83-outfits-3.webp" alt="焰绫、鸢璃、霜翎、丹蔷三套职业衣装正背对照" loading="lazy"></a><figcaption>焰绫 · 鸢璃 · 霜翎 · 丹蔷</figcaption></figure>
+<figure><a href="native-83-outfits-4.webp" aria-label="放大弥澈、弦月、荆蜜、曦珞的三套主题"><img src="native-83-outfits-4.webp" alt="弥澈、弦月、荆蜜、曦珞三套职业衣装正背对照" loading="lazy"></a><figcaption>弥澈 · 弦月 · 荆蜜 · 曦珞</figcaption></figure>
+<figure><a href="native-83-outfits-5.webp" aria-label="放大月汐、花音、漪萝、霓羽的三套主题"><img src="native-83-outfits-5.webp" alt="月汐、花音、漪萝、霓羽三套职业衣装正背对照" loading="lazy"></a><figcaption>月汐 · 花音 · 漪萝 · 霓羽</figcaption></figure>
+</div>
+<p class="note muted">完全离线、单人游玩。单指相对拖动与自动射击保持原有操作；已有角色、装备、皮肤和养成进度继续保留。</p>
+<footer><a href="native-experience.html">查看上一版体验记录</a></footer>
+</main></html>
