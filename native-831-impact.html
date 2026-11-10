@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light"><title>星渡 · 打击音效试听</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f0e6;color:#173d42;font:17px/1.7 system-ui,-apple-system,sans-serif;padding:36px 22px 48px}main{max-width:540px;margin:auto}.tag{font-size:13px;font-weight:700;letter-spacing:.12em;color:#876535}h1{font-size:30px;line-height:1.3;margin:12px 0 18px}p{margin:12px 0;color:#526467}section{background:#fffdf8;border:1px solid #ded8c9;border-radius:18px;margin:22px 0;padding:20px}h2{font-size:21px;margin:0 0 8px}audio{display:block;width:100%;height:54px;margin:14px 0 4px}small{display:block;color:#627175;font-size:14px}strong{font-weight:650;color:#173d42}a{color:#216c75}li{margin:9px 0}ul{padding-left:22px}footer{margin-top:28px;font-size:13px;color:#758184}
+</style>
+<main>
+<div class="tag">星渡 / 开发试听</div>
+<h1>让“打中了”<br>听得出来。</h1>
+<p>先听旧版，再听调整版。每段 18 秒，使用<strong>相同的开火、命中、击杀时序和音乐</strong>。</p>
+<section><h2>① 调整前</h2><small>原有开火与爆炸声，命中没有声音。</small><audio controls preload="metadata" src="native-831-impact-before.mp3">浏览器不支持音频播放。</audio></section>
+<section><h2>② 调整后</h2><small>命中有短促反馈；击破、击杀更厚实；开火声后退。</small><audio controls preload="metadata" src="native-831-impact-after.mp3">浏览器不支持音频播放。</audio></section>
+<ul><li>四种命中音色，每种轮换三个变体。</li><li>击破护甲、小敌击杀、大敌爆炸分别处理。</li><li>密集命中合并，给重要声音留出空间。</li></ul>
+<p><small>这是按同一时序制作的离线混音样片，含背景音乐；不是手机实录，也不代表最终手机扬声器表现。此改版尚未发布到 TestFlight，原生界面与完整性能验收仍待完成。</small></p>
+<footer>音效基础素材：Kenney · Sci-Fi Sounds（CC0），已剪辑与混音。音乐：MintoDog · Hope（CC0）。</footer>
+</main>
+<script>document.querySelectorAll('audio').forEach(a=>a.addEventListener('play',()=>document.querySelectorAll('audio').forEach(b=>{if(a!==b)b.pause()})))</script>
+</html>
