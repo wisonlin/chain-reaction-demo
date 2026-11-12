@@ -1,0 +1,12 @@
+{
+  "version": "8.9.0",
+  "build": "28",
+  "availableInExistingInternalTestFlight": true,
+  "nativeTestsPerDevice": 103,
+  "standardSoundOnProfiles": 35,
+  "finiteUltimateProfiles": 6,
+  "gameplayCoreChanged": false,
+  "screenshots": "Actual simulator screen captures, resized proportionally only",
+  "audio": "Actual app effects mixer output, no music mixed in",
+  "physicalDevicePerformanceVerified": false
+}
