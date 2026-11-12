@@ -1,0 +1,588 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "weapons": 18,
+  "backgroundOnlyCorrections": 2,
+  "notes": "Eighteen distinct renders, background-key cleanup where necessary, preserved alpha and proportional fitting. No palette-swapped substitute icons. This is native review media, not a web game.",
+  "records": [
+    {
+      "id": "ember-spread",
+      "name": "烬羽法杖",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 烬羽法杖, an original fantasy equipment design.\nSubject: Black lacquer and polished silver lantern staff, long slim tapered shaft, angular feather-shaped cage surrounding a solid ruby glass flame, crimson feather finial and short red silk tassel. Dramatic red/black/silver, elegant and sharply constructed.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: true transparent background, clean cutout alpha.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.",
+      "transparentOutput": true,
+      "chromaKey": null,
+      "savedAsset": "assets/weapons-v88/runtime/ember-spread.png",
+      "publicAsset": "native-88-ember-spread.webp",
+      "normalization": {
+        "sourceBounds": [
+          33,
+          13,
+          1242,
+          1233
+        ],
+        "fittedSize": [
+          444,
+          448
+        ],
+        "position": [
+          34,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "ember-laser",
+      "name": "霜露法杖",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 霜露法杖, an original fantasy equipment design.\nSubject: A pearl-white and silver lantern staff with an open droplet-shaped cage, deep aqua glass teardrop at its center, a small blue ribbon tied beneath the head, thin curved silver fins. Clearly a water variant of the same slender staff family.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: true transparent background, clean cutout alpha.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput images: the provided isolated crimson staff is a rendering-style reference only. Match its polished metal, precise edges, cel-painted jewel volumes and detail level. Create the distinct requested 霜露法杖; do not reproduce the reference's staff form when the subject is a scythe or an astrolabe.",
+      "transparentOutput": true,
+      "chromaKey": null,
+      "savedAsset": "assets/weapons-v88/runtime/ember-laser.png",
+      "publicAsset": "native-88-ember-laser.webp",
+      "normalization": {
+        "sourceBounds": [
+          25,
+          0,
+          1253,
+          1254
+        ],
+        "fittedSize": [
+          439,
+          448
+        ],
+        "position": [
+          36,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "ember-homing",
+      "name": "鸣雷法杖",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 鸣雷法杖, an original fantasy equipment design.\nSubject: A black and pale-gold lantern staff with a jagged forked lightning cage, amethyst faceted core, violet short ribbon, angular gold feather tips. Distinct head silhouette from a fire lantern.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: true transparent background, clean cutout alpha.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput images: the provided isolated crimson staff is a rendering-style reference only. Match its polished metal, precise edges, cel-painted jewel volumes and detail level. Create the distinct requested 鸣雷法杖; do not reproduce the reference's staff form when the subject is a scythe or an astrolabe.",
+      "transparentOutput": true,
+      "chromaKey": null,
+      "savedAsset": "assets/weapons-v88/runtime/ember-homing.png",
+      "publicAsset": "native-88-ember-homing.webp",
+      "normalization": {
+        "sourceBounds": [
+          31,
+          0,
+          1254,
+          1254
+        ],
+        "fittedSize": [
+          437,
+          448
+        ],
+        "position": [
+          37,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "lune-spread",
+      "name": "弦月雷镰",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 弦月雷镰, an original fantasy equipment design.\nSubject: A long black-and-gold crescent lightning scythe-spear: spear point extends above a broad swept single crescent blade, blade edge made of translucent purple crystal, sharp gold filigree, compact violet ribbon. Strong crescent silhouette, elegant fantasy polearm.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: true transparent background, clean cutout alpha.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput images: the provided isolated crimson staff is a rendering-style reference only. Match its polished metal, precise edges, cel-painted jewel volumes and detail level. Create the distinct requested 弦月雷镰; do not reproduce the reference's staff form when the subject is a scythe or an astrolabe.",
+      "transparentOutput": true,
+      "chromaKey": null,
+      "savedAsset": "assets/weapons-v88/runtime/lune-spread.png",
+      "publicAsset": "native-88-lune-spread.webp",
+      "normalization": {
+        "sourceBounds": [
+          25,
+          9,
+          1242,
+          1235
+        ],
+        "fittedSize": [
+          445,
+          448
+        ],
+        "position": [
+          33,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "lune-laser",
+      "name": "雨鸣雷镰",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 雨鸣雷镰, an original fantasy equipment design.\nSubject: A deep-blue and silver crescent scythe-spear with a transparent aquamarine water blade, shell-like curved guard, fine droplets carved into metal and a short blue ribbon. Same polearm family, open wave-shaped crescent blade.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: true transparent background, clean cutout alpha.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput images: the provided isolated crimson staff is a rendering-style reference only. Match its polished metal, precise edges, cel-painted jewel volumes and detail level. Create the distinct requested 雨鸣雷镰; do not reproduce the reference's staff form when the subject is a scythe or an astrolabe.",
+      "transparentOutput": true,
+      "chromaKey": null,
+      "savedAsset": "assets/weapons-v88/runtime/lune-laser.png",
+      "publicAsset": "native-88-lune-laser.webp",
+      "normalization": {
+        "sourceBounds": [
+          41,
+          6,
+          1244,
+          1226
+        ],
+        "fittedSize": [
+          442,
+          448
+        ],
+        "position": [
+          35,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "lune-homing",
+      "name": "幽蕊雷镰",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: precise-object-edit. Asset: original fantasy weapon cutout for a native game. Edit target: provided weapon illustration. Change ONLY the background: replace all white/gray haze, glow, shadow, transparency and current green background with perfectly flat opaque #FF00FF magenta chroma key. All empty gaps between metal and leaves must be exactly the same flat #FF00FF. Preserve the exact full weapon outline, pose, proportions, all green jade and leaves, metal highlights, jewels, ribbons and original colors. Do not redesign or add anything. No new scenery, gradients, clouds, lettering or floor. This is an opaque intermediate for clean deterministic extraction.",
+      "transparentOutput": false,
+      "chromaKey": "#FF00FF",
+      "savedAsset": "assets/weapons-v88/runtime/lune-homing.png",
+      "publicAsset": "native-88-lune-homing.webp",
+      "normalization": {
+        "sourceBounds": [
+          0,
+          35,
+          1182,
+          1254
+        ],
+        "fittedSize": [
+          434,
+          448
+        ],
+        "position": [
+          39,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      },
+      "initialPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 幽蕊雷镰, an original fantasy equipment design.\nSubject: An emerald-green and dark-bronze crescent scythe-spear, a thorned curling leaf blade and a glowing solid jade bud at the joint, small ivy leaves clasped to the upper shaft. Botanical hooked crescent silhouette.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: true transparent background, clean cutout alpha.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput images: the provided isolated crimson staff is a rendering-style reference only. Match its polished metal, precise edges, cel-painted jewel volumes and detail level. Create the distinct requested 幽蕊雷镰; do not reproduce the reference's staff form when the subject is a scythe or an astrolabe.",
+      "backgroundOnlyEdit": true
+    },
+    {
+      "id": "nerine-spread",
+      "name": "沧珠星仪",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 沧珠星仪, an original fantasy equipment design.\nSubject: A floating tide astrolabe weapon, two intricate asymmetrical gold-and-silver orbit rings enclosing a large solid sapphire pearl, crescent wave fins, three small pearls mounted on the metal ring. A compact handheld magical instrument with no shaft, unmistakable deep-blue water core.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: true transparent background, clean cutout alpha.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput images: the provided isolated crimson staff is a rendering-style reference only. Match its polished metal, precise edges, cel-painted jewel volumes and detail level. Create the distinct requested 沧珠星仪; do not reproduce the reference's staff form when the subject is a scythe or an astrolabe.",
+      "transparentOutput": true,
+      "chromaKey": null,
+      "savedAsset": "assets/weapons-v88/runtime/nerine-spread.png",
+      "publicAsset": "native-88-nerine-spread.webp",
+      "normalization": {
+        "sourceBounds": [
+          0,
+          17,
+          1240,
+          1236
+        ],
+        "fittedSize": [
+          448,
+          440
+        ],
+        "position": [
+          32,
+          36
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "nerine-laser",
+      "name": "霜汐星仪",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 霜汐星仪, an original fantasy equipment design.\nSubject: A floating frost tide astrolabe, angular silver orbit rings surrounding a faceted icy-blue crystal pearl, six short crystalline snowflake points and a pale-blue bow. Compact magical instrument, distinct hexagonal ring silhouette.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: this is an OPAQUE chroma-key intermediate for a sprite pipeline. The ENTIRE background is perfectly uniform #00FF00 RGB, with no variations, no gradient and no shadow. Keep that exact color completely off the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: rendering-style reference only. Match polished metal and painterly cel-shaded crystal. Draw the requested 霜汐星仪, not a staff. For swords: a single ordinary straight sword blade, hilt and guard, no orbit rings or cages. For flute: a playable tubular musical instrument, no staff or sword. Keep all requested details and do not add scenery. NO glow or haze outside the object.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/nerine-laser.png",
+      "publicAsset": "native-88-nerine-laser.webp",
+      "normalization": {
+        "sourceBounds": [
+          159,
+          37,
+          1177,
+          1210
+        ],
+        "fittedSize": [
+          389,
+          448
+        ],
+        "position": [
+          61,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "nerine-homing",
+      "name": "雷汐星仪",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 雷汐星仪, an original fantasy equipment design.\nSubject: A floating storm tide astrolabe, black-and-gold segmented orbit rings enclosing a solid violet pearl, angular lightning-shaped ring segments and small purple crystal prongs. Compact magical instrument, distinct electric star shape.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: this is an OPAQUE chroma-key intermediate for a sprite pipeline. The ENTIRE background is perfectly uniform #00FF00 RGB, with no variations, no gradient and no shadow. Keep that exact color completely off the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: rendering-style reference only. Match polished metal and painterly cel-shaded crystal. Draw the requested 雷汐星仪, not a staff. For swords: a single ordinary straight sword blade, hilt and guard, no orbit rings or cages. For flute: a playable tubular musical instrument, no staff or sword. Keep all requested details and do not add scenery. NO glow or haze outside the object.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/nerine-homing.png",
+      "publicAsset": "native-88-nerine-homing.webp",
+      "normalization": {
+        "sourceBounds": [
+          165,
+          42,
+          1124,
+          1204
+        ],
+        "fittedSize": [
+          370,
+          448
+        ],
+        "position": [
+          71,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "sol-spread",
+      "name": "绯穗细剑",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: precise-object-edit. Asset: original fantasy weapon cutout for a native game. Edit target: provided weapon illustration. Change ONLY the background: replace all white/gray haze, glow, shadow, transparency and current green background with perfectly flat opaque #FF00FF magenta chroma key. All empty gaps between metal and leaves must be exactly the same flat #FF00FF. Preserve the exact full weapon outline, pose, proportions, all green jade and leaves, metal highlights, jewels, ribbons and original colors. Do not redesign or add anything. No new scenery, gradients, clouds, lettering or floor. This is an opaque intermediate for clean deterministic extraction.",
+      "transparentOutput": false,
+      "chromaKey": "#FF00FF",
+      "savedAsset": "assets/weapons-v88/runtime/sol-spread.png",
+      "publicAsset": "native-88-sol-spread.webp",
+      "normalization": {
+        "sourceBounds": [
+          0,
+          54,
+          1161,
+          1254
+        ],
+        "fittedSize": [
+          433,
+          448
+        ],
+        "position": [
+          39,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      },
+      "initialPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 绯穗细剑, an original fantasy equipment design.\nSubject: An elegant slim emerald wind rapier, very long narrow polished silver blade, a flowing jade-and-gold swept basket guard shaped like an open orchid petal, ivory wrapped hilt, a small green jewel and two short cream ribbons. Feminine refined duelist weapon, beautifully legible slender silhouette.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: this is an OPAQUE chroma-key intermediate for a sprite pipeline. The ENTIRE background is perfectly uniform #00FF00 RGB, with no variations, no gradient and no shadow. Keep that exact color completely off the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: rendering-style reference only. Match polished metal and painterly cel-shaded crystal. Draw the requested 绯穗细剑, not a staff. For swords: a single ordinary straight sword blade, hilt and guard, no orbit rings or cages. For flute: a playable tubular musical instrument, no staff or sword. Keep all requested details and do not add scenery. NO glow or haze outside the object.",
+      "backgroundOnlyEdit": true
+    },
+    {
+      "id": "sol-laser",
+      "name": "霜华细剑",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 霜华细剑, an original fantasy equipment design.\nSubject: A slim frost-flower rapier with a pale-blue crystalline needle blade, polished silver lily-petal basket guard, dark-blue wrapped hilt and a small icy-blue rose at the pommel. A distinct icy lily guard, elegant long thin blade.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: this is an OPAQUE chroma-key intermediate for a sprite pipeline. The ENTIRE background is perfectly uniform #00FF00 RGB, with no variations, no gradient and no shadow. Keep that exact color completely off the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: rendering-style reference only. Match polished metal and painterly cel-shaded crystal. Draw the requested 霜华细剑, not a staff. For swords: a single ordinary straight sword blade, hilt and guard, no orbit rings or cages. For flute: a playable tubular musical instrument, no staff or sword. Keep all requested details and do not add scenery. NO glow or haze outside the object.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/sol-laser.png",
+      "publicAsset": "native-88-sol-laser.webp",
+      "normalization": {
+        "sourceBounds": [
+          105,
+          42,
+          1157,
+          1209
+        ],
+        "fittedSize": [
+          404,
+          448
+        ],
+        "position": [
+          54,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "sol-homing",
+      "name": "翠棘细剑",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 翠棘细剑, an original fantasy equipment design.\nSubject: A botanical thorn rapier with a very slender silver blade inset with jade, curling dark-bronze vine basket guard forming an open leafy rose, dark-green wrapped hilt, small ivory bud and tiny ivy leaves. Distinct asymmetrical thorned rose guard.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: this is an OPAQUE chroma-key intermediate for a sprite pipeline. The ENTIRE background is perfectly uniform #FF00FF RGB, with no variations, no gradient and no shadow. Keep that exact color completely off the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: rendering-style reference only. Match polished metal and painterly cel-shaded crystal. Draw the requested 翠棘细剑, not a staff. For swords: a single ordinary straight sword blade, hilt and guard, no orbit rings or cages. For flute: a playable tubular musical instrument, no staff or sword. Keep all requested details and do not add scenery. NO glow or haze outside the object.",
+      "transparentOutput": false,
+      "chromaKey": "#FF00FF",
+      "savedAsset": "assets/weapons-v88/runtime/sol-homing.png",
+      "publicAsset": "native-88-sol-homing.webp",
+      "normalization": {
+        "sourceBounds": [
+          104,
+          25,
+          1181,
+          1228
+        ],
+        "fittedSize": [
+          401,
+          448
+        ],
+        "position": [
+          55,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "vesper-spread",
+      "name": "夜珩冰剑",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 夜珩冰剑, an original fantasy equipment design.\nSubject: A long ice greatsword with a slender but broad angular translucent lilac-blue crystal blade, black-and-silver hilt, two swept crystalline quillons, tiny pink gem and dark-violet ribbon. Sharp spearhead-shaped tip, faceted cold surfaces, elegant balanced sword proportions.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: this is an OPAQUE chroma-key intermediate for a sprite pipeline. The ENTIRE background is perfectly uniform #00FF00 RGB, with no variations, no gradient and no shadow. Keep that exact color completely off the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: rendering-style reference only. Match polished metal and painterly cel-shaded crystal. Draw the requested 夜珩冰剑, not a staff. For swords: a single ordinary straight sword blade, hilt and guard, no orbit rings or cages. For flute: a playable tubular musical instrument, no staff or sword. Keep all requested details and do not add scenery. NO glow or haze outside the object.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/vesper-spread.png",
+      "publicAsset": "native-88-vesper-spread.webp",
+      "normalization": {
+        "sourceBounds": [
+          106,
+          29,
+          1178,
+          1224
+        ],
+        "fittedSize": [
+          402,
+          448
+        ],
+        "position": [
+          55,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "vesper-laser",
+      "name": "熔星冰剑",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 熔星冰剑, an original fantasy equipment design.\nSubject: A black-and-gold long sword with a narrow solid ruby core inside a dark split crystalline blade, angular red crystal guard, black wrapped hilt and a short crimson ribbon. Distinct ember shard silhouette, subtle red material emission only.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: OPAQUE CHROMA KEY intermediate. Entire background is perfectly flat uniform #00FF00 RGB, no gradient or shadow. This exact key color must not be painted on the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: STYLE REFERENCE ONLY, match refined painted metal/jewel highlights. Create the requested 熔星冰剑 with a completely different silhouette from the reference. Swords must be single swords with no ring cage. Flutes must be slender playable wooden musical instruments with visible finger holes, not staffs, not swords. NO glow or haze outside the object. One complete item only.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/vesper-laser.png",
+      "publicAsset": "native-88-vesper-laser.webp",
+      "normalization": {
+        "sourceBounds": [
+          118,
+          31,
+          1152,
+          1222
+        ],
+        "fittedSize": [
+          389,
+          448
+        ],
+        "position": [
+          61,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "vesper-homing",
+      "name": "澄潮冰剑",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 澄潮冰剑, an original fantasy equipment design.\nSubject: A long silver-and-sapphire tide sword, flowing translucent pale-blue blade with a clear dark-blue central vein, wave-shaped silver crossguard, pearl pommel and a short navy ribbon. Distinct wavy water blade silhouette, no surrounding water effects.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: OPAQUE CHROMA KEY intermediate. Entire background is perfectly flat uniform #00FF00 RGB, no gradient or shadow. This exact key color must not be painted on the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: STYLE REFERENCE ONLY, match refined painted metal/jewel highlights. Create the requested 澄潮冰剑 with a completely different silhouette from the reference. Swords must be single swords with no ring cage. Flutes must be slender playable wooden musical instruments with visible finger holes, not staffs, not swords. NO glow or haze outside the object. One complete item only.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/vesper-homing.png",
+      "publicAsset": "native-88-vesper-homing.webp",
+      "normalization": {
+        "sourceBounds": [
+          132,
+          60,
+          1158,
+          1194
+        ],
+        "fittedSize": [
+          405,
+          448
+        ],
+        "position": [
+          53,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "aster-spread",
+      "name": "青翎木笛",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 青翎木笛, an original fantasy equipment design.\nSubject: An enchanted wooden transverse flute weapon, polished ivory and warm honey wood body, six clearly visible finger holes, delicate gold keys and curved leaf fittings, a large solid emerald seed crystal held in antler-like branches at one end, two small jade leaves. A single elegant fantasy flute, very clear musical instrument silhouette.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: OPAQUE CHROMA KEY intermediate. Entire background is perfectly flat uniform #FF00FF RGB, no gradient or shadow. This exact key color must not be painted on the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: STYLE REFERENCE ONLY, match refined painted metal/jewel highlights. Create the requested 青翎木笛 with a completely different silhouette from the reference. Swords must be single swords with no ring cage. Flutes must be slender playable wooden musical instruments with visible finger holes, not staffs, not swords. NO glow or haze outside the object. One complete item only.",
+      "transparentOutput": false,
+      "chromaKey": "#FF00FF",
+      "savedAsset": "assets/weapons-v88/runtime/aster-spread.png",
+      "publicAsset": "native-88-aster-spread.webp",
+      "normalization": {
+        "sourceBounds": [
+          0,
+          34,
+          1213,
+          1254
+        ],
+        "fittedSize": [
+          445,
+          448
+        ],
+        "position": [
+          33,
+          32
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "aster-laser",
+      "name": "焰芽木笛",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 焰芽木笛, an original fantasy equipment design.\nSubject: An enchanted dark mahogany transverse flute weapon with six visible finger holes, warm gold keys, one ruby blossom crystal in a small curling brass stem at one end, small crimson flower petals and a short red silk tie. Distinct flame-flower wooden flute.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: OPAQUE CHROMA KEY intermediate. Entire background is perfectly flat uniform #00FF00 RGB, no gradient or shadow. This exact key color must not be painted on the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: STYLE REFERENCE ONLY, match refined painted metal/jewel highlights. Create the requested 焰芽木笛 with a completely different silhouette from the reference. Swords must be single swords with no ring cage. Flutes must be slender playable wooden musical instruments with visible finger holes, not staffs, not swords. NO glow or haze outside the object. One complete item only.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/aster-laser.png",
+      "publicAsset": "native-88-aster-laser.webp",
+      "normalization": {
+        "sourceBounds": [
+          64,
+          72,
+          1206,
+          1169
+        ],
+        "fittedSize": [
+          448,
+          430
+        ],
+        "position": [
+          32,
+          41
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    },
+    {
+      "id": "aster-homing",
+      "name": "露芽木笛",
+      "tool": "built-in image_gen.imagegen",
+      "finalPrompt": "Use case: stylized-concept\nAsset type: finished isolated weapon illustration for a native iPhone fantasy game's equipment screen and inventory cards.\nPrimary request: one 露芽木笛, an original fantasy equipment design.\nSubject: An enchanted pearl-white and pale-blue transverse flute weapon with six visible finger holes, fine silver keys, a solid aqua dewdrop gem in a silver lily at one end, two tiny blue leaves and a short pale-blue silk tie. Distinct cool dewdrop flute.\nStyle/medium: premium anime fantasy RPG weapon concept render, clean painterly cel shading, beautifully polished metal highlights, sculpted three-dimensional volume, crisp precise edges, detailed but readable at a 96-point inventory thumbnail. No character.\nComposition/framing: one complete weapon only, centered in a square image, presented diagonally from lower left to upper right; floating ring instruments face the camera in three-quarter view. Whole object, full tip and handle visible, generous clear 10% margins. Weapon fills about 80% of the frame. The camera shows the broad visible face of the weapon, not a foreshortened end.\nLighting/mood: cool soft rim and warm white top-left key light contained on the material, sophisticated jewel/metal depth.\nScene/backdrop: OPAQUE CHROMA KEY intermediate. Entire background is perfectly flat uniform #00FF00 RGB, no gradient or shadow. This exact key color must not be painted on the solid weapon.\nText: none.\nAvoid: scenery, hands, people, UI, letters, labels, logos, borders, mockup cards, a second weapon, cropped tips, shadows on a floor, haze, particle clouds, diffuse bloom outside the solid object, checkerboard, gradients, oversized ribbons. Keep sharp silhouette and visible material details.\nInput image: STYLE REFERENCE ONLY, match refined painted metal/jewel highlights. Create the requested 露芽木笛 with a completely different silhouette from the reference. Swords must be single swords with no ring cage. Flutes must be slender playable wooden musical instruments with visible finger holes, not staffs, not swords. NO glow or haze outside the object. One complete item only.",
+      "transparentOutput": false,
+      "chromaKey": "#00FF00",
+      "savedAsset": "assets/weapons-v88/runtime/aster-homing.png",
+      "publicAsset": "native-88-aster-homing.webp",
+      "normalization": {
+        "sourceBounds": [
+          47,
+          72,
+          1208,
+          1177
+        ],
+        "fittedSize": [
+          448,
+          426
+        ],
+        "position": [
+          32,
+          43
+        ],
+        "resampling": "LANCZOS",
+        "canvas": [
+          512,
+          512
+        ],
+        "alpha": "preserved"
+      }
+    }
+  ]
+}
