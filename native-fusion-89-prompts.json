@@ -1,0 +1,200 @@
+{
+  "stage": "concept-only",
+  "runtimeChanged": false,
+  "tool": "built-in imagegen",
+  "note": "六位女性与配套武器的融合设定稿；尚未替换 App，未制作三套皮肤或运行时动画。",
+  "heroes": [
+    {
+      "id": "ember",
+      "name": "岚珀",
+      "element": "火",
+      "title": "烬尾祈火师",
+      "color": "#ae482b",
+      "references": [
+        [
+          "妖火红狐 Delphox",
+          "https://www.pokemon.com/us/pokedex/delphox",
+          "狐形耳廓与火焰裙摆"
+        ],
+        [
+          "沙古牙兽 Sakuyamon",
+          "https://digimon.net/reference_en/detail.php?directory_name=sakuyamon",
+          "仪式装备与法器的整体感"
+        ]
+      ],
+      "changes": [
+        "银白长发改为暖棕短发，保留成熟的人类面孔。",
+        "火焰扇领与两片尾状裙拖形成整体轮廓。",
+        "法杖采用狐形陶壳与露出的炭火核心。"
+      ],
+      "images": {
+        "new": "native-fusion-89-ember-new.webp",
+        "weapon": "native-fusion-89-ember-weapon.webp",
+        "old": "native-fusion-89-ember-old.webp"
+      },
+      "face": "native-fusion-89-ember-face.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one original full-body adult female game character, portrait 2:3, no UI. One human woman only, clearly adult around 27 to 32. Full head, feet, dress, organic structures and weapon visible with generous margins. Human attractive but individual face, human hands and legs. Every outfit must be a clearly visible skirt or dress, covered torso, no trousers, shorts, leggings or leotard-only suit. Original hybrid fantasy design whose nonhuman anatomy visibly shapes the silhouette and costume. Creature influence is conceptual shape language only; do not copy an existing character. Reference image is ONLY a rendering/material/lighting target: crisp dark colored contours, broad cel shadows, selective painted opal and chitin highlights, refined adult anime face. Do not copy the reference woman's face, hairstyle, skin tone, gown, fins, pose or weapon. Soft key light from upper left. Plain very light warm gray #F1EEE9 backdrop and faint ground contact shadow only. No environment, particles, giant aura, captions, text, logos, swatches, panels, UI or watermark. Large clean masses readable at 160px character height, detail concentrated on face, hands and weapon. Avoid Genshin-specific hair, silhouettes, insignia, matching costumes, ornate gold filigree, chrome jewelry everywhere, distorted hands, extra limbs and cropped wings or feet.\nSubject and pose: Ember, original fire-fox ritualist. Warm ivory skin with a few freckles, alert amber upturned eyes, short cinnamon-brown wavy hair, two long but narrow fox-shaped living ear fins swept outward, no silver hair. Dress in ochre orange, ash charcoal and bone ivory. Angular fan of six ember-colored overlapping ceramic flame petals grows from the shoulder collar. An opaque charcoal sleeveless fitted upper dress with ivory ceramic rib panels, a real knee-length ochre skirt in broad upward flame-shaped panels, and two long split trailing skirt ribbons echoing forked fox tails, not a real furry tail. Bare human legs and ankle-height ceramic sandals. Human face with poised sly smile. Pose: grounded twisting side-step, one foot crossing in front of the other, shoulder turning back toward the viewer, low staff held diagonally across the body without blocking face, free hand holding one small ember. Staff: long charcoal living-wood shaft, ivory fox-head ceramic cradle with two long ears and an exposed ochre flame core. No lantern cage, no red tie, no military coat. Inspiration only from Delphox fox-fire silhouette and Sakuyamon ritual implement unity, no direct likeness.",
+      "weaponPrompt": "Use case: precise-object-edit. Asset type: isolated weapon concept, one object on a square plain very light warm gray #F1EEE9 background, not a game UI. Input image is a matching original hero concept and defines the WEAPON DESIGN and rendering only. Remove the character, hands, body, face, costume, floor and every other object. Redraw the weapon alone at large product-illustration scale. Crisp dark colored contours, broad clean cel shading, refined selective organic/ceramic/chitin material highlights matching reference. Soft upper-left light, no shadow of the absent person. Keep every extremity inside frame with at least 7 percent margins. Restrained glow confined to weapon interior; no background auras, particles, text, logos, swatches, border, UI or watermark. Preserve the organic silhouette and exact palette; do not return the old ornate gold fantasy weapon. Subject: One original FIRE FOX STAFF. Preserve the reference character's actual held staff design: long slender twisted charcoal living-wood shaft with thin ember-orange seam, small tapered ivory lower tip; upper head is an open ivory ceramic fox head in profile with two long pointed fox ears and an exposed ochre flame core in its neck cavity, flowing jaw/petal cradle. Head in upper right, complete staff diagonal from lower left. Smooth broad ceramic surfaces and restrained details, no lantern cage."
+    },
+    {
+      "id": "lune",
+      "name": "霁弦",
+      "element": "雷",
+      "title": "雷翼巡猎者",
+      "color": "#7050aa",
+      "references": [
+        [
+          "苍炎刃鬼 Ceruledge",
+          "https://www.pokemon.com/us/pokedex/ceruledge",
+          "刃状甲壳与关节分段"
+        ],
+        [
+          "妖女兽 LadyDevimon",
+          "https://digimon.net/reference_en/detail.php?directory_name=ladydevimon",
+          "不对称翼膜轮廓"
+        ]
+      ],
+      "changes": [
+        "红金长发改成黑紫短辫与侧削发。",
+        "硬质甲壳和折叠翼膜构成巡猎者的轮廓。",
+        "月镰改成螳螂前肢般的分节弯刃。"
+      ],
+      "images": {
+        "new": "native-fusion-89-lune-new.webp",
+        "weapon": "native-fusion-89-lune-weapon.webp",
+        "old": "native-fusion-89-lune-old.webp"
+      },
+      "face": "native-fusion-89-lune-face.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one original full-body adult female game character, portrait 2:3, no UI. One human woman only, clearly adult around 27 to 32. Full head, feet, dress, organic structures and weapon visible with generous margins. Human attractive but individual face, human hands and legs. Every outfit must be a clearly visible skirt or dress, covered torso, no trousers, shorts, leggings or leotard-only suit. Original hybrid fantasy design whose nonhuman anatomy visibly shapes the silhouette and costume. Creature influence is conceptual shape language only; do not copy an existing character. Reference image is ONLY a rendering/material/lighting target: crisp dark colored contours, broad cel shadows, selective painted opal and chitin highlights, refined adult anime face. Do not copy the reference woman's face, hairstyle, skin tone, gown, fins, pose or weapon. Soft key light from upper left. Plain very light warm gray #F1EEE9 backdrop and faint ground contact shadow only. No environment, particles, giant aura, captions, text, logos, swatches, panels, UI or watermark. Large clean masses readable at 160px character height, detail concentrated on face, hands and weapon. Avoid Genshin-specific hair, silhouettes, insignia, matching costumes, ornate gold filigree, chrome jewelry everywhere, distorted hands, extra limbs and cropped wings or feet.\nSubject and pose: Lune, original lightning-wing huntress, adult female humanoid. Cool medium olive skin, strong narrow face and straight brows, chartreuse eyes, ink-violet hair with one short tight side braid and a small side shave, no long red hair. Lilac ceramic chitin and matte charcoal armor with sparse ion-yellow joints. A clearly visible charcoal and lilac armored SKIRT of six long irregular pointed panels, opaque fitted torso armor, human bare legs, ankle boots. Two small asymmetric folded batlike membrane wings emerge from shoulders and stay behind body, one sharply bent back and the other wrapped into a shoulder mantle, no feathered angel wings, face not covered. Short swept-back antenna-like horns on head, no full helmet. One forearm is encased in larger segmented chitin armor with visible articulated joints. Pose: decisive low side lunge, both feet grounded, one knee bent strongly, leading shoulder forward, fierce calm face looking at viewer, both human hands gripping a long weapon along a sweeping diagonal. Weapon is a crescent scythe whose blade looks like one living mantis forelimb: three lilac and charcoal articulated shell plates, pale yellow electric membrane on inner edge, long segmented handle. No motorcycle, leather biker clothes or red mane. Inspiration only from Ceruledge segmented blade armor and LadyDevimon asymmetric wing silhouette, no direct copy.",
+      "weaponPrompt": "Use case: precise-object-edit. Asset type: isolated weapon concept, one object on a square plain very light warm gray #F1EEE9 background, not a game UI. Input image is a matching original hero concept and defines the WEAPON DESIGN and rendering only. Remove the character, hands, body, face, costume, floor and every other object. Redraw the weapon alone at large product-illustration scale. Crisp dark colored contours, broad clean cel shading, refined selective organic/ceramic/chitin material highlights matching reference. Soft upper-left light, no shadow of the absent person. Keep every extremity inside frame with at least 7 percent margins. Restrained glow confined to weapon interior; no background auras, particles, text, logos, swatches, border, UI or watermark. Preserve the organic silhouette and exact palette; do not return the old ornate gold fantasy weapon. Subject: One original LIGHTNING MANTIS CRESCENT SCYTHE. Preserve the reference character's actual held weapon: long segmented dark carbon shaft with sparse lilac chitin joints, an asymmetrical hooked crescent blade formed by articulated lilac ceramic shell plates with dark carbon edges, exposed ion-yellow electric membrane along the inner cutting curve; pointed trailing butt spike. A functional scythe, not two separate blades. Complete shaft and blade visible. Diagonal lower-left to upper-right composition."
+    },
+    {
+      "id": "nerine",
+      "name": "澜歌",
+      "element": "水",
+      "title": "潮鳍颂唱者",
+      "color": "#247a82",
+      "references": [
+        [
+          "沙奈朵 Gardevoir",
+          "https://www.pokemon.com/us/pokedex/gardevoir",
+          "连续流动的裙形外轮廓"
+        ],
+        [
+          "天女兽 Angewomon",
+          "https://digimon.net/reference_en/detail.php?directory_name=angewomon",
+          "向下收拢的翼状结构"
+        ]
+      ],
+      "changes": [
+        "银蓝短发与礼帽改成深青卷发与鳍耳。",
+        "贝壳上衣、鳃领和鳍裙共用流动的形状。",
+        "星仪改成托着水珠的珊瑚环。"
+      ],
+      "images": {
+        "new": "native-fusion-89-nerine-new.webp",
+        "weapon": "native-fusion-89-nerine-weapon.webp",
+        "old": "native-fusion-89-nerine-old.webp"
+      },
+      "face": "native-fusion-89-nerine-face.webp",
+      "prompt": "Use case: stylized-concept.\nAsset type: a single original full-body adult female game-character concept, portrait 2:3, not a UI mockup.\nPrimary request: redesign Nerine / 澜歌, a water oracle, as a beautiful HUMAN woman whose costume and silhouette integrate a humanoid sea-spirit anatomy. Draw one character only, head, feet, fins, dress and held weapon fully visible with generous margins. Clearly adult woman about 28, warm brown skin, distinct elegant face, almond-shaped deep teal eyes, short dark turquoise curls gathered behind one ear, tiny pearl ear fins. No top hat, no silver bob.\nDesign synthesis: the flowing organic gown geometry seen in humanoid Pokémon such as Gardevoir and the wing-shaped limb silhouettes of angelic Digimon such as Angewomon are only distant conceptual references. Create a new aquatic identity: opaque pearl-white overlapping shell-petal bodice, seafoam-to-deep-teal knee-to-ankle asymmetric layered fin DRESS, undulating translucent shoulder-gill collar, two compact translucent pectoral fin wings growing from the upper back and resting downward, coral-pink living seams and asymmetrical pearl growths. Fins feel anatomically integrated, not costume wings. Human face, human hands, human bare legs, open-toed pearl footwear. Covered elegant torso, clearly visible dress. Sparse surface detail and large readable masses, no elaborate gold filigree.\nPose: poised low forward step with weight on the front foot; torso turns three-quarter toward viewer, one knee bent, other leg extended; left hand brings a floating coral-and-pearl water ring diagonally in front of her waist and right hand gently conducts a small single water ribbon. Readable relaxed fingers, face unobstructed. The weapon is one open irregular C-shaped smooth coral ring containing a single large suspended water pearl, a living creature-like implement, not an astrolabe.\nStyle/medium: refined anime concept illustration with crisp dark colored contour lines, broad cel-shaded volumes, selective painterly highlights on opal, wet ceramic, sheer fin membranes; nuanced face, crisp anatomical joints, no photorealism, no doll face. Soft upper-left key light, gentle cool bounce light.\nScene/backdrop: plain very light warm gray #F1EEE9, very faint ground-contact shadow only, no environment, no aura, no particles, no text, no swatches or panels.\nComposition: character about 86 percent of portrait height, all hair, fins, fingers, feet and weapon inside image. Concentrate detail on face, hands and weapon. Keep silhouette legible when reduced to 160px high.\nAvoid: direct replicas of any existing franchise character, Genshin costumes or insignia, generic ornate gacha jewelry, trousers, shorts, leggings, leotard-only clothing, childlike proportions, nudity, extra limbs, extra characters, giant weapon covering face, cropped body, caption, watermark.",
+      "weaponPrompt": "Use case: precise-object-edit. Asset type: isolated weapon concept, one object on a square plain very light warm gray #F1EEE9 background, not a game UI. Input image is a matching original hero concept and defines the WEAPON DESIGN and rendering only. Remove the character, hands, body, face, costume, floor and every other object. Redraw the weapon alone at large product-illustration scale. Crisp dark colored contours, broad clean cel shading, refined selective organic/ceramic/chitin material highlights matching reference. Soft upper-left light, no shadow of the absent person. Keep every extremity inside frame with at least 7 percent margins. Restrained glow confined to weapon interior; no background auras, particles, text, logos, swatches, border, UI or watermark. Preserve the organic silhouette and exact palette; do not return the old ornate gold fantasy weapon. Subject: One original WATER CORAL RING. Preserve the exact matching concept in the reference: a single open irregular C-shaped coral-pink organic branch ring with rounded forked ends, one pearlescent rim seam and ONE large clear teal water pearl floating inside the opening. No concentric orbit circles, star symbols, gold frames or extra pearls. Natural smooth coral with subtle wet ceramic highlights, no hand, no miniature creature. Front three-quarter view, entire open ring and its suspended water core clearly visible."
+    },
+    {
+      "id": "sol",
+      "name": "绯穗",
+      "element": "风",
+      "title": "风蝶游剑士",
+      "color": "#478b70",
+      "references": [
+        [
+          "裙儿小姐 Lilligant",
+          "https://www.pokemon.com/us/pokedex/lilligant",
+          "花瓣层叠的裙形"
+        ],
+        [
+          "风神兽 Shutumon",
+          "https://digimon.net/reference_en/detail.php?directory_name=shutumon",
+          "轻盈翼面与战斗动作"
+        ]
+      ],
+      "changes": [
+        "深玉色直发改成蓬松栗色卷发。",
+        "蝶翼与花瓣裹裙构成轻快的宽窄对比。",
+        "细剑的护手和剑刃像展开的叶脉。"
+      ],
+      "images": {
+        "new": "native-fusion-89-sol-new.webp",
+        "weapon": "native-fusion-89-sol-weapon.webp",
+        "old": "native-fusion-89-sol-old.webp"
+      },
+      "face": "native-fusion-89-sol-face.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one original full-body adult female game character, portrait 2:3, no UI. One human woman only, clearly adult around 27 to 32. Full head, feet, dress, organic structures and weapon visible with generous margins. Human attractive but individual face, human hands and legs. Every outfit must be a clearly visible skirt or dress, covered torso, no trousers, shorts, leggings or leotard-only suit. Original hybrid fantasy design whose nonhuman anatomy visibly shapes the silhouette and costume. Creature influence is conceptual shape language only; do not copy an existing character. Reference image is ONLY a rendering/material/lighting target: crisp dark colored contours, broad cel shadows, selective painted opal and chitin highlights, refined adult anime face. Do not copy the reference woman's face, hairstyle, skin tone, gown, fins, pose or weapon. Soft key light from upper left. Plain very light warm gray #F1EEE9 backdrop and faint ground contact shadow only. No environment, particles, giant aura, captions, text, logos, swatches, panels, UI or watermark. Large clean masses readable at 160px character height, detail concentrated on face, hands and weapon. Avoid Genshin-specific hair, silhouettes, insignia, matching costumes, ornate gold filigree, chrome jewelry everywhere, distorted hands, extra limbs and cropped wings or feet.\nSubject and pose: Sol, original wind-butterfly duelist, adult human woman about 29. Warm tawny skin, heart-shaped mature face with hazel eyes and a confident broad smile, fluffy short chestnut curls, no black straight bob. Mint, pale ivory and dusty coral-pink palette. Clearly visible asymmetrical opaque knee-length wrap SKIRT built from three broad living leaf petals, fitted ivory and mint bodice with leaf-vein ribs, light spiral shoulder frills, bare human legs and fine strap sandals. Two translucent butterfly wing membranes, narrow at waist and broader at shoulder height, with mint veins and one pale coral oval each, integrated into her shoulder blades. Not a giant symmetrical backplate. Tiny curled antennae tucked into hair. Pose: nimble fencing pivot, weight on one bent leg, other foot pointed and lifted just off ground, hips and shoulders counter-rotate, left arm extended behind for balance, right hand pointing a slender rapier outward diagonally; face turned to viewer, silhouette stable and readable. Rapier has a long tapered semi-transparent leaf-vein blade and a single curled leaf hand guard, pale mint ceramic grip, no golden filigree. Inspiration only from Lilligant organic petal layers and Shutumon agile winged combat silhouette, no existing face or outfit.",
+      "weaponPrompt": "Use case: precise-object-edit. Asset type: isolated weapon concept, one object on a square plain very light warm gray #F1EEE9 background, not a game UI. Input image is a matching original hero concept and defines the WEAPON DESIGN and rendering only. Remove the character, hands, body, face, costume, floor and every other object. Redraw the weapon alone at large product-illustration scale. Crisp dark colored contours, broad clean cel shading, refined selective organic/ceramic/chitin material highlights matching reference. Soft upper-left light, no shadow of the absent person. Keep every extremity inside frame with at least 7 percent margins. Restrained glow confined to weapon interior; no background auras, particles, text, logos, swatches, border, UI or watermark. Preserve the organic silhouette and exact palette; do not return the old ornate gold fantasy weapon. Subject: One original WIND LEAF RAPIER. Preserve the reference character's actual held weapon: very slim long tapering translucent pale mint blade with a single clear midrib and diagonal leaf-vein divisions, creamy mint ceramic hand guard made from ONE broad curled leaf in an S-curve, narrow teal grip and small rounded petal pommel. Complete pointed blade and pommel visible. No gold metal filigree, no extra blades, no giant flower. Fine fencing weapon diagonal from lower left to upper right."
+    },
+    {
+      "id": "vesper",
+      "name": "夜珩",
+      "element": "冰",
+      "title": "霜月守望者",
+      "color": "#48629b",
+      "references": [
+        [
+          "雪妖女 Froslass",
+          "https://www.pokemon.com/us/pokedex/froslass",
+          "雪铃与垂落长袖的形状"
+        ],
+        [
+          "狄安娜兽 Dianamon",
+          "https://digimon.net/reference_en/detail.php?directory_name=dianamon",
+          "弯月与冷硬护甲"
+        ]
+      ],
+      "changes": [
+        "银紫长发改为深靛短发和浅色发梢。",
+        "雪铃裙与偏置月牙护肩形成上下呼应。",
+        "长剑用宽冰晶主刃和月牙护手。"
+      ],
+      "images": {
+        "new": "native-fusion-89-vesper-new.webp",
+        "weapon": "native-fusion-89-vesper-weapon.webp",
+        "old": "native-fusion-89-vesper-old.webp"
+      },
+      "face": "native-fusion-89-vesper-face.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one original full-body adult female game character, portrait 2:3, no UI. One human woman only, clearly adult around 27 to 32. Full head, feet, dress, organic structures and weapon visible with generous margins. Human attractive but individual face, human hands and legs. Every outfit must be a clearly visible skirt or dress, covered torso, no trousers, shorts, leggings or leotard-only suit. Original hybrid fantasy design whose nonhuman anatomy visibly shapes the silhouette and costume. Creature influence is conceptual shape language only; do not copy an existing character. Reference image is ONLY a rendering/material/lighting target: crisp dark colored contours, broad cel shadows, selective painted opal and chitin highlights, refined adult anime face. Do not copy the reference woman's face, hairstyle, skin tone, gown, fins, pose or weapon. Soft key light from upper left. Plain very light warm gray #F1EEE9 backdrop and faint ground contact shadow only. No environment, particles, giant aura, captions, text, logos, swatches, panels, UI or watermark. Large clean masses readable at 160px character height, detail concentrated on face, hands and weapon. Avoid Genshin-specific hair, silhouettes, insignia, matching costumes, ornate gold filigree, chrome jewelry everywhere, distorted hands, extra limbs and cropped wings or feet.\nSubject and pose: Vesper, original lunar frost guardian, human adult woman about 31. Pale cool skin, long narrow elegant face, steady slate-blue eyes, blunt short deep-navy bob with frosted white ends, no silver-lilac flowing hair, no pink eyes. Silver ivory and indigo, sparse ice-cyan edges. Opaque silver curved crescent armor on one shoulder only, tall but compact snowbell-shaped structured DRESS with a fitted covered upper torso and an outward flared knee-length bell skirt made of four broad indigo and pearl ceramic panels. Two long translucent ivory sleeve streamers split into icicle points at their ends. Bare human legs and low armored pearl ankle boots. Crescent ear-shaped crystal crest points sideways not upward like antlers, human face unobstructed. Pose: grounded protective half-kneel with one foot ahead and rear knee hovering just above ground, torso upright, both human hands rest on the hilt of a broad ice sword planted point-down in front of her but off to one side so skirt and legs remain visible; serious composed expression. Sword: broad translucent frosted crystal blade, asymmetric crescent shell guard, dark indigo handle, no ornate gold and no decorative orbit rings. Inspiration only from Froslass snowbell and sleeve shapes and Dianamon lunar cold armor, not a copy or kimono replica.",
+      "weaponPrompt": "Use case: precise-object-edit. Asset type: isolated weapon concept, one object on a square plain very light warm gray #F1EEE9 background, not a game UI. Input image is a matching original hero concept and defines the WEAPON DESIGN and rendering only. Remove the character, hands, body, face, costume, floor and every other object. Redraw the weapon alone at large product-illustration scale. Crisp dark colored contours, broad clean cel shading, refined selective organic/ceramic/chitin material highlights matching reference. Soft upper-left light, no shadow of the absent person. Keep every extremity inside frame with at least 7 percent margins. Restrained glow confined to weapon interior; no background auras, particles, text, logos, swatches, border, UI or watermark. Preserve the organic silhouette and exact palette; do not return the old ornate gold fantasy weapon. Subject: One original ICE CRESCENT SWORD. Preserve the reference guardian's actual sword: broad long frosted ice-crystal blade with angular asymmetric cuts and a simple internal crystalline seam, curved ivory-silver crescent shell guard that extends more on one side, short wrapped indigo handle with small smooth pearl terminal. No gold, no constellation rings, no floating parts. Entire hilt and pointed crystal blade visible, diagonal from lower-left blade tip to upper-right pommel."
+    },
+    {
+      "id": "aster",
+      "name": "青翎",
+      "element": "草",
+      "title": "兰瓣织梦师",
+      "color": "#a45089",
+      "references": [
+        [
+          "魔幻假面喵 Meowscarada",
+          "https://www.pokemon.com/us/pokedex/meowscarada",
+          "叶片披肩与魔术师的姿态"
+        ],
+        [
+          "蔷薇兽 Rosemon",
+          "https://digimon.net/reference_en/detail.php?directory_name=rosemon",
+          "植物融入人形轮廓"
+        ]
+      ],
+      "changes": [
+        "紫色长发和鹿角改成粉白短发、兰瓣头冠。",
+        "兰花裙与叶片披肩围绕身体自然生长。",
+        "木笛由种荚与叶脉形成，保留清晰吹孔。"
+      ],
+      "images": {
+        "new": "native-fusion-89-aster-new.webp",
+        "weapon": "native-fusion-89-aster-weapon.webp",
+        "old": "native-fusion-89-aster-old.webp"
+      },
+      "face": "native-fusion-89-aster-face.webp",
+      "prompt": "Use case: stylized-concept. Asset type: one original full-body adult female game character, portrait 2:3, no UI. One human woman only, clearly adult around 27 to 32. Full head, feet, dress, organic structures and weapon visible with generous margins. Human attractive but individual face, human hands and legs. Every outfit must be a clearly visible skirt or dress, covered torso, no trousers, shorts, leggings or leotard-only suit. Original hybrid fantasy design whose nonhuman anatomy visibly shapes the silhouette and costume. Creature influence is conceptual shape language only; do not copy an existing character. Reference image is ONLY a rendering/material/lighting target: crisp dark colored contours, broad cel shadows, selective painted opal and chitin highlights, refined adult anime face. Do not copy the reference woman's face, hairstyle, skin tone, gown, fins, pose or weapon. Soft key light from upper left. Plain very light warm gray #F1EEE9 backdrop and faint ground contact shadow only. No environment, particles, giant aura, captions, text, logos, swatches, panels, UI or watermark. Large clean masses readable at 160px character height, detail concentrated on face, hands and weapon. Avoid Genshin-specific hair, silhouettes, insignia, matching costumes, ornate gold filigree, chrome jewelry everywhere, distorted hands, extra limbs and cropped wings or feet.\nSubject and pose: Aster, original orchid illusionist, adult human woman about 27. Warm porcelain skin, soft oval face, thoughtful large amber-brown eyes, cropped pale pink hair with one long curling side lock, no lavender long hair, no antlers. Orchid magenta, fresh leaf green and creamy ivory. One asymmetrical ivory orchid petal head crest growing behind the ear, a short green leaf mantle flaring from shoulders, covered ivory bodice with organic magenta stems, unmistakable below-knee DRESS consisting of five broad orchid petals, three in magenta and two creamy ivory, slightly overlapping at a green living stem waistband. Bare human calves, green petal sandals. Small living root filaments curl from wrists but retain entirely human hands. Pose: seated sideways on one low curved living root arc, knees together to one side, one foot grounded and other relaxed, upper body twisting gently back toward viewer, a seedpod flute held near the lips with two clearly visible human hands, calm enigmatic smile. Flute is slim pale green curved seedpod with six dark finger holes, one curled leaf mouthpiece and a single magenta orchid bud growing from far end; it is a functional woodwind, not a staff or harp. Inspiration only from Meowscarada leaf mantle magician bearing and Rosemon integrated flower anatomy, no cat mask, no rose helmet, no existing creature face.",
+      "weaponPrompt": "Use case: precise-object-edit. Asset type: isolated weapon concept, one object on a square plain very light warm gray #F1EEE9 background, not a game UI. Input image is a matching original hero concept and defines the WEAPON DESIGN and rendering only. Remove the character, hands, body, face, costume, floor and every other object. Redraw the weapon alone at large product-illustration scale. Crisp dark colored contours, broad clean cel shading, refined selective organic/ceramic/chitin material highlights matching reference. Soft upper-left light, no shadow of the absent person. Keep every extremity inside frame with at least 7 percent margins. Restrained glow confined to weapon interior; no background auras, particles, text, logos, swatches, border, UI or watermark. Preserve the organic silhouette and exact palette; do not return the old ornate gold fantasy weapon. Subject: One original GRASS SEEDPOD FLUTE. Preserve the reference character's actual woodwind: a slim pale yellow-green naturally curved seedpod tube, a short curled leaf mouthpiece at one end, a single closed magenta orchid bud with two green sepals at the other end, SIX clearly separated round dark finger holes along the tube. It must be a playable-looking flute, not a gun, staff, harp, sword or long vine. Smooth satin seedpod skin with restrained leaf veins. Entire tube and bud visible, diagonal lower left to upper right."
+    }
+  ]
+}
