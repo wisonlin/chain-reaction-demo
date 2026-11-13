@@ -1,0 +1,51 @@
+{
+  "version": "8.12.0",
+  "build": "31",
+  "availableInExistingInternalTestFlight": true,
+  "uploadedToExistingApp": true,
+  "nativeTestsPerDevice": 112,
+  "unitTestsPerDevice": 62,
+  "uiTestsPerDevice": 50,
+  "nativeValidationRun": "native-run3",
+  "soundOnReleaseProfiles": 41,
+  "actualHomeCostumesReviewed": 18,
+  "perVolleySoundVerifiedForAllSixHeroes": true,
+  "portraitCanvas": [
+    768,
+    1536
+  ],
+  "fixedAnatomyWithIndependentMaterials": true,
+  "gameInterface": "Original locally bundled camp, route chart and full-screen native game panels",
+  "gameEnvironmentVerified": true,
+  "inheritedRearOrFaceViews": 30,
+  "generatedRearCorrections": 6,
+  "actualIdleCycleFramesCaptured": 72,
+  "actualNativeInterfaceScreens": 4,
+  "interfaceScenes": [
+    {
+      "id": "route",
+      "name": "\u5173\u5361\u822a\u56fe",
+      "image": "native-812-route.webp"
+    },
+    {
+      "id": "equipment",
+      "name": "\u6b66\u5668\u88c5\u5907",
+      "image": "native-812-equipment.webp"
+    },
+    {
+      "id": "recruit",
+      "name": "\u661f\u53f0\u62db\u52df",
+      "image": "native-812-recruit.webp"
+    },
+    {
+      "id": "atlas",
+      "name": "\u5192\u9669\u56fe\u9274",
+      "image": "native-812-atlas.webp"
+    }
+  ],
+  "ultimateCoverage": "18 actual texture/layout checks; six default-costume unpaused native captures",
+  "screenshots": "Actual simulator screen captures, proportional resizing only",
+  "audio": "Actual app effects mixer output, six 18-second recordings, no background music",
+  "video": "Actual native simulator recordings, silent",
+  "physicalDevicePerformanceVerified": false
+}
